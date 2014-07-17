@@ -1,0 +1,82 @@
+.footer
+	background: #35393D url(../img/bg.png) repeat-x 50% 100%
+	.footer__in
+		@extend %in
+		+clr
+		padding-top: 18px 
+		padding-bottom: 25px 
+	.footer__text,.footer__col
+		float: left
+		width: $w
+		margin-right: $s  
+	.footer__col
+		width: 143px 
+		margin-right: 23px 
+	.footer__designed
+		width: $w 
+		float: right
+		text-align: right
+	.footer__logo
+		+s(flogo)
+		display: inline-block
+		+hide-text
+		margin-bottom: 17px 
+	.footer__copy
+		font-size: 11px 
+		font-style: italic
+		color: #fff 
+		line-height: 1.1
+		margin-bottom: 23px  
+	.footer__links
+		font-size: 12px 
+		color: #B1B2B3
+		position: relative
+		left: -24px 
+		a
+			color:  #B1B2B3
+			text-decoration: none
+			padding:  0 24px 
+			display: inline-block
+			position: relative
+			&:first-child
+				&:before
+					content: ' '
+					position: absolute
+					right: 0
+					top: -2px 
+					height: 18px 
+					border-right: 1px solid #4F5255  
+	.footer__col	
+		h3
+			color: #fff 
+			margin-bottom: 13px 
+			&:after
+				content: ' '
+				display: inline-block
+				margin-left: 16px 
+				+s(arrow)
+				vertical-align: middle
+				position: relative
+				top: 2px 
+		ul
+			list-style: none
+			a
+				color: #BFC0C1
+				text-decoration: none 
+				border-bottom: 1px solid #484C4F
+				display: block
+				padding: 7px 0  
+			li
+				&:last-child
+					a
+						border-bottom-style: none
+	.footer__designby
+		color: #868889
+		font-size: 11px  
+		color: #868889 
+		text-decoration: none
+		a
+			+hide-text
+			display: inline-block
+			+s(tdeser)
+			vertical-align: middle
