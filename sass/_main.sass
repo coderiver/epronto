@@ -50,6 +50,7 @@
 			+s(play)  
 .pop
 	@extend %in
+	margin-bottom: 25px 
 	.pop__head
 		background: url(../img/titlebg.png) repeat-x 0 50% 
 		text-align: center
@@ -71,6 +72,14 @@
 			float: left
 		.pop__right
 			float: right
+	.pop__more
+		background: url(../img/wave.png) repeat-x 0 50%
+		text-align: center
+		.pop__morelink
+			display: inline-block
+			+s(pop__more)
+			position: relative
+			top: 2px 
 .go__wrap
 	margin-right: -24px 
 	+clr
@@ -111,6 +120,40 @@
 			font-size: 18px 
 			color: #2E2F2F
 			font-style: normal 
-
+.rec
+	+clr
+	.rec__title
+		color: #000000
+		+lite
+		font-size: 30px  
+		margin-bottom: 50px 
+		text-align: center
+.feedback
+	width: 33%
+	float: left
+	text-align: center
+	font-size: 13px 
+	margin-bottom: 60px 
+	.feedback__photo 
+		display: inline-block
+		width: 130px 
+		height: 130px 
+		border-radius: 130px
+		margin-bottom: 12px 
+	.feedback__name
+		color: #000000
+		font-size: 18px
+		font-weight: normal  
+	.feedback__site
+		font-size: 13px 
+		color: #03519C
+		text-decoration: none 
+	.feedback__text
+		margin-top: 13px 
+		font-size: 15px 
+		color: #000000
+		line-height: 24px  
+		padding: 0 20px 
+		
 
 	
