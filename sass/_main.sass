@@ -1,2 +1,116 @@
 // Normally mainpage styles
  
+
+.about
+	margin: 34px  auto 25px auto
+	@extend %in
+	+clr
+	.about__item
+		float: left
+		width: $w - 53px
+		margin-right: $s
+		padding-left: 53px 
+		position: relative
+		font-size: 12px 
+		font-style: italic
+		color: #8B8B8B 
+		
+		strong
+			display: block
+			font-size: 15px 
+			color: #000000 
+			font-weight: normal
+			font-style: normal 
+			margin-bottom: 8px  
+	.about__icon
+		position: absolute
+		left: 0
+		+s(check) 
+		top: 0 
+	.about__video
+		float: right
+		width: $w - 77px
+		padding-left: 77px 
+		position: relative
+		font-size: 12px 
+		font-style: italic
+		color: #8B8B8B 
+		text-decoration: none
+		.about__videotitle
+			font-style: normal
+			font-size: 20px 
+			font-weight: normal
+			color: #000000
+			line-height: 1  
+			margin-bottom: 7px 
+		.about__videoicon
+			position: absolute
+			left: 0
+			top: 0
+			+s(play)  
+.pop
+	@extend %in
+	.pop__head
+		background: url(../img/titlebg.png) repeat-x 0 50% 
+		text-align: center
+		margin-bottom: 25px 
+		span
+			background: #fff
+			padding: 0 20px
+			display: inline-block  
+			font-size: 30px 
+			+lite
+	.pop__text
+		+clr
+		font-size: 15px 
+		line-height: 24px
+		color: #4C4C4C
+		margin-bottom: 28px 
+		.pop__left,.pop__right
+			width: 2*$w + $s 
+			float: left
+		.pop__right
+			float: right
+.go__wrap
+	margin-right: -24px 
+	+clr
+.go
+	float: left
+	margin-right: 24px 
+	width: 144px 
+	margin-bottom: 32px 
+	.go__title
+		font-size: 15px 
+		color: #0C5EA7
+		text-decoration: none 
+		font-weight: normal
+		margin-bottom: 11px 
+	.go__pic
+		border-radius: 4px
+		margin-bottom: 7px 
+		img
+			display: block
+			border-radius: 4px
+	.go__hotels
+		float: left
+		font-size: 11px 
+		padding-top: 7px 
+		line-height: 1 
+		strong
+			font-weight: normal
+			color: #0C5EA7
+			text-decoration: none
+	.go__price
+		float: right
+		font-size: 11px 
+		font-style: italic
+		color: #A0A0A0
+		line-height: 1 
+		strong
+			font-weight: normal
+			font-size: 18px 
+			color: #2E2F2F
+			font-style: normal 
+
+
+	
