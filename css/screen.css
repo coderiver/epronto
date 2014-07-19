@@ -60,8 +60,8 @@ body { background: url(../img/map.jpg) repeat-x 50% 6px; }
 .footer .footer__in { *zoom: 1; padding-top: 18px; padding-bottom: 25px; }
 .footer .footer__in:after { content: " "; display: table; clear: both; }
 .footer .footer__text, .footer .footer__col { float: left; width: 228px; margin-right: 24px; }
-.footer .footer__col { width: 143px; margin-right: 23px; }
-.footer .footer__designed { width: 228px; float: right; text-align: right; }
+.footer .footer__col { width: 143px; margin-right: 23px; padding-top: 5px; }
+.footer .footer__designby { width: 228px; float: right; text-align: right; padding-top: 7px; }
 .footer .footer__logo { background: url('../img/icons-sa4129c4b42.png') 0 -445px no-repeat; width: 88px; height: 21px; display: inline-block; font: 0/0 a; text-shadow: none; color: transparent; margin-bottom: 17px; }
 .footer .footer__copy { font-size: 11px; font-style: italic; color: white; line-height: 1.1; margin-bottom: 23px; }
 .footer .footer__links { font-size: 12px; color: #b1b2b3; position: relative; left: -24px; }
@@ -70,7 +70,7 @@ body { background: url(../img/map.jpg) repeat-x 50% 6px; }
 .footer .footer__col h3 { color: white; margin-bottom: 13px; }
 .footer .footer__col h3:after { content: " "; display: inline-block; margin-left: 16px; background: url('../img/icons-sa4129c4b42.png') 0 -676px no-repeat; width: 14px; height: 11px; vertical-align: middle; position: relative; top: 2px; }
 .footer .footer__col ul { list-style: none; }
-.footer .footer__col ul a { color: #bfc0c1; text-decoration: none; border-bottom: 1px solid #484c4f; display: block; padding: 7px 0; }
+.footer .footer__col ul a { color: #bfc0c1; text-decoration: none; border-bottom: 1px solid #484c4f; display: block; padding: 6px 0; }
 .footer .footer__col ul li:last-child a { border-bottom-style: none; }
 .footer .footer__designby { color: #868889; font-size: 11px; color: #868889; text-decoration: none; }
 .footer .footer__designby a { font: 0/0 a; text-shadow: none; color: transparent; display: inline-block; background: url('../img/icons-sa4129c4b42.png') 0 -414px no-repeat; width: 72px; height: 21px; vertical-align: middle; }
