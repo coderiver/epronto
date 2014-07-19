@@ -11,13 +11,15 @@
 
 <!-- begin header  -->
 <div class="header"><div class="header__in">
+	<div class="header__left"></div>
+	<div class="header__right"></div>
 	<a href="#" class="header__logo"></a>
 	<ul class="nav">
-		<li><a href="#">Отели</a></li>
-		<li><a href="#">Авиабилеты</a></li>
-		<li><a href="#">Прокат авто</a></li>
+		<li class="nav__hotel"><a href="#"><i></i>Отели</a></li>
+		<li class="nav__avia"><a href="#"><i></i>Авиабилеты</a></li>
+		<li class="nav__auto"><a href="#"><i></i>Прокат авто</a></li>
 	</ul>
-	<div class="header__socials">
+	<div class="social">
 		<a href="#" class="social__fb"></a>
 		<a href="#" class="social__vk"></a>
 	</div>
@@ -25,12 +27,12 @@
 <!-- end header -->
 
 <!-- begin form  -->
-<div class="form">
+<div class="form__wrap"><div class="form">
 	<div class="form__title">
 		<h2>Сравнение цен на отели <span>Бесплатно найдите самую низкую цену за номер!</span></h2>
 	</div>
 	<div class="form__hotel">
-		<input type="text" name="" placeholder="Город или название гостиницы" id="">
+		<input class="input" type="text" name="" placeholder="Город или название гостиницы" id="">
 		<div class="form__hotelicon"></div>
 		<div class="form__hotelsearch"></div>
 	</div>
@@ -38,21 +40,20 @@
 		<div class="form__exampleicon"></div>
 		Например <a href='#'>Париж</a>  или  <a href='#'>Hilton Berlin</a>
 	</div>
-	<div class="form__dates">
-		<div class="form__date form__date_in">
-			<input type="text" name="" placeholder="Дата заезда" id="">
-			<div class="form__dateicon"></div>
-		</div>
-		<div class="form__date form__date_out">
-			<input type="text" name="" placeholder="Дата отъезда" id="">
-			<div class="form__dateicon"></div>
-		</div>
+
+	<div class="form__date form__date_in">
+		<input class="input" type="text" name="" placeholder="Дата заезда" id="">
+		<div class="form__dateicon"></div>
 		<div class="form__nodates">
-			<label><input type="checkbox" name="" id=""><i></i>Даты неизвестны</label>
+			<label><input type="checkbox" name="" id=""><i></i><span>Даты неизвестны</span></label>
 		</div>
 	</div>
+	<div class="form__date form__date_out">
+		<input type="text" class="input"  name="" placeholder="Дата отъезда" id="">
+		<div class="form__dateicon"></div>
+	</div>
 	<div class="form__people">
-		<input type="text" name="" placeholder="2 взрослых в 1 номере" id="">
+		<input class="input" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
 		<div class="form__peopleicon"></div>
 		<div class="form__peoplearrow"></div>
 	</div>
@@ -60,7 +61,7 @@
 		<a href="#" class="btn">Сравнить цены</a>
 	</div>
 	
-</div>
+</div></div>
 <!-- end form -->
 
 <!-- begin about  -->
@@ -87,7 +88,7 @@
 <!-- end about -->
 
 <!-- begin content  -->
-<div class="content">
+<div class="content content_main">
 
 
 	
@@ -210,7 +211,7 @@
 
 
 	<!-- begin rec  -->
-	<div class="rec">
+	<div class="rec"><div class="rec__in">
 		<h2 class="rec__title">Нас рекомендуют</h2>
 		<div class="feedback">
 			<div class="feedback__photo" style="background-image:url(http://placekitten.com/130/130)"></div>
@@ -242,7 +243,7 @@
 приятно видеть, как сервис, который изначально был очень полезен, все развивается и развиваетсся, постоянно добавляя новые возможности. Меня ePronto еще ни разу не подводил, я уверен, что он и вас не подведет!</p>
 			</div>
 		</div>
-	</div>
+	</div></div>
 	<!-- end rec -->
 
 </div>
