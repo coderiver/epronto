@@ -5,5 +5,23 @@ head.ready(function() {
 		return false;
 	});
 
-	console.log($('body').html());
+
+
+	$('.feedbacks').slick({
+	  slidesToShow: 3,
+	  responsive: [
+	    {
+	      breakpoint: 880,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 640,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
 });

@@ -64,7 +64,7 @@
 			font-size: 20px 
 			font-weight: normal
 			color: #000000
-			line-height: 1  
+			line-height: .9
 			margin-bottom: 7px 
 		.about__videoicon
 			position: absolute
@@ -84,6 +84,15 @@
 			display: inline-block  
 			font-size: 30px 
 			+lite
+			+r1
+				font-size: 25px 
+			+r2
+				font-size: 20px 
+				line-height: .9 
+			br
+				display: none
+				+r2
+					display: block
 	.pop__text
 		+clr
 		font-size: 15px 
@@ -93,6 +102,14 @@
 		.pop__left,.pop__right
 			width: 2*$w + $s 
 			float: left
+			+r1
+				width: 45% 
+			+r2
+				float: none
+				width: auto
+			p
+				+r2
+					margin-bottom: 1.2em 
 		.pop__right
 			float: right
 	.pop__more
@@ -106,11 +123,21 @@
 .go__wrap
 	margin-right: -24px 
 	+clr
+	+r1
+		margin-right: -2% 
+	+r2
+		margin-right: -3% 
 .go
 	float: left
 	margin-right: 24px 
 	width: 144px 
 	margin-bottom: 32px 
+	+r1
+		width: 23% 
+		margin-right: 2% 
+	+r2
+		width: 47% 
+		margin-right: 3% 
 	.go__title
 		font-size: 15px 
 		color: #0C5EA7
@@ -123,6 +150,7 @@
 		img
 			display: block
 			border-radius: 4px
+			width: 100% 
 	.go__hotels
 		float: left
 		font-size: 11px 
@@ -145,6 +173,7 @@
 			font-style: normal 
 .rec
 	+clr
+	overflow: hidden
 	background: url(../img/map1.jpg) no-repeat 50% 50%
 	.rec__in
 		@extend %in
@@ -154,6 +183,8 @@
 		font-size: 30px  
 		margin-bottom: 50px 
 		text-align: center
+.feedbacks
+	overflow: hidden
 .feedback
 	width: 33%
 	float: left
@@ -177,7 +208,7 @@
 	.feedback__text
 		margin-top: 13px 
 		font-size: 15px 
-		color: #000000
+		color: #737373
 		line-height: 24px  
 		padding: 0 20px 
 		
