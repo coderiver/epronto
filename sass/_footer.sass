@@ -5,14 +5,48 @@
 		+clr
 		padding-top: 18px 
 		padding-bottom: 25px 
+		+r2
+			font-size: 0 
 	.footer__text,.footer__col
 		float: left
 		width: $w
-		margin-right: $s  
+		margin-right: $s 
+		+r1
+			width: 22%
+			margin-left: 2%  
+			margin-right: 0 
+	.footer__text
+		+r1
+			margin-left: 0  
+		+r2
+			display: inline-block
+			vertical-align: top
+			width: 50% 
+			float: none
+			+box
+			padding-right: 30px 
+			
 	.footer__col
 		width: 143px 
 		margin-right: 23px 
 		padding-top: 5px 
+		+r1
+			width: 22%
+			margin-left: 4%  
+			margin-right: 0 
+		+r2
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			+box
+			margin: 0 
+			float: none
+			margin-bottom: 20px 
+		&:nth-child(2n+1)
+			padding-right: 30px 
+			+box
+
+		
 	.footer__designby
 		width: $w 
 		float: right
@@ -34,21 +68,32 @@
 		color: #B1B2B3
 		position: relative
 		left: -24px 
+		+r1
+			left: 0 
+			margin-top: -10px 
 		a
 			color:  #B1B2B3
 			text-decoration: none
 			padding:  0 24px 
 			display: inline-block
 			position: relative
+			+r1
+				display: block
+				padding: 6px 0 
 			&:first-child
+				+r1
+					border-bottom: 1px solid #4A4D51 
 				&:before
 					content: ' '
 					position: absolute
 					right: 0
 					top: -2px 
 					height: 18px 
-					border-right: 1px solid #4F5255  
+					border-right: 1px solid #4F5255 
+					+r1
+						display: none 
 	.footer__col	
+		font-size: 12px 
 		h3
 			color: #fff 
 			margin-bottom: 13px 
@@ -77,6 +122,8 @@
 		font-size: 11px  
 		color: #868889 
 		text-decoration: none
+		+r1
+			display: none
 		a
 			+hide-text
 			display: inline-block

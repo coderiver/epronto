@@ -37,8 +37,12 @@
 	+g(#ffdb69,#ffbd3b)
 	padding: 12px 30px 48px 30px
 	font-size: 0 
+	position: relative
+	z-index: 10 
 	.form__title
 		margin-bottom: 25px 
+		+r1
+			margin-bottom: 13px 
 		h2
 			font-size: 50px 
 			font-weight: 100
@@ -46,10 +50,20 @@
 			color: #3E3B35
 			text-align: center
 			line-height: 1 
+			+r1
+				font-size: 25px 
+			+r2
+				font-size: 20px  
 			span
 				font-size: 26px 
 				display: block
 				line-height: 1 
+				+r1
+					font-size: 15px 
+					color: #957D3C
+					padding-top: 2px 
+				+r2
+					display: none
 	.form__hotel
 		position: relative
 		.form__hotelsearch
@@ -74,6 +88,9 @@
 		color: #704A23 
 		text-shadow: 1px 1px 0 rgba(255,255,255,.24)
 		cursor: pointer
+		+r2
+			bottom: auto
+			top: 116px 
 		span
 			vertical-align: middle
 			position: relative
@@ -94,8 +111,23 @@
 		width: 20%
 		margin-right: 2% 
 		float: left
-		&.form__dateout
-			float: right
+		+r1
+			margin-bottom: 46px 
+			width: 48% 
+			margin-right: 0
+			margin-left: 0  
+		+r2
+			width: auto
+			margin-bottom: 16px 
+			float: none
+			display: block
+		&.form__date_out
+			+r1
+				float: right
+			+r2
+				float: none
+				margin-bottom: 47px 
+
 		.form__dateicon
 			position: absolute
 			right: 10px 
@@ -108,6 +140,14 @@
 		width: 36%
 		display: inline-block
 		margin-right: 2% 
+		+r1
+			width: 60% 
+			margin-right: 4% 
+		+r2
+			width: auto
+			margin-right: 0
+			margin-bottom: 16px  
+			display: block
 		.form__peopleicon
 			left: 16px 
 			top: 11px 
@@ -144,6 +184,11 @@
 	.form__submit
 		display: inline-block
 		width: 18% 
+		+r1
+			width: 36% 
+		+r2
+			width: auto
+			display: block
 		.btn
 			display: block
 			padding: 0

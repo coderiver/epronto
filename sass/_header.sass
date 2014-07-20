@@ -1,15 +1,16 @@
-body
-	background: url(../img/map.jpg) repeat-x 50% 6px
-%in
-	max-width: 984px 
-	margin: 0 auto
+
 .header
 	background: url(../img/bg.png) repeat-x 50% 0
 	overflow: hidden
+	padding-top: 6px 
+	+r1
+		overflow: visible
 	.header__in
 		@extend %in
 		height: 120px 
 		position: relative
+		+r1
+			height: 75px 
 	.header__left,.header__right
 		position: absolute
 		top: 57px 
@@ -17,6 +18,8 @@ body
 		left: -1010px 
 		height: 2px 
 		background: url(../img/dash.png) repeat-x 100% 0
+		+r1
+			display: none
 	.header__right
 		left: auto
 		right: -1005px 
@@ -27,20 +30,35 @@ body
 		right: 0
 		text-align: right 
 		font-size: 0 
+		+r1
+			position: static
+			text-align: center
 		.social__fb,.social__vk
 			display: inline-block
 			margin-left: 6px 
 			box-shadow: 0 2px 4px rgba(0,0,0,.12)
 		.social__fb
 			+s(facebook)
+			.is-menu &
+				+r1
+					+sp(facebookactive)
 		.social__vk
 			+s(vk)
+			.is-menu &
+				+r1
+					+sp(vkactive)
 	.header__logo
 		position: absolute
 		top: 37px 
 		left: 0
 		+s(logo) 
 		+hide-text
+		z-index: 30 
+		.is-menu &
+			+r1
+				+s(logoactive)
+		+r1
+			top: 20px 
 		&:before
 			position: absolute
 			left: 157px 
@@ -50,22 +68,30 @@ body
 			height: 2px   
 			content: ' '
 			cursor: default
+			+r1
+				display: none
 .nav
 	font-size: 15px 
 	list-style: none
 	font-weight: bold
 	text-transform: uppercase
+	+r1
+		margin-bottom: 30px 
 	li
 		position: absolute
 		top: 34px 
 		height: 46px 
 		line-height: 46px 
+		+r1
+			position: static
 		&:before
 			position: absolute
 			top: 22px 
 			height: 2px 
 			content: ' '
 			background: url(../img/dash.png) repeat-x 0 0
+			+r1
+				display: none
 			
 	a
 		color: #000000
@@ -75,10 +101,19 @@ body
 		position: relative
 		height: 46px 
 		line-height: 46px 
+		+r1
+			color: #fff 
+			text-align: center
+			padding-left: 0
+			text-align: center 
+			border-bottom: 1px solid #084B85 
+			box-shadow: 0 1px 0 #246FAE
 		i
 			position: absolute
 			left: 0
 			top: 0  
+			+r1
+				display: none
 	.nav__hotel
 		left: 223px 
 		&:before
@@ -100,3 +135,35 @@ body
 			width: 115px 
 		i
 			+s(nauto)
+.menu
+	display: none
+	+s(menu)
+	position: absolute
+	top: 14px 
+	right: 0
+	cursor: pointer 
+	z-index: 40 
+	+r1
+		display: block
+	.is-menu &
+		+r1
+			+s(menuactive)
+			display: block
+.menu__dropdown
+	display: block
+	+r1
+		display: none
+	.is-menu &
+		+r1
+			display: block
+	+r1
+		background: #0C5EA7
+		position: absolute
+		left: -20px   
+		right: -20px 
+		top: 0px 
+		z-index: 20
+		padding-top: 83px 
+		padding-bottom: 24px 
+		box-shadow: 0 10px 10px rgba(0,0,0,.35)
+		
