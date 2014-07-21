@@ -28,7 +28,9 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	background: sprite($map, $sprite) no-repeat
 	//background-image: inline-image('icons/'+$sprite+'.png','image/png')
 	+image-size(sprite-file($map, $sprite))
-
+=s64
+	background-image: inline-image('icons/'+$sprite+'.png','image/png')
+	+image-size(sprite-file($map, $sprite))
 //for retina
 =sr($sprite, $map: $icons)
 	background: sprite($map, $sprite) no-repeat

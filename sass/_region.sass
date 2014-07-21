@@ -1,14 +1,13 @@
 .region
-	padding-bottom: 23px 
-	margin-bottom: 23px 
 	.bc
 		margin-bottom: 11px 
+		max-width: 420px 
 	.region__in
 		@extend %in
 		position: relative
-		border-bottom: 1px solid #E5E5E5 
 	.region__sites
 		padding-top: 22px 
+		padding-bottom: 22px 
 		img
 			width: 100%
 			display: block 
@@ -16,9 +15,17 @@
 		font-size: 30px 
 		line-height: 1 
 		margin-bottom: 20px 
+		width: 400px 
 		+lite
 		img
-			margin-left: 16px 
+			//margin-left: 16px 
+	.region__flag
+		width: 1px 
+		margin-left: -1px 
+		display: inline-block
+		img
+			position: relative
+			left: 16px 
 	.region__formwrap
 		width: 480px 
 		position: relative
@@ -91,3 +98,177 @@
 			color: #B9CCE2
 			font-weight: bold
 			font-size: 15px 
+
+
+.abouthotels
+	margin-bottom: 50px 
+	h2
+		font-size: 30px 
+		+lite
+		font-weight: 200
+		margin-bottom: 14px 
+		+r1
+			font-size: 25px 
+			color: #000 
+	.abouthotels__content
+		color: #737373
+		font-size: 15px  
+		line-height: 24px
+		+column-count(2)
+		+column-gap(30px)
+		+r1
+			+column-count(1)
+			+column-gap(0)
+		p
+			margin-bottom: 1em 
+
+.sw
+	margin-bottom: 30px 
+	border-bottom: 1px solid #D7D5CB 
+	+clr
+	ul
+		list-style: none
+		li
+			float: left
+			position: relative
+			z-index: 20
+			margin-right: 10px 
+			&+li
+				z-index: 19 
+			&+li+li
+				z-index: 18
+			&+li+li+li
+				z-index: 17
+			&+li+li+li+li
+				z-index: 16
+			&+li+li+li+li+li
+				z-index: 15
+			// padding: 0 10px 
+			// &:before,&:after
+			// 	content: ' '
+			// 	position: absolute
+			// 	top: 0
+			// 	background: red
+			// 	width: 10px 
+			// 	height: 20px
+			// &:before
+			// 	background: purple
+			// 	left: 0 
+			// &:after
+			// 	background: red 
+			// 	right: 0 
+	a
+		text-decoration: none
+		color: #7D7C7C
+		font-size: 14px  
+		background: #F8F5EB 
+		padding: 0 12px 0 23px
+		height: 35px  
+		line-height: 35px 
+		float: left
+		position: relative
+		z-index: 2 
+		top: 1px 
+		+si(sw)
+		&:after
+			position: absolute
+			right: -15px 
+			top: 0
+			+s(swr) 
+			content: ' '
+	.is-active 
+		z-index: 50 
+		a
+			color: #fff
+			+sp(swh) 
+			&:after
+				+sp(swhr)
+			&:before
+				position: absolute
+				+s(downarrow)
+				content: ' '
+				left: 22px 
+				bottom: -6px 
+.rh
+	+clr
+	padding-bottom: 20px  
+	margin-bottom: 30px 
+	position: relative
+	&:before
+		background: url(../img/wave.png) repeat-x 0 100%
+		height: 5px 
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%   
+		content: ' '
+		opacity: .3 
+	&.is-last
+		margin-bottom: 0
+		padding-bottom: 10px 
+		&:before
+			display: none
+	.rh__pic
+		float: left
+		margin-right: 24px
+		width: 228px 
+		img
+			width: 100%
+			display: block
+			border-radius: 5px 
+	.rh__content
+		overflow: hidden
+	.rh__title
+		color: #0A539A
+		font-weight: normal
+		margin-right: 13px 
+		margin-bottom: 7px 
+		h3
+			font-weight: normal
+			color: #0A539A 
+			font-size: 20px 
+			display: inline-block
+			a
+				text-decoration: none
+				color: #0A539A 
+		.rh__hotels
+			display: inline-block
+			border: 1px solid #ffbf3f
+			@include border-radius(5px)
+			padding: 3px 4px
+			font-size: 13px   
+			font-style: italic
+			color: #737D83
+			text-decoration: none
+			margin-left: 15px 
+			span
+				border-bottom: 1px dotted #095097
+				font-size: 14px  
+				font-style: normal
+				color: #095097 
+	.rh__text
+		font-size: 15px 
+		line-height: 24px
+		color: #737373  
+	.sub
+		padding-top: 20px 
+		clear: both
+		li
+			display: inline-block
+			a
+				display: inline-block
+				background: #EBF2F8 
+				border-radius: 5px
+				font-size: 12px 
+				font-style: italic
+				color: #414141
+				text-decoration: none
+				padding: 3px 10px
+				margin-right: 8px  
+				margin-bottom: 10px 
+				span
+					font-size: 14px 
+					border-bottom: 1px dotted #095097 
+					color: #095097
+					font-style: normal 
+					margin-right: 6px 
