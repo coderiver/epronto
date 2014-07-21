@@ -45,6 +45,7 @@ body.b-inside1 { background-position: 50% -60px; }
 .header .social { position: absolute; top: 42px; right: 0; text-align: right; font-size: 0; }
 @media only screen and (max-width: 984px) { .header .social { position: static; text-align: center; } }
 .header .social .social__fb, .header .social .social__vk { display: inline-block; margin-left: 6px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); }
+.header .social .social__fb:hover, .header .social .social__vk:hover { position: relative; top: -2px; }
 .header .social .social__fb { background: url('../img/icons-scd5310764b.png') 0 -758px no-repeat; width: 29px; height: 29px; }
 @media only screen and (max-width: 984px) { .is-menu .header .social .social__fb { background-position: 0 -825px; } }
 .header .social .social__vk { background: url('../img/icons-scd5310764b.png') 0 -680px no-repeat; width: 29px; height: 29px; }
@@ -374,6 +375,7 @@ body.b-inside1 { background-position: 50% -60px; }
 
 .sw { margin-bottom: 30px; border-bottom: 1px solid #d7d5cb; *zoom: 1; }
 .sw:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 984px) { .sw { border-bottom-style: none; margin-bottom: 20px; } }
 .sw ul { list-style: none; }
 .sw ul li { float: left; position: relative; z-index: 20; margin-right: 10px; }
 .sw ul li + li { z-index: 19; }
@@ -382,11 +384,18 @@ body.b-inside1 { background-position: 50% -60px; }
 .sw ul li + li + li + li + li { z-index: 16; }
 .sw ul li + li + li + li + li + li { z-index: 15; }
 .sw a { text-decoration: none; color: #7d7c7c; font-size: 14px; background: #f8f5eb; padding: 0 12px 0 23px; height: 35px; line-height: 35px; float: left; position: relative; z-index: 2; top: 1px; background: url('../img/icons-scd5310764b.png') 0 -1210px no-repeat; }
+.sw a br { display: none; }
+@media only screen and (max-width: 984px) { .sw a br { display: block; } }
 .sw a:after { position: absolute; right: -15px; top: 0; background: url('../img/icons-scd5310764b.png') 0 -1001px no-repeat; width: 15px; height: 35px; content: " "; }
 .sw .is-active { z-index: 50; }
 .sw .is-active a { color: white; background-position: 0 -1076px; }
 .sw .is-active a:after { background-position: 0 -894px; }
 .sw .is-active a:before { position: absolute; background: url('../img/icons-scd5310764b.png') 0 -1396px no-repeat; width: 11px; height: 6px; content: " "; left: 22px; bottom: -6px; }
+@media only screen and (max-width: 984px) { .sw li { margin-right: 0; }
+  .sw a { background: none; margin-right: 5px; border: 1px solid #dfddd5; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: #f7f5eb; font-size: 13px; color: #7d7c7c; text-align: center; height: auto; line-height: 1; padding: 3px 6px; background-position: 0 0; margin-bottom: 5px; }
+  .sw a:after { display: none; }
+  .sw .is-active a { background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #004b97), color-stop(100%, #0081cb)); background-image: -webkit-linear-gradient(bottom, #004b97 0%, #0081cb 100%); background-image: -moz-linear-gradient(bottom, #004b97 0%, #0081cb 100%); background-image: -o-linear-gradient(bottom, #004b97 0%, #0081cb 100%); background-image: linear-gradient(bottom, #004b97 0%, #0081cb 100%); background-position: 0 0; border-style: none; padding: 4px 7px; }
+  .sw .is-active a:before { left: 50%; margin-left: -5px; } }
 
 .rh { *zoom: 1; padding-bottom: 20px; margin-bottom: 30px; position: relative; }
 .rh:after { content: " "; display: table; clear: both; }
@@ -394,8 +403,10 @@ body.b-inside1 { background-position: 50% -60px; }
 .rh.is-last { margin-bottom: 0; padding-bottom: 10px; }
 .rh.is-last:before { display: none; }
 .rh .rh__pic { float: left; margin-right: 24px; width: 228px; }
+@media only screen and (max-width: 640px) { .rh .rh__pic { float: none; width: auto; margin-bottom: 16px; } }
 .rh .rh__pic img { width: 100%; display: block; border-radius: 5px; }
 .rh .rh__content { overflow: hidden; }
+@media only screen and (max-width: 984px) { .rh .rh__content { overflow: visible; } }
 .rh .rh__title { color: #0a539a; font-weight: normal; margin-right: 13px; margin-bottom: 7px; }
 .rh .rh__title h3 { font-weight: normal; color: #0a539a; font-size: 20px; display: inline-block; }
 .rh .rh__title h3 a { text-decoration: none; color: #0a539a; }

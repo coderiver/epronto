@@ -126,6 +126,9 @@
 	margin-bottom: 30px 
 	border-bottom: 1px solid #D7D5CB 
 	+clr
+	+r1
+		border-bottom-style: none
+		margin-bottom: 20px 
 	ul
 		list-style: none
 		li
@@ -143,20 +146,6 @@
 				z-index: 16
 			&+li+li+li+li+li
 				z-index: 15
-			// padding: 0 10px 
-			// &:before,&:after
-			// 	content: ' '
-			// 	position: absolute
-			// 	top: 0
-			// 	background: red
-			// 	width: 10px 
-			// 	height: 20px
-			// &:before
-			// 	background: purple
-			// 	left: 0 
-			// &:after
-			// 	background: red 
-			// 	right: 0 
 	a
 		text-decoration: none
 		color: #7D7C7C
@@ -170,6 +159,10 @@
 		z-index: 2 
 		top: 1px 
 		+si(sw)
+		br
+			display: none
+			+r1
+				display: block
 		&:after
 			position: absolute
 			right: -15px 
@@ -189,6 +182,36 @@
 				content: ' '
 				left: 22px 
 				bottom: -6px 
+	+r1
+		li
+			margin-right: 0 
+		a
+			background: none
+			margin-right: 5px 
+			border: 1px solid #dfddd5
+			@include border-radius(5px)
+			background-color: #f7f5eb
+			font-size: 13px 
+			color: #7D7C7C
+			text-align: center 
+			height: auto 
+			line-height: 1
+			padding: 3px 6px  
+			background-position: 0 0 
+			margin-bottom: 5px 
+			&:after
+				display: none
+		.is-active
+			a
+				// background-color: #f7f5eb
+				@include background-image(linear-gradient(bottom, #004b97 0%, #0081cb 100%))
+				background-position: 0 0
+				border-style: none 
+				padding: 4px 7px  
+				&:before
+					left: 50%
+					margin-left: -5px  
+
 .rh
 	+clr
 	padding-bottom: 20px  
@@ -212,12 +235,18 @@
 		float: left
 		margin-right: 24px
 		width: 228px 
+		+r2
+			float: none
+			width: auto
+			margin-bottom: 16px 
 		img
 			width: 100%
 			display: block
 			border-radius: 5px 
 	.rh__content
 		overflow: hidden
+		+r1
+			overflow: visible
 	.rh__title
 		color: #0A539A
 		font-weight: normal
