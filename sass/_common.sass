@@ -51,15 +51,23 @@ body
 	font-size: 12px 
 	line-height: 1.4
 	background: url(../img/map.jpg) repeat-x 50% 6px
+	&.b-inside
+		background-position: 50% -110px 
+	&.b-inside
+		background-position: 50% -60px 
 %in
 	max-width: 984px 
 	margin: 0 auto
 	+r1
 		margin: 0 20px
-		 
+.content_inside
+	@extend %in
 $w: 228px
 $s: 24px
 
+.is-mobilehidden
+	+r1
+		display: none
 =lite
 	font-family: "Helvetica Neue",arial, sans-serif 
 	font-weight: 300 

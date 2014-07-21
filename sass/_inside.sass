@@ -1,0 +1,175 @@
+.h1
+	+lite
+	font-weight: 200
+	font-size: 40px  
+	line-height: .9
+	margin-bottom: 60px  
+	+r1
+		font-size: 25px 
+		margin-bottom: 14px 
+.h2
+	+lite
+	font-size: 26px 
+	font-weight: normal
+	line-height: .9
+	color: #000000
+	font-weight: 200   
+	margin-bottom: 17px 
+	br
+		+r1
+			display: none
+.description
+	font-size: 15px 
+	line-height: 24px
+	color: #737373 
+	margin-bottom: 30px 
+	p
+		margin-bottom: 1em 
+.more
+	border-top: 1px solid #DDDDDC 
+	margin: 45px 0
+	text-align: center
+	.more__button
+		display: inline-block
+		border: 1px solid #ecbe62
+		@include border-radius(5px)
+		background-color: #fff
+		@include box-shadow(0 3px 3px rgba(0,0,0,.11))
+		@include background-image(linear-gradient(bottom, #ffbd3b 0%, #ffdb69 100%))
+		color: #71491e
+		font-size: 15px
+		@include text-shadow(1px 1px 0 rgba(255,255,255,.24))
+		text-decoration: none
+		padding: 0 20px
+		height: 35px  
+		line-height: 35px
+		position: relative
+		top: -18px  
+
+
+
+
+.lists
+	margin-bottom: 20px 
+.list
+	border-radius: 5px
+	background: #F8FAFC
+	padding: 18px 18px 12px 18px
+	margin-bottom: 10px 
+	.list__title
+		font-size: 18px 
+		font-weight: normal
+		line-height: .9
+		margin-bottom: 12px  
+		br
+			+r1
+				display: none 
+	ul
+		list-style: none
+	li
+		margin-bottom: 7px 
+		br
+			+r1
+				display: none
+		a
+			color: #095097
+			text-decoration: none
+			border-bottom: 1px dotted #095097  
+			font-size: 14px 
+		span
+			font-size: 12px 
+			margin-left: 8px 
+			font-style: italic
+		color: #414141 
+
+.textcontent
+	h2
+		@extend .h2
+	p
+		margin-bottom: 1em
+		font-size: 15px  
+		line-height: 24px
+		color: #737373  
+
+
+.bc
+	font-size: 12px 
+	color: #3E3B35 
+	margin-bottom: 35px 
+	+r1
+		display: none
+	&>*
+		vertical-align: middle
+		display: inline-block
+	a
+		color: #0C5EA7
+		text-decoration: none 
+	i
+		+s(arr)
+		display: inline-block
+		margin: 0 11px 
+
+
+.hotel
+	display: inline-block
+	width: 233px 
+	border: 1px solid #E5E5E5 
+	border-radius: 5px
+	vertical-align: top
+	text-decoration: none
+	+r2
+		width: auto
+		display: block
+		margin-bottom: 15px 
+	.hotel__content
+		padding: 9px 
+	.hotel__pic
+		border-radius: 5px
+		display: block
+		margin-bottom: 10px 
+		img
+			display: block
+			width: 100% 
+			border-radius: 5px
+	.hotel__stars
+		float: right
+	.hotel__title
+		color: #585858
+		font-size: 15px  
+		font-weight: normal
+		overflow: hidden
+	.hotel__price
+		border-top: 1px solid #E5E5E5 
+		overflow: hidden
+		padding: 9px 
+		background: #F8F5EB
+		border-bottom-right-radius: 5px
+		border-bottom-left-radius: 5px
+	.hotel__pricelabel
+		float: left
+		width: 40%
+		color: #BDBBB3
+		font-size: 12px   
+		line-height: 1
+	.hotel__pricevalue
+		+lite
+		font-size: 15px 
+		font-weight: 300 
+		color: #000 
+		float: right
+		line-height: 1 
+		strong
+			font-size: 25px 
+			font-weight: 200
+		
+			
+.stars
+	font-size: 0 
+	i
+		display: inline-block
+		+s(star1)
+		vertical-align: top
+	.stars__0
+		+s(star0)
+
+
