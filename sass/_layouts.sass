@@ -28,3 +28,65 @@
 	&.l-top
 		border-top: 1px solid #E5E5E5 
 		padding-top: 20px 
+
+
+.cols2
+	+clr
+	.col1
+		float: left
+		width: 235px 
+		+r1
+			width: 49%
+		+r2
+			width: auto
+			float: none 
+	.col2
+		float: right
+		width: 235px 
+		+r1
+			width: 49%
+		+r2
+			float: none
+			width: auto
+
+.cols21
+	+clr
+	.col1,.col2
+		float: left
+		width: 357px 
+		+r1
+			width: 49%
+		+r2
+			width: auto
+			float: none 
+	.col2
+		float: right
+		+r1
+			width: 49%
+		+r2
+			width: auto
+			float: none 
+
+.cols3
+	+clr
+	.col1,.col2,.cols3
+		float: left
+		width: 235px 
+		+r1
+			width: 32%
+		+r2
+			width: auto
+			float: none 
+	.col2,.col3
+		margin-left: 6px 
+		+r1
+			margin-left: 2%
+		+r2
+			margin: 0
+			width: auto
+			float: none 
+	.col3
+		float: right
+		+r2
+			float: none
+	

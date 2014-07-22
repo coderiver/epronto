@@ -24,4 +24,13 @@ head.ready(function() {
 	    }
 	  ]
 	});
+
+
+	$(document).click(function(event) {
+        if (!$(event.target).closest('.search_form').length) {
+            if ($('.select_list').is(":visible")) {
+                $('.select_list').hide().removeClass("opened");
+            }
+        }
+    })
 });

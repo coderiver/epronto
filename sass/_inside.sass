@@ -45,6 +45,10 @@
 		line-height: 35px
 		position: relative
 		top: -18px  
+		&:hover
+			+g(#FFEFBC,#FFC144)
+		&:active
+			+g(#FFBE3C,#FFDC69)
 	&.more_small
 		text-align: left
 		position: relative
@@ -132,6 +136,8 @@
 	a
 		color: #0C5EA7
 		text-decoration: none 
+		&:hover
+			text-decoration: underline
 	i
 		+s(arr)
 		display: inline-block
@@ -140,12 +146,15 @@
 
 .hotel
 	display: inline-block
-	width: 233px 
+	display: block
+	//width: 233px 
 	border: 1px solid #E5E5E5 
 	border-radius: 5px
 	vertical-align: top
 	text-decoration: none
 	margin-bottom: 10px
+	&:hover
+		box-shadow: 0 0 10px rgba(0,0,0,0.5)
 	+r2
 		width: auto
 		display: block
@@ -191,7 +200,7 @@
 			font-size: 25px 
 			font-weight: 200
 	&.hotel_big
-		width: 357px 
+		// width: 357px 
 		+r2
 			width: auto
 		.hotel__text
