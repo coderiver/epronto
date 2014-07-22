@@ -143,6 +143,7 @@
 	border-radius: 5px
 	vertical-align: top
 	text-decoration: none
+	margin-bottom: 10px
 	+r2
 		width: auto
 		display: block
@@ -187,7 +188,34 @@
 		strong
 			font-size: 25px 
 			font-weight: 200
-		
+	&.hotel_big
+		width: 357px 
+		+r2
+			width: auto
+		.hotel__text
+			font-size: 15px 
+			line-height: 24px
+			color: #737373  
+		.hotel__pricelabel
+			width: auto 
+		.hotel__book
+			float: right
+			border: 1px solid #ecbe62
+			@include border-radius(5px)
+			@include box-shadow(0 3px 3px rgba(0,0,0,.11))
+			@include background-image(linear-gradient(bottom, #ffbd3b 0%, #ffdb69 100%))
+			color: #71491e
+			font-size: 15px
+			@include text-shadow(1px 1px 0 rgba(255,255,255,.24))
+			height: 33px 
+			line-height: 33px
+			padding: 0 14px
+			text-decoration: none 
+			margin-left: 16px  
+		.hotel__pricevalue,.hotel__pricelabel
+			padding-top: 5px 
+
+
 			
 .stars
 	font-size: 0 
