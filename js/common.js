@@ -40,7 +40,8 @@ head.ready(function() {
 		$('.people').addClass('is-open')
 	});
 	$('.people li').click(function(event) {
-		$('.js-people').val($(this).date('adult')+' взрослых и '+$(this).date('roms')+' комнат');
+		$('.js-people').val($(this).data('adult')+' взрослых и '+$(this).data('rooms')+' комнат');
+		$('.people').removeClass('is-open')
 	});
 
 	$(document).click(function(event) {
