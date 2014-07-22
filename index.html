@@ -19,7 +19,7 @@
 	<div class="menu__dropdown">
 		<div class="menu__fakelogo"></div>
 		<ul class="nav">
-			<li class="nav__hotel"><a href="#"><i></i>Отели</a></li>
+			<li class="nav__hotel is-active"><a href="#"><i></i>Отели</a></li>
 			<li class="nav__avia"><a href="#"><i></i>Авиабилеты</a></li>
 			<li class="nav__auto"><a href="#"><i></i>Прокат авто</a></li>
 		</ul>
@@ -60,13 +60,34 @@
 	</div>
 	<div class="form__people">
 		<input class="input js-people" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
-		<div class="form__peopleicon"></div>
+		<div class="form__peopleicon iconmore"></div>
 		<div class="form__peoplearrow"></div>
 		<div class="people">
 			<ul>
-				<li><a href="#">1 человек</a></li>
-				<li><a href="#">1 человек</a></li>
-				<li><a href="#">1 человек</a></li>
+				<li data-adult="1" data-rooms="1">
+                    <i class="icon11"></i>
+                    1&nbsp;взрослый
+                </li>
+                <li data-adult="2" data-rooms="1">
+                    <i class="icon21"></i>
+                    2&nbsp;взрослых в 1 номере
+                </li>
+                <li data-adult="3" data-rooms="1">
+                    <i class="icon31"></i>
+                    3&nbsp;взрослых в 1 номере
+                </li>
+                <li data-adult="4" data-rooms="1">
+                    <i class="icon41"></i>
+                    4&nbsp;взрослых 1 номере
+                </li>
+                <li data-adult="2" data-rooms="2">
+                    <i class="icon22"></i>
+                    2&nbsp;взрослых в 2 номерах
+                </li>
+                <li data-adult="0" data-rooms="0">
+                    <i class="iconmore"></i>
+                    Нужно больше номеров или проживание с детьми
+                </li>
 			</ul>
 		</div>
 	</div>

@@ -36,12 +36,17 @@ head.ready(function() {
 	    }
 	  ]
 	});
-
+	$('.js-people').focus(function(event) {
+		$('.people').addClass('is-open')
+	});
+	$('.people li').click(function(event) {
+		$('.js-people').val($(this).text());
+	});
 
 	$(document).click(function(event) {
-        if (!$(event.target).closest('.search_form').length) {
-            if ($('.select_list').is(":visible")) {
-                $('.select_list').hide().removeClass("opened");
+        if (!$(event.target).closest('.form').length) {
+            if ($('.people').is(":visible")) {
+                $('.people').hide().removeClass("is-open");
             }
         }
     })

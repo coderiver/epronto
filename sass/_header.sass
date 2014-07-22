@@ -123,7 +123,13 @@
 			left: 126px 
 			width: 72px 
 		i
-			+s(nhotel)
+			+s(nhotel0)
+			margin-left: 3px 
+			height: 60px 
+		&.is-active,&:hover
+			i
+				+sp(nhotel)
+				margin-left: 0 
 	.nav__avia
 		left: 427px 
 		&:before
@@ -131,6 +137,11 @@
 			width: 17px 
 		i
 			+s(navia)
+			height: 60px 
+		&.is-active,&:hover
+			i
+				+sp(navia1)
+				margin-left: 0
 	.nav__auto
 		left: 627px 
 		&:before
@@ -138,6 +149,11 @@
 			width: 115px 
 		i
 			+s(nauto)
+			height: 60px 
+		&.is-active,&:hover
+			i
+				+sp(nauto1)
+				margin-left: 0 
 .menu
 	display: none
 	+s(menu)

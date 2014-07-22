@@ -321,3 +321,74 @@
 			+r2
 				float: none
 				width: auto
+
+.people
+	position: absolute
+	left: 0
+	top: 57px  
+	background: #fff 
+	z-index: 1000
+	box-shadow: 0 5px 27px rgba(0,0,0,.22)
+	width: 230px 
+	font-size: 12px 
+	border-radius: 5px
+	display: none
+	&.is-open
+		display: block
+	&:before
+		content: '\25B2'
+		display: block
+		position: absolute
+		left: 15px
+		top: -12px
+		height: 13px
+		width: 13px
+		overflow: hidden
+		font-size: 13px
+		line-height: 16px
+		text-align: center
+		color: #fff
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0  
+		height: 5px
+		overflow: hidden
+		border-radius: 0 0 5px 5px
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(#2192d3), to(#004e94))
+		background: -webkit-linear-gradient(#2192d3 0%, #004e94 100%)
+		background: -moz-linear-gradient(#2192d3 0%, #004e94 100%)
+		background: -o-linear-gradient(#2192d3 0%, #004e94 100%)
+		background: linear-gradient(#2192d3 0%, #004e94 100%)
+		// -webkit-transform: scale(1.4, 1)
+		// -ms-transform: scale(1.4, 1)
+		// transform: scale(1.4, 1)
+	ul
+		list-style: none
+		padding-top: 4px 
+	li
+		border-top: 1px solid #d9d9d9
+		padding: 10px 15px 11px 12px
+		color: #626161
+		cursor: pointer
+		min-width: 18px
+		padding-left: 63px 
+		position: relative
+		i
+			position: absolute
+			top: 8px 
+			right: 180px 
+		&:first-child
+			border-style: none
+		&:hover
+			background-color: #e6eef3
+			color: #000
+@each $s in icon11,icon21,icon31,icon41,icon22, iconmore
+	.#{$s}
+		+s(#{$s})
+	li:hover .#{$s}
+		+sp(#{$s}h)
+	
