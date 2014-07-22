@@ -71,6 +71,8 @@
 			padding: 0 10px 
 			@include text-shadow(1px 1px 0 rgba(255,255,255,.24))
 
+	.l-col2 &
+		margin-bottom: 0 
 
 
 
@@ -226,4 +228,50 @@
 	.stars__0
 		+s(star0)
 
-
+.bh
+	margin-bottom: 40px 
+.comments
+	margin-bottom: 40px 
+	.comments__title
+		margin-bottom: 20px 
+		font-size: 30px  
+		+lite
+		color: #000000 
+.comment
+	margin-bottom: 23px 
+	.comment__meta
+		a
+			color: #095097
+			text-decoration: none
+		span
+			font-size: 12px 
+			color: #8B8B8B
+			font-style: italic 
+	blockquote
+		padding: 20px 
+		border: 1px solid #E7DDC3 
+		border-radius: 5px
+		font-size: 13px 
+		line-height: 20px
+		color: #737373
+		font-style: italic
+		margin-bottom: 15px   
+		position: relative
+		&:before
+			position: absolute
+			content: ' '
+			bottom: -16px 
+			left: 20px 
+			+s(commentsarrow)
+.map
+	+r1
+		margin-bottom: 20px 
+	h3
+		font-size: 18px 	
+		margin-bottom: 15px 
+		font-weight: normal
+.sh
+	.sh__title
+		font-size: 18px 
+		font-weight: normal
+		margin-bottom: 20px 
