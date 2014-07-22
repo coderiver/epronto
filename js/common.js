@@ -5,7 +5,19 @@ head.ready(function() {
 		return false;
 	});
 
+	//$( ".js-datepicker" ).datepicker();
 
+	$( ".js-datein" ).datepicker({
+		minDate: 0,
+		onSelect: function( selectedDate ) {
+			$( ".js-dateout" ).datepicker( "option", "minDate", selectedDate );
+		}
+	});
+	$( ".js-dateout" ).datepicker({
+		onSelect: function( selectedDate ) {
+			$( ".js-datein" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
 
 	$('.feedbacks').slick({
 	  slidesToShow: 3,
