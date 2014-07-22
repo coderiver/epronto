@@ -275,3 +275,48 @@
 		font-size: 18px 
 		font-weight: normal
 		margin-bottom: 20px 
+.bh
+	border-bottom: 1px solid #E5E5E5 
+	padding-bottom: 20px 
+	margin-bottom: 15px 
+	h3
+		font-size: 18px 
+		font-weight: normal
+		margin-bottom: 0 
+	.bh__content
+		font-size: 15px 
+		line-height: 24px 
+		color: #737373
+		margin-top: 15px  
+.cols
+	+clr
+	+r2
+		margin-bottom: 20px 
+.ll
+	font-size: 15px 
+	list-style: none
+	width: 48% 
+	float: left
+
+	+r2
+		float: none
+		width: auto
+	&+.ll
+		float: right
+		+r2
+			float: none
+			width: auto
+	li
+		font-size: 15px 
+		color: #262626
+		padding: 10px 0 
+		border-bottom: 1px solid #E5E5E5 
+		&:last-child
+			border-bottom: none 
+			+r2
+				border-bottom: 1px solid #E5E5E5 
+		a
+			font-size: 14px 
+			color: #095097 
+			text-decoration: none
+			border-bottom: 1px dotted #095097 
