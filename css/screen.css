@@ -30,6 +30,9 @@ a { color: #005ca9; }
 
 @media only screen and (max-width: 984px) { .is-mobilehidden { display: none; } }
 
+.rub { display: inline-block; font-family: Arial, sans-serif; position: relative; }
+.rub:before { content: " "; height: 5%; width: 80%; background: black; position: absolute; top: 60%; left: 0; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 24%; }
