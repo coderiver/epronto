@@ -897,6 +897,16 @@ li:hover .iconmore { background-position: 0 -1011px; }
 @media only screen and (max-width: 640px) { .ll li:last-child { border-bottom: 1px solid #e5e5e5; } }
 .ll li a { font-size: 14px; color: #095097; text-decoration: none; border-bottom: 1px dotted #095097; }
 
+.hotelitems { *zoom: 1; padding: 20px 0; }
+.hotelitems:after { content: " "; display: table; clear: both; }
+
+.hotelitem { display: inline-block; width: 33%; margin-bottom: 20px; }
+.hotelitem a { text-decoration: none; }
+.hotelitem .flag, .hotelitem .cname { display: inline-block; vertical-align: middle; margin-right: 5px; font-size: 30px; font-weight: normal; }
+@media only screen and (max-width: 984px) { .hotelitem { width: 45%; } }
+@media only screen and (max-width: 640px) { .hotelitem { width: auto; display: block; } }
+.hotelitem ul li { margin-bottom: 5; font-size: 13px; }
+
 .region .bc { margin-bottom: 11px; max-width: 420px; }
 .region .region__in { position: relative; }
 .region .region__sites { padding-top: 22px; padding-bottom: 22px; }
