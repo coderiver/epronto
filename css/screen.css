@@ -22,6 +22,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; background: url(../img/map.jpg) repeat-x 50% 6px; }
 body.b-inside { background-position: 50% -110px; }
 body.b-inside1 { background-position: 50% -60px; }
+body.b-inside2 { background-position: 50% -220px; }
 
 .content_inside, .header .header__in, .footer .footer__in, .form__wrap, .about, .pop, .rec .rec__in, .region .region__in { max-width: 984px; margin: 0 auto; }
 @media only screen and (max-width: 984px) { .content_inside, .header .header__in, .footer .footer__in, .form__wrap, .about, .pop, .rec .rec__in, .region .region__in { margin: 0 20px; } }
