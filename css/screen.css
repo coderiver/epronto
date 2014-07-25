@@ -918,7 +918,7 @@ li:hover .iconmore { background-position: 0 -1011px; }
 .hotelitems { *zoom: 1; padding: 20px 0; }
 .hotelitems:after { content: " "; display: table; clear: both; }
 
-.hotelitem { display: inline-block; width: 33%; margin-bottom: 20px; }
+.hotelitem { display: inline-block; width: 33%; margin-bottom: 20px; vertical-align: top; }
 .hotelitem a { text-decoration: none; }
 .hotelitem .flag, .hotelitem .cname { display: inline-block; vertical-align: middle; margin-right: 5px; font-size: 30px; font-weight: normal; }
 @media only screen and (max-width: 984px) { .hotelitem { width: 45%; } }
