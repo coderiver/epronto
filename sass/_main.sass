@@ -178,6 +178,17 @@
 			font-size: 18px 
 			color: #2E2F2F
 			font-style: normal 
+	.go__picsprite
+		height: 0
+		width: 100%
+		padding-bottom: 60%
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		background-repeat: no-repeat 
+	@each $s in it,es,fr,de,gr,th,cz
+		.go__#{$s}
+			+s64pic(#{$s})
 .rec
 	+clr
 	overflow: hidden

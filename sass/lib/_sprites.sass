@@ -28,9 +28,13 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	background: sprite($map, $sprite) no-repeat
 	//background-image: inline-image('icons/'+$sprite+'.png','image/png')
 	+image-size(sprite-file($map, $sprite))
-=s64
+=s64($sprite, $map: $icons)
 	background-image: inline-image('icons/'+$sprite+'.png','image/png')
 	+image-size(sprite-file($map, $sprite))
+=s64pic($sprite, $map: $icons)
+	background-image: inline-image('countries/'+$sprite+'.jpg','image/jpg')
+=s64pic1($sprite, $map: $icons)
+	background-image: inline-image($sprite+'.png','image/png')
 //for retina
 =sr($sprite, $map: $icons)
 	background: sprite($map, $sprite) no-repeat
