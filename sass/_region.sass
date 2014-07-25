@@ -222,7 +222,10 @@
 	margin-bottom: 30px 
 	position: relative
 	&:before
-		background: url(../img/wave.png) repeat-x 0 100%
+		// background: url(../img/wave.png) repeat-x 0 100%
+		@extend .wave
+		background-repeat: repeat-x
+		background-position: 0 50% 
 		height: 5px 
 		position: absolute
 		left: 0

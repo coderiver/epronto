@@ -1,4 +1,5 @@
-
+%dash
+	+s64pic1(dash)
 .header
 	@extend .colorborder
 	background-repeat: repeat-x
@@ -20,7 +21,10 @@
 		width: 1000px 
 		left: -1010px 
 		height: 2px 
-		background: url(../img/dash.png) repeat-x 100% 0
+		// background: url(../img/dash.png) repeat-x 100% 0
+		@extend %dash
+		background-repeat: repeat-x
+		background-position: 100% 0 
 		+r1
 			display: none
 	.header__right
@@ -69,7 +73,10 @@
 			position: absolute
 			left: 157px 
 			top: 19px 
-			background: url(../img/dash.png) repeat-x 0 0
+			// background: url(../img/dash.png) repeat-x 0 0
+			@extend %dash
+			background-repeat: repeat-x
+			background-position: 0% 0 
 			width: 63px
 			height: 2px   
 			content: ' '
@@ -95,7 +102,10 @@
 			top: 22px 
 			height: 2px 
 			content: ' '
-			background: url(../img/dash.png) repeat-x 0 0
+			// background: url(../img/dash.png) repeat-x 0 0
+			@extend %dash
+			background-repeat: repeat-x
+			background-position: 0% 0 
 			+r1
 				display: none
 			

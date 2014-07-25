@@ -75,7 +75,10 @@
 	@extend %in
 	margin-bottom: 25px 
 	.pop__head
-		background: url(../img/titlebg.png) repeat-x 0 50% 
+		// background: url(../img/titlebg.png) repeat-x 0 50% 
+		+s64pic1(titlebg)
+		background-repeat: repeat-x
+		background-position: 0 50% 
 		text-align: center
 		margin-bottom: 25px 
 		span
@@ -113,7 +116,10 @@
 		.pop__right
 			float: right
 	.pop__more
-		background: url(../img/wave.png) repeat-x 0 50%
+		@extend .wave
+		background-repeat: repeat-x
+		background-position: 0 50% 
+		// background: url(../img/wave.png) repeat-x 0 50%
 		text-align: center
 		.pop__morelink
 			display: inline-block
