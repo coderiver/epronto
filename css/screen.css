@@ -926,6 +926,7 @@ li:hover .iconmore { background-position: 0 -1011px; }
 .region .bc { margin-bottom: 11px; max-width: 420px; }
 .region .region__in { position: relative; }
 .region .region__sites { padding-top: 22px; padding-bottom: 22px; }
+@media only screen and (max-width: 984px) { .region .region__sites { display: none; } }
 .region .region__sites img { width: 100%; display: block; height: auto !important; }
 .region .region__title { font-size: 30px; line-height: 1; margin-bottom: 20px; width: 400px; font-family: "Helvetica Neue", arial, sans-serif; font-weight: 300; }
 .region .region__flag { width: 1px; margin-left: -1px; display: inline-block; }
