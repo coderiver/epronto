@@ -1023,6 +1023,8 @@ li:hover .iconmore { background-position: 0 -1011px; }
 .rh.rh_small .rh__numbers { width: 45%; float: left; }
 @media only screen and (max-width: 984px) { .rh.rh_small .rh__numbers { float: none; width: auto; } }
 .rh.rh_small .rh__numbers li { border: none; padding: 4px 0; }
+.rh.rh_small .rh__hotels { position: absolute; right: 0; top: 0; background: white; }
+.rh.rh_small .rh__hotels:before { width: 20px; height: 50px; top: -10px; left: -21px; position: absolute; content: " "; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); }
 
 .sub { padding-top: 10px; clear: both; }
 .sub li { display: inline-block; }
