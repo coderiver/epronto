@@ -66,9 +66,10 @@ head.ready(function() {
 	});
 	$('.people li').click(function(event) {
 		if($(this).data('rooms')==0){
-			alert('go');
+			$('.form__moarpeople').show();
 		}
 		else{
+			$('.form__moarpeople').hide();
 			$('.js-people').val($(this).data('adult')+' взрослых и '+$(this).data('rooms')+' комнат');
 		}
 		$('.people').removeClass('is-open')
