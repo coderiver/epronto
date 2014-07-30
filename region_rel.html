@@ -57,12 +57,152 @@
 				<div class="form__dateicon"></div>
 			</div>
 			<div class="form__people">
-				<input class="input" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
-				<div class="form__peopleicon"></div>
+				<input class="input js-people" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
+				<div class="form__peopleicon iconmore"></div>
 				<div class="form__peoplearrow"></div>
+				<div class="people">
+					<ul>
+						<li data-adult="1" data-rooms="1">
+		                    <i class="icon11"></i>
+		                    1&nbsp;взрослый
+		                </li>
+		                <li data-adult="2" data-rooms="1">
+		                    <i class="icon21"></i>
+		                    2&nbsp;взрослых в 1 номере
+		                </li>
+		                <li data-adult="3" data-rooms="1">
+		                    <i class="icon31"></i>
+		                    3&nbsp;взрослых в 1 номере
+		                </li>
+		                <li data-adult="4" data-rooms="1">
+		                    <i class="icon41"></i>
+		                    4&nbsp;взрослых 1 номере
+		                </li>
+		                <li data-adult="2" data-rooms="2">
+		                    <i class="icon22"></i>
+		                    2&nbsp;взрослых в 2 номерах
+		                </li>
+		                <li data-adult="0" data-rooms="0">
+		                    <i class="iconmore"></i>
+		                    Нужно больше номеров или проживание с детьми
+		                </li>
+					</ul>
+				</div>
 			</div>
+			
+			
 			<div class="form__submit">
 				<a href="#" class="btn">Найти</a>
+			</div>
+			<div class="form__moarpeople">
+				<fieldset class="form__moar">
+					<legend>Номер <span>1</span>:</legend>
+					<div class="form__moarselect">
+						<label for="">Взрослых</label>
+						<div class="form__select">
+							<select name="" id=""><option value="">1111</option></select>
+							<input class="input js-select" type="text" name="" placeholder="1" id="">
+							<div class="form__arrow"></div>
+							<div class="drop">
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="form__moarselect">
+						<label>Детей</label>
+						<div class="form__select">
+							<select name="" id=""><option value="">1111</option></select>
+							<input class="input js-select" type="text" name="" placeholder="1" id="">
+							<div class="form__arrow"></div>
+							<div class="drop">
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="form__removeme">Удалить</a>
+				</fieldset>
+				<fieldset class="form__moar">
+					<legend>Номер <span>1</span>:</legend>
+					<div class="form__moarselect">
+						<label for="">Взрослых</label>
+						<div class="form__select">
+							<select name="" id=""><option value="">1111</option></select>
+							<input class="input js-select" type="text" name="" placeholder="1" id="">
+							<div class="form__arrow"></div>
+							<div class="drop">
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="form__moarselect">
+						<label>Детей</label>
+						<div class="form__select">
+							<select name="" id=""><option value="">1111</option></select>
+							<input class="input js-select" type="text" name="" placeholder="1" id="">
+							<div class="form__arrow"></div>
+							<div class="drop">
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="form__removeme">Удалить</a>
+				</fieldset>
+
+
+				
+				<a href="#" class="form__clonemoar">Добавить другой номер</a>
+				<div class="toclone" hidden>
+					<fieldset class="form__moar" >
+						<legend>Номер <span>1</span>:</legend>
+						<div class="form__moarselect">
+							<label for="">Взрослых</label>
+							<div class="form__select">
+								<select name="" id=""><option value="">1111</option></select>
+								<input class="input js-select" type="text" name="" placeholder="1" id="">
+								<div class="form__arrow"></div>
+								<div class="drop">
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form__moarselect">
+							<label>Детей</label>
+							<div class="form__select">
+								<select name="" id=""><option value="">1111</option></select>
+								<input class="input js-select" type="text" name="" placeholder="1" id="">
+								<div class="form__arrow"></div>
+								<div class="drop">
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="form__removeme">Удалить</a>
+					</fieldset>
+				</div>
 			</div>
 		</div>
 		<!-- end form -->

@@ -321,6 +321,76 @@
 			+r2
 				float: none
 				width: auto
+	.form__moarpeople
+		clear: both
+		padding-top: 10px  
+	.form__moar
+		border: 1px solid #6C6C6C
+		padding: 15px  
+		margin-bottom: 12px 
+		+clr
+		legend
+			display: block
+			font-size: 12px 
+			margin-left: 10px 
+			color: #3e3b35 
+			padding: 0 4px 
+	.form__moarselect
+		float: left
+		margin-right: 15px 
+		text-align: left
+		width: 86px 
+		label
+			display: block
+			font-style: italic
+			text-shadow: 1px 1px 1px rgba(255, 255, 255, .24)
+			color: #714A1F 
+			font-size: 12px 
+			display: block
+			margin-bottom: 5px 
+	.form__clonemoar
+		color: #005CA9 
+		font-size: 13px 
+		display: inline-block
+		// margin-top: 8px 
+	.form__select
+		position: relative
+		.form__arrow
+			position: absolute
+			width: 45px 
+			height: 45px 
+			right: 0
+			top: 0  
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+			&:before
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -5px   
+				margin-left: -7px 
+				content: ' '
+				+s(arrow1)
+		select
+			display: none
+		&.is-active
+			.form__arrow
+				+g(#004E99,#0069A7)
+				&:before
+					+s(arrow2)
+			.input
+				border: 1px solid #0071BD 
+	.form__removeme
+		font-size: 12px 
+		display: block
+		clear: both
+		padding-top: 7px 
+	.form__moar
+		.form__removeme
+			display: none
+	.form__moar+.form__moar
+		.form__removeme
+			display: block
 
 .people
 	position: absolute
@@ -386,9 +456,28 @@
 		&:hover
 			background-color: #e6eef3
 			color: #000
+		&:last-child:hover
+			border-bottom-right-radius: 5px
+			border-bottom-left-radius: 5px
 @each $s in icon11,icon21,icon31,icon41,icon22, iconmore
 	.#{$s}
 		+s(#{$s})
 	li:hover .#{$s}
 		+sp(#{$s}h)
+
+
+.drop
+	@extend .people
+	left: auto
+	right: 0
+	width: 80px 
+	&:before
+		left: auto 
+		right: 20px 
+	.is-active &
+		display: block
+	li
+		padding-left: 0
+		padding-right: 0 
+		text-align: center 
 	

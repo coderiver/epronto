@@ -1,8 +1,33 @@
 head.ready(function() {
-
+	function docount(){
+		i = 1;
+		$('.form__moar legend span').each(function(index, el) {
+			$(this).text(i);
+			i++;
+		});
+	}
+	docount();
+	$('.form').on('click', '.form__removeme', function(event) {
+		event.preventDefault();
+		$(this).parents('fieldset').remove();
+		docount();
+	});
+	$('.form__clonemoar').click(function(event) {
+		event.preventDefault();
+		var el = $('.toclone .form__moar').clone(true);
+		el.insertBefore( ".form__clonemoar" );
+		docount();
+	});
+	$('.form__select').click(function(event) {
+		$(this).addClass('is-active');
+	});
 	$('.menu').click(function(event) {
 		$('body').toggleClass('is-menu');
 		return false;
+	});
+	$('.form').on('click', '.drop li', function(event) {
+		event.preventDefault();
+		$(this).parents('.form__select').removeClass("is-active").children('.input').val($(this).text());
 	});
 
 	//$( ".js-datepicker" ).datepicker();
@@ -40,8 +65,14 @@ head.ready(function() {
 		$('.people').addClass('is-open')
 	});
 	$('.people li').click(function(event) {
-		$('.js-people').val($(this).data('adult')+' взрослых и '+$(this).data('rooms')+' комнат');
+		if($(this).data('rooms')==0){
+			alert('go');
+		}
+		else{
+			$('.js-people').val($(this).data('adult')+' взрослых и '+$(this).data('rooms')+' комнат');
+		}
 		$('.people').removeClass('is-open')
+		
 	});
 
 	$(document).click(function(event) {
@@ -49,6 +80,12 @@ head.ready(function() {
             if ($('.people').is(":visible")) {
                 $('.people').hide().removeClass("is-open");
             }
+        }
+        if (!$(event.target).closest('.form__select').length) {
+            // if ($('.people').is(":visible")) {
+            //     $('.people').hide().removeClass("is-open");
+            // }
+            $('.form__select').removeClass('is-active');
         }
     })
 });
