@@ -814,7 +814,8 @@ li:hover .iconmore { background-position: 0 -1011px; }
 .go { float: left; margin-right: 24px; width: 144px; margin-bottom: 32px; }
 @media only screen and (max-width: 984px) { .go { width: 23%; margin-right: 2%; } }
 @media only screen and (max-width: 640px) { .go { width: 47%; margin-right: 3%; } }
-.go .go__title { font-size: 15px; color: #0c5ea7; text-decoration: none; font-weight: normal; margin-bottom: 11px; }
+.go .go__title { font-size: 15px; color: #0c5ea7; text-decoration: none; font-weight: normal; margin-bottom: 11px; white-space: nowrap; overflow: hidden; position: relative; }
+.go .go__title:before { content: " "; right: 0; top: 0; height: 20px; width: 20px; position: absolute; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); }
 .go .go__title a { color: #0c5ea7; text-decoration: none; }
 .go .go__title a:hover { text-decoration: underline; }
 .go .go__pic { border-radius: 4px; margin-bottom: 7px; }

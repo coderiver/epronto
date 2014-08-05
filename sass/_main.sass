@@ -151,7 +151,19 @@
 		color: #0C5EA7
 		text-decoration: none 
 		font-weight: normal
-		margin-bottom: 11px 
+		margin-bottom: 11px
+		white-space: nowrap
+		overflow: hidden
+		position: relative
+		&:before
+			content: ' '
+			right: 0
+			top: 0 
+			height: 20px  
+			width: 20px 
+			position: absolute
+			+gh(rgba(#fff,0),#fff)
+			
 		a
 			color: #0C5EA7
 			text-decoration: none 
