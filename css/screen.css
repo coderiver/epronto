@@ -274,7 +274,7 @@ a { color: #005ca9; }
 .form .form__moarselect label, .form .form__age label { display: block; font-style: italic; text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.24); color: #714a1f; font-size: 12px; display: block; margin-bottom: 5px; }
 .form .form__age { min-width: 180px; margin-right: 0; margin-left: 0; display: none; }
 .form .form__age label { white-space: nowrap; }
-.form .form__age input { width: 40px; margin-right: 4px; display: inline-block; }
+.form .form__age input { width: 40px; margin-right: 4px; display: inline-block; text-align: center; padding-left: 0; padding-right: 0; }
 .form .form__age input:last-child { margin-right: 0; }
 .form .form__age.show1 input + input { display: none; }
 .form .form__age.show2 input + input + input { display: none; }
