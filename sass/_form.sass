@@ -179,6 +179,9 @@
 			+s(people)
 			position: absolute
 			//+s(date)
+			@each $s in icon11,icon21,icon31,icon41,icon22, iconmore
+				&.#{$s}
+					+s(#{$s})
 		.input
 			padding-left: 45px 
 			padding-right: 40px 

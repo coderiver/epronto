@@ -87,7 +87,9 @@ head.ready(function() {
 			$('.form__moarpeople').hide();
 			$('.js-people').val($(this).data('adult')+' взрослых и '+$(this).data('rooms')+' комнат');
 		}
-		$('.people').removeClass('is-open')
+		cl = $(this).children('i').attr('class');
+		$('.form__peopleicon').removeClass('icon11 icon21 icon31 icon41 icon22 iconmore').addClass(cl);
+		$('.people').removeClass('is-open');
 		
 	});
 
