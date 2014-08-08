@@ -220,6 +220,9 @@ a { color: #005ca9; }
 .form .form__people .form__peopleicon.icon41 { background: url('../img/icons-s6d7eb691b2.png') 0 -1041px no-repeat; width: 27px; height: 14px; }
 .form .form__people .form__peopleicon.icon22 { background: url('../img/icons-s6d7eb691b2.png') 0 -1461px no-repeat; width: 27px; height: 20px; }
 .form .form__people .form__peopleicon.iconmore { background: url('../img/icons-s6d7eb691b2.png') 0 -912px no-repeat; width: 26px; height: 21px; }
+.form .form__people .form__peopleicon.icon41 { top: 17px; }
+.form .form__people .form__peopleicon.icon22 { left: 13px; }
+.form .form__people .form__peopleicon.icon31 { top: 12px; }
 .form .form__people .input { padding-left: 45px; padding-right: 40px; }
 .form .form__people .form__peoplearrow { position: absolute; right: 10px; top: 17px; background: url('../img/icons-s6d7eb691b2.png') 0 -1990px no-repeat; width: 15px; height: 10px; }
 .form .form__example { display: block; font-size: 11px; font-style: italic; color: white; margin-top: 6px; margin-bottom: 9px; }
