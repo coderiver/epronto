@@ -267,6 +267,7 @@ a { color: #005ca9; }
 .form.form_demi .form__submit { float: right; width: 26%; }
 @media only screen and (max-width: 640px) { .form.form_demi .form__submit { float: none; width: auto; } }
 .form .form__moarpeople { clear: both; padding-top: 10px; display: none; }
+.is-mainpage .form .form__moarpeople { padding-top: 32px; }
 .form .form__moar { border: 1px solid #6c6c6c; padding: 15px; margin-bottom: 12px; *zoom: 1; }
 .form .form__moar:after { content: " "; display: table; clear: both; }
 .form .form__moar legend { display: block; font-size: 12px; margin-left: 10px; color: #3e3b35; padding: 0 4px; }
