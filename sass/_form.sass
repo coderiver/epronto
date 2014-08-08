@@ -349,6 +349,30 @@
 			font-size: 12px 
 			display: block
 			margin-bottom: 5px 
+	.form__age
+		@extend .form__moarselect
+		min-width: 180px 
+		margin-right: 0 
+		margin-left: 0 
+		display: none
+		label
+			white-space: nowrap
+			
+		input
+			width: 40px 
+			margin-right: 4px 
+			display: inline-block
+			&:last-child
+				margin-right: 0 
+		&.show1
+			input+input
+				display: none
+		&.show2
+			input+input+input
+				display: none
+		&.show3
+			input:last-child
+				display: none
 	.form__clonemoar
 		color: #005CA9 
 		font-size: 13px 

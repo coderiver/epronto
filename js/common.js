@@ -1,4 +1,19 @@
 head.ready(function() {
+
+	$('.form').on('click', '.form_children .drop li', function(event) {
+		event.preventDefault();
+		// $(this).parents('fieldset').remove();
+		// docount();
+		aa = $(this).text();
+		if(aa==0){
+			$(this).parents('.form__moar').children('.form__age').hide()
+		}
+		else{
+			$(this).parents('.form__moar').children('.form__age').show().removeClass('show1 show2 show3').addClass('show'+aa);
+		}
+
+	});
+
 	function docount(){
 		i = 1;
 		$('.form__moar legend span').each(function(index, el) {

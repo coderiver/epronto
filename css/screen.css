@@ -261,8 +261,15 @@ a { color: #005ca9; }
 .form .form__moar { border: 1px solid #6c6c6c; padding: 15px; margin-bottom: 12px; *zoom: 1; }
 .form .form__moar:after { content: " "; display: table; clear: both; }
 .form .form__moar legend { display: block; font-size: 12px; margin-left: 10px; color: #3e3b35; padding: 0 4px; }
-.form .form__moarselect { float: left; margin-right: 15px; text-align: left; width: 86px; }
-.form .form__moarselect label { display: block; font-style: italic; text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.24); color: #714a1f; font-size: 12px; display: block; margin-bottom: 5px; }
+.form .form__moarselect, .form .form__age { float: left; margin-right: 15px; text-align: left; width: 86px; }
+.form .form__moarselect label, .form .form__age label { display: block; font-style: italic; text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.24); color: #714a1f; font-size: 12px; display: block; margin-bottom: 5px; }
+.form .form__age { min-width: 180px; margin-right: 0; margin-left: 0; display: none; }
+.form .form__age label { white-space: nowrap; }
+.form .form__age input { width: 40px; margin-right: 4px; display: inline-block; }
+.form .form__age input:last-child { margin-right: 0; }
+.form .form__age.show1 input + input { display: none; }
+.form .form__age.show2 input + input + input { display: none; }
+.form .form__age.show3 input:last-child { display: none; }
 .form .form__clonemoar { color: #005ca9; font-size: 13px; display: inline-block; }
 .form .form__select { position: relative; }
 .form .form__select .form__arrow { position: absolute; width: 45px; height: 45px; right: 0; top: 0; border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
