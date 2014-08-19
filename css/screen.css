@@ -193,7 +193,7 @@ a { color: #005ca9; }
 .form .form__hotel { position: relative; }
 .form .form__hotel .form__hotelsearch { position: absolute; right: 10px; top: 50%; margin-top: -11px; background: url('../img/icons-s6d7eb691b2.png') 0 -1429px no-repeat; width: 23px; height: 22px; }
 .form .form__hotel .form__hotelicon { position: absolute; left: 13px; top: 14px; background: url('../img/icons-s6d7eb691b2.png') 0 -1785px no-repeat; width: 10px; height: 15px; }
-.form .form__hotel .input { padding-left: 35px; }
+.form .form__hotel .input { padding-left: 35px; padding-right: 40px; }
 .form .form__nodates { position: absolute; bottom: -25px; left: 0; font-style: italic; font-size: 12px; color: #704a23; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.24); cursor: pointer; }
 @media only screen and (max-width: 984px) { .form .form__nodates { bottom: -31px; } }
 @media only screen and (max-width: 640px) { .form .form__nodates { bottom: auto; top: 116px; } }
