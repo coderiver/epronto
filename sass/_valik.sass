@@ -1,0 +1,1329 @@
+=svg($name, $width, $height)
+	background: url("../img/svg/#{$name}.svg") no-repeat 0 0
+	+background-size(#{$width}px #{$height}px)
+	width: #{$width}px
+	height: #{$height}px
+	display: inline-block
+	.ie8 &
+		+s($name)
+
+.form__wrap_h
+	margin: 0 0 50px
+.box-wrapper
+	padding-bottom: 55px
+.box
+	+clr
+	+r1
+		padding-bottom: 20px
+	.box__img
+		overflow: hidden
+		+border-radius(50%)
+		width: 230px
+		font-size: 0
+		&.is-left
+			float: left
+			margin: 0 60px 0 40px 
+		&.is-right
+			float: right
+			margin: 0 70px 
+		&.is-left, &.is-right
+			+r2
+				float: none
+				margin: 0 auto 20px
+		img
+			width: 100%
+	.box__text
+		overflow: hidden
+		height: 210px
+		padding: 10px 0 
+		+vertical
+		text-align: left
+		+r2
+			text-align: center
+	p
+		font-size: 15px
+		line-height: 1.6
+		color: #4c4c4c 
+		display: inline-block
+		vertical-align: middle 
+		
+//support
+.support
+	+r1
+		padding: 40px 0 0 0 
+	h1
+		+lite
+		font-size: 40px
+		line-height: 1.1
+		color: #000
+		+r1
+			text-align: center
+		+r2
+			font-size: 32px
+	.support__inner
+		padding: 35px 0 50px
+		+clr
+.questions
+	width: 100%
+	max-width: 480px
+	float: left
+	+r1
+		float: none
+		margin: 0 auto 20px
+.question
+	margin-bottom: 4px
+	&.is-active
+		border: 1px solid #FFBE3C
+		+border-radius(5px)
+		+box-shadow(0 3px 3px rgba(0, 0, 0, 0.11))
+		.question__link
+			background: none
+			margin: -1px
+			padding: 20px 50px  
+			+r2
+				padding: 13px 40px 
+			&:before
+				+s(q-arr-active)
+				+opacity(1)
+			i
+				+box-shadow(0 3px 3px rgba(0, 0, 0, 0.11))
+				color: #714A1F
+				top: 20px
+				+r2
+					top: 12px
+				&:before
+					background: none
+			span
+				+opacity(1)
+				font-size: 18px
+				+r2
+					font-size: 15px
+	.question__link
+		display: block
+		padding: 12px 50px 13px
+		font-size: 15px
+		background: #f5f8fb 
+		text-decoration: none
+		color: #000 
+		position: relative
+		+border-radius(5px)
+		+r2
+			font-size: 13px
+			padding: 12px 40px 13px 
+		&:before
+			position: absolute
+			top: 20px
+			right: 15px
+			content: ""
+			+s(q-arr)
+			+opacity(0.1)
+			+r2
+				top: 15px
+		i
+			position: absolute
+			top: 10px
+			left: 12px
+			font-weight: bold
+			color: #005CA9
+			width: 25px
+			height: 25px
+			font-style: normal
+			background-image: -moz-linear-gradient(bottom, #FFBD3B 0%, #FFDC69 100%)
+			background-image: -o-linear-gradient(bottom, #FFBD3B 0%, #FFDC69 100%)
+			background-image: -webkit-linear-gradient(bottom, #FFBD3B 0%, #FFDC69 100%)
+			background-image: linear-gradient(to top, #FFBD3B 0%, #FFDC69 100%)
+			+box-shadow(0 1px 3px rgba(0, 0, 0, 0.03))
+			+border-radius(50%)
+			+r2
+				height: 23px
+				width: 23px
+				left: 8px
+				top: 8px
+			&:before
+				content: "?" 
+				line-height: 21px
+				position: absolute
+				top: 2px
+				left: 2px
+				right: 2px
+				bottom: 2px
+				text-align: center
+				background: #f5f8fb 
+				+border-radius(50%)
+				+r2
+					line-height: 19px
+		span
+			+opacity(0.8)	
+			max-width: 340px
+			display: block
+	.question__box
+		background-color: #FFF
+		padding: 0 50px 15px 50px
+		display: none
+		+r2
+			padding: 0 40px 15px 
+		p
+			font-size: 15px
+			line-height: 25px
+			color: #000
+			+opacity(0.5) 
+			+r2
+				font-size: 13px
+				line-height: 18px
+		
+.s-form
+	max-width: 480px
+	width: 100%
+	float: right
+	padding: 7px
+	+box
+	background: url(../img/bg-form.png) repeat top left #fff
+	+border-radius(5px)
+	+box-shadow(0 6px 30px rgba(0, 0, 0, 0.2))
+	+r1
+		float: none
+		margin: 0 auto 20px
+	.s-form__inner
+		background: #fff
+		padding: 23px 22px 0 24px
+		+r2
+			padding: 15px 15px 0 
+	h2
+		+lite
+		font-size: 26px
+		line-height: 1
+		margin-bottom: 18px
+	.s-form__field
+		font-size: 0
+		padding-bottom: 20px
+	.s-form__input, .s-form__textarea
+		width: 100%
+		padding: 10px 15px 9px
+		+box
+		background-color: #FFF
+		border: 1px solid #DDDCD5
+		+border-radius(5px)
+		+box-shadow(inset 2.5px 4.3px 6px rgba(0, 0, 0, 0.1))
+		color: #000
+		font-size: 12px 
+	.s-form__textarea
+		height: 290px
+		resize: none
+	.s-form__code
+		margin: 0 -6px 
+		+vertical
+		text-align: left
+		+clr
+		+r2
+			text-align: center
+		.s-form__input
+			width: 120px
+		.s-form__input, img
+			display: inline-block
+			vertical-align: middle
+			margin: 0 6px 
+	.s-form__btn
+		width: 190px
+		height: 35px
+		background-color: #FFF
+		background-image: -moz-linear-gradient(bottom, #FFBD3B 0%, #FFDC69 100%)
+		background-image: -o-linear-gradient(bottom, #FFBD3B 0%, #FFDC69 100%)
+		background-image: -webkit-linear-gradient(bottom, #FFBD3B 0%, #FFDC69 100%)
+		background-image: linear-gradient(to top, #FFBD3B 0%, #FFDC69 100%)
+		border: 1px solid #E2B252
+		+border-radius(5px)
+		+box-shadow(0 3px 3px rgba(0, 0, 0, 0.11))
+		font-size: 15px
+		color: #714A1F
+		text-shadow: 0.7px 0.7px 0 rgba(255, 255, 255, 0.24)
+		position: relative
+		float: right
+		&:active
+			top: 1px
+		+r2
+			float: none
+			display: block
+			margin: 20px auto 0
+			
+.b-sup
+	.header
+		.header__in
+			height: 100px
+		
+
+.form_h
+	padding-bottom: 20px
+	h3
+		font-size: 18px
+		line-height: 1
+		font-weight: normal
+		margin-bottom: 15px
+	.btn
+		font-size: 18px
+		font-weight: normal
+
+.h-block
+	+clr
+	h1
+		font-size: 40px
+		line-height: 1.1
+		+lite
+		margin-bottom: 20px
+	.h-block__left
+		max-width: 620px
+		float: left
+.h-info
+	padding-bottom: 10px
+	+vertical
+	text-align: left
+	+r2
+		text-align: center
+	.h-info__label, .h-btn
+		display: inline-block
+		vertical-align: middle
+	.h-info__label
+		font-size: 12px
+		color: #000000
+		margin: 0 15px 15px 0
+		+r2
+			display: block
+	.h-btn
+		color: #656e73
+		text-decoration: none
+		display: inline-block
+		padding: 0 10px 0 11px
+		border: 1px solid #a5c5df
+		+border-radius(5px)  
+		+vertical
+		height: 23px
+		margin: 0 3px 15px
+		position: relative
+		&:active
+			top: 1px
+		i, span
+			display: inline-block
+			vertical-align: middle
+		span
+			font-size: 12px 
+		i
+			margin: 0 5px 0 0 
+	.h-btn_map
+		i
+			+s(location)
+	.h-btn_blue
+		border-color: #005ca9
+		color: #005ca9 
+
+
+.h-services
+	overflow: hidden
+	h3
+		font-size: 18px
+		text-align: center
+		font-weight: normal
+		line-height: 1
+		margin-bottom: 30px
+.h-row
+	font-size: 0
+	margin: 0 -10px 
+	+r1
+		text-align: center
+.h-box
+	display: inline-block
+	vertical-align: top
+	width: 100%
+	padding: 0 10px 40px
+	+box
+	h4
+		font-size: 15px
+		line-height: 20px
+		+opacity(0.8)
+		+clr
+		margin-bottom: 7px
+		i
+			margin-right: 10px
+			float: left
+			margin-top: 1px
+			+r1
+				float: none
+			&.is-theme
+				+svg(is-theme, 16, 16)
+			&.is-time
+				+svg(is-time, 16, 16)
+			&.is-internet
+				+svg(is-internet, 16, 16)
+			&.is-parking
+				+svg(is-parking, 16, 16)
+			&.is-restaurant
+				+svg(is-restaurant, 16, 14)
+			&.is-beauty
+				+svg(is-beauty, 17, 18)
+			&.is-inroom
+				+svg(is-inroom, 17, 13)
+			&.is-services
+				+svg(is-services, 17, 14)
+		span
+			display: block
+			overflow: hidden
+	p
+		font-size: 13px
+		line-height: 20px
+		+opacity(0.5)
+	&.h-box_small
+		width: 20%
+		max-width: 200px
+		+r1
+			width: 200px
+			text-align: center
+	&.h-box_med
+		max-width: 334px
+		width: 33%
+		+r1
+			width: 100%
+			text-align: center
+.h-rating
+	margin-bottom: 70px
+	h3
+		font-size: 18px
+		font-weight: normal
+		line-height: 1
+		margin-bottom: 20px
+.h-rating__block
+	border: 1px solid #FFBE3C
+	+border-radius(5px)
+	overflow: hidden
+	+clr
+.h-rating__box, .h-rating__result
+	float: left
+	display: block
+	text-align: center
+	padding: 30px 10px 25px 
+	text-decoration: none
+	+box
+	position: relative
+	height: 195px
+.h-rating__logo
+	height: 27px
+	width: 100%
+	+vertical
+	margin-bottom: 25px
+	img, span
+		display: inline-block
+		vertical-align: middle
+	span
+		font-size: 18px
+		font-weight: bold
+		+opacity(0.8)
+.h-rating__ttl
+	display: block
+	font-size: 40px
+	line-height: 1.1
+	+lite
+	color: #000 
+	margin-bottom: 5px
+.h-rating__txt
+	font-size: 15px
+	line-height: 22px
+	color: #005ca9
+	display: block
+	margin-bottom: 5px
+.h-rating__comment
+	font-size: 12px
+	line-height: 1
+	font-style: italic
+	color: #8e8e8e
+	display: block
+	span
+		color: #000000 
+.h-rating__box
+	width: 16.6%
+	background: #fff 
+	+border-radius(5px 0 0 5px)
+	&:after
+		position: absolute
+		top: 0
+		bottom: -1000px
+		right: 0
+		content: "" 
+		border-right: 1px solid #e5e5e5 
+		z-index: 3
+		+r1
+			right: auto
+			left: 0
+	&:before
+		position: absolute
+		bottom: 0
+		right: -100px
+		left: -100px
+		border-bottom: 1px solid #e5e5e5 	
+		content: "" 
+		display: none
+		z-index: 3 
+		+r1
+			display: block	
+	+r1
+		width: 33%
+	+r2
+		width: 50%
+.h-rating__result
+	width: 17%
+	background: #f8f5eb
+	+border-radius(0 5px 5px 0)
+	&:before, &:after
+		position: absolute
+		right: 100%
+		content: "" 
+		margin-right: -1px
+	&:before
+		top: 19px
+		+arr(11, 19, #e5e5e5, l)
+		z-index: 4 
+	&:after
+		top: 20px
+		+arr(10, 17, #f8f5eb, l)
+		z-index: 5
+	+r1
+		width: 34%
+	+r2
+		width: 50%
+		
+.h-place
+	margin-bottom: 20px
+	h3
+		font-size: 18px
+		text-align: center
+		font-weight: normal
+		line-height: 1
+		margin-bottom: 30px
+	p
+		font-size: 15px
+		line-height: 24px
+		color: #4c4c4c
+		margin-bottom: 30px 
+.h-map-wrapper
+	position: relative
+	overflow: hidden
+	margin-bottom: 45px		
+.h-map
+	width: 100%
+	height: 320px
+.h-map__block
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	width: 230px
+	+r2
+		position: relative
+		width: 100%
+		height: 320px
+	&:after
+		position: absolute
+		top: 20px
+		right: 100%
+		+arr(10, 19, #f5f8fb, l)
+		content: "" 
+		+r2
+			top: auto
+			bottom: 100%
+			right: 20px
+			+arr(19, 10, #f5f8fb, t)
+.h-map__box
+	background: #f5f8fb
+	padding: 10px 20px 
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	overflow: hidden
+	+box-shadow(0 0 10px 2px rgba(0, 0, 0, 0.2))
+	h4
+		font-size: 15px
+		font-weight: bold
+		padding: 5px 0 
+	li
+		a
+			+clr
+			display: block
+			border-bottom: 1px solid #dcdfe1
+			padding: 10px 2px  
+		.h-map__name
+			color: #565656
+			font-size: 13px
+			float: left
+		.h-map__quantity
+			color: #005ca9
+			font-style: italic
+			font-size: 12px 
+			float: right
+		&:last-child
+			a
+				border-bottom: none
+.h-map__list
+	height: 265px
+	padding: 0 10px 0 0 
+.h-map__pop
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	background: #f5f8fb
+	display: none
+	&.is-open
+		display: block
+	.jspVerticalBar
+		right: 3px
+.h-map__top
+	background-image: -moz-linear-gradient(bottom, #EBF0F6 0%, #F5F8FB 100%, #F5F8FB 100%)
+	background-image: -o-linear-gradient(bottom, #EBF0F6 0%, #F5F8FB 100%, #F5F8FB 100%)
+	background-image: -webkit-linear-gradient(bottom, #EBF0F6 0%, #F5F8FB 100%, #F5F8FB 100%)
+	background-image: linear-gradient(to top, #EBF0F6 0%, #F5F8FB 100%, #F5F8FB 100%)
+	+clr
+	position: relative
+	padding: 0 15px 0 20px 
+	+box-shadow(0 0 3px 1px rgba(0, 0, 0, 0.2))
+	margin-bottom: 5px
+	h4
+		line-height: 30px
+.h-map__back	
+	float: right
+	text-decoration: none
+	font-size: 11px
+	line-height: 40px
+	color: #005ca9
+	font-style: italic
+	position: relative
+	padding: 0 0 0 15px 
+	&:before
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -4px
+		+s(arr-left)
+.h-map__drop
+	height: 265px 
+	+box
+	li
+		padding: 0 2px 0 7px 
+		a
+			font-size: 13px
+			color: #565656 
+			text-decoration: none
+			border: none
+			padding: 0 3px 0 13px
+			position: relative
+			+border-radius(3px)
+			span
+				padding: 10px 2px 
+				display: block
+				position: relative
+				&:after
+					content: "" 
+					position: absolute
+					bottom: -1px
+					left: 0
+					right: 0
+					border-bottom: 1px solid #dcdfe1
+					z-index: 1
+			&:hover
+				color: #000 
+				background: #DFE8F2 
+				z-index: 2 
+				span
+					padding: 10px 2px 10px 33px
+					&:before
+						position: absolute
+						top: 50%
+						left: 3px
+						margin-top: -9px
+						content: "" 
+						+s(h-map-dec)
+					&:after
+						display: none
+.h-photo
+	+clr
+	margin: 0 - 5px 
+	float: left
+.h-photo_t
+	max-width: 730px
+	width: 100%
+.h-photo_mod
+	float: none
+	+clr
+.h-photo_right
+	.h-photo__big, .h-photo__med, .h-photo__small, .h-photo__med2, .h-photo__big2, .h-photo__small2
+		float: right
+.h-photo__big
+	width: 55%
+	padding-bottom: 45%
+	+r2
+		width: 100%
+		padding-bottom: 90%
+.h-photo__big2
+	width: 50%
+	padding-bottom: 45%
+	+r2
+		width: 100%
+		padding-bottom: 90%
+.h-photo__med
+	width: 30%
+	padding-bottom: 29.9%
+	+r2
+		width: 60%
+		padding-bottom: 60%
+.h-photo__med2
+	width: 25%
+	padding-bottom: 22.5%
+	+r2
+		width: 50%
+		padding-bottom: 50%
+.h-photo__small
+	width: 15%
+	padding-bottom: 15%
+	+r2
+		width: 20%
+		padding-bottom: 20%
+.h-scroll
+	height: 450px
+	width: 100% !important
+	position: relative
+	outline: none 
+	.jspContainer, .jspPane
+		width: 100% !important
+
+#is-guest
+	.h-photo
+		width: 100%
+	.h-photo__big
+		width: 53%
+		padding-bottom: 46%
+		+r2
+			width: 100%
+			padding-bottom: 90%
+		div
+			right: 20px
+			+r2
+				right: 10px
+	.h-photo__small
+		width: 11.5%
+		padding-bottom: 11.5%
+		+r2
+			width: 19.5%
+			padding-bottom: 19.5%
+.h-photo__big, .h-photo__med, .h-photo__small, .h-photo__med2, .h-photo__big2, .h-photo__small2
+	height: 0
+	float: left
+	position: relative
+	div
+		position: absolute
+		top: 5px
+		left: 5px
+		right: 5px
+		bottom: 5px
+		background-repeat: no-repeat 
+		+cover
+		+border-radius(5px)
+
+.h-block__right
+	float: right
+	max-width: 228px
+	width: 100%
+	+r1
+		float: none
+		clear: both
+		padding: 20px 0
+		max-width: 100%
+		+box 
+.h-reserv
+	+box-shadow(0 3px 3px rgba(0, 0, 0, 0.11))
+	+g(#FFDC69, #FFBD3B)
+	border: 1px solid #E2B252
+	+border-radius(5px)
+	max-width: 228px
+.h-reserv__top, .h-reserv__bot
+	text-align: center
+	display: block
+	position: relative
+	&:before
+		content: "" 
+		position: absolute
+		left: 50%
+.h-reserv__top
+	font-size: 20px
+	line-height: 1
+	font-weight: bold
+	text-transform: uppercase
+	padding: 19px 10px 
+	border-bottom: 1px solid #e5b74a
+	&:before
+		top: 100%
+		+arr(11, 6, #ffcc51, b)
+		margin-left: -5px
+		margin-top: -1px
+		z-index: 5 
+		
+.h-reserv__bot
+	padding: 15px 10px 
+	border-top: 1px solid #ffd674 
+	&:before
+		top: -1px
+		+arr(11, 6, #e5b74a, b)
+		margin-left: -5px
+		z-index: 4 
+	&:after
+		content: "" 
+		position: absolute
+		left: 50%
+		top: 0
+		+arr(11, 6, #ffd674, b)
+		margin-left: -5px
+		z-index: 3 
+.reserv__txt, .reserv__amount
+	display: inline-block
+	vertical-align: bottom
+.reserv__txt
+	font-size: 12px
+	+opacity(0.4)
+	margin-right: 20px
+.reserv__amount
+	font-size: 25px
+	+lite
+	line-height: 1
+	span
+		font-size: 15px
+		
+.h-block__heading
+	background-color: #F8F5EB
+	border: 1px solid #FFBE3C
+	position: relative
+	padding: 18px 20px 20px
+	+border-radius(5px 5px 0 0)
+	&:before, &:after
+		content: "" 
+		position: absolute
+		right: 100%
+		+r1
+			right: 50%
+	&:before
+		top: 19px
+		+arr(11, 19, #FFBE3C, l)
+		+r1
+			+arr(19, 11, #FFBE3C, t)
+			top: -12px
+			margin-right: -9px
+	&:after
+		top: 20px
+		+arr(10, 16, #f8f5eb, l)
+		+r1
+			+arr(16, 11, #f8f5eb, t)
+			top: -11px
+			margin-right: -8px
+	p
+		&.is-blue
+			color: #005CA9
+			font-size: 18px
+			span
+				font-size: 13px
+.h-block__small
+	font-size: 12px
+	font-style: italic
+	+opacity(0.7)
+	color: #8E8E8E
+	span
+		color: #000
+	
+.h-block__list
+	background-color: #F5F8FB
+	padding: 18px 20px 20px
+	+border-radius(0 0 5px 5px)
+	li
+		margin-bottom: 15px
+	a
+		color: #005CA9
+		font-size: 13px
+		border-bottom: 1px dotted #005CA9
+		text-decoration: none
+		
+.h-list
+	font-size: 0
+	clear: both
+	padding: 20px 0 
+	li
+		display: inline-block
+		margin-right: 25px
+		a
+			+vertical
+			color: #000
+			text-decoration: none
+			i, span
+				display: inline-block
+				vertical-align: middle
+			span
+				font-size: 13px
+				+opacity(0.8)
+			i
+				margin-right: 10px
+				&.is-internet
+					+svg(is-internet, 16, 16)
+				&.is-parking
+					+svg(is-parking, 16, 16)
+				&.is-restaurant
+					+svg(is-restaurant, 16, 14)
+				&.is-spa
+					+svg(is-beauty, 17, 18)
+				&.is-pool
+					+svg(is-pool, 17, 13)
+
+.h-tabs_wrap
+	padding: 60px 0 0 0 
+.h-tabs
+	background: #f5f8fb 				
+.h-tabs__inner
+	max-width: 984px
+	margin: 0 auto
+	padding-bottom: 40px
+	+clr
+	+r1
+		margin: 20px
+.h-tabs__inner_mod
+	margin-top: -40px
+.h-photo_wrapper	
+	overflow: hidden
+	width: 100%
+	clear: both
+	padding-bottom: 30px
+.h-tabs__list
+	font-size: 0
+	margin: -60px 0 0px 0 
+	float: left
+	width: 100%
+	+clr
+	li
+		display: inline-block
+		vertical-align: top
+		margin-right: 4px
+		+r1
+			display: block
+			margin: 0 auto 20px
+	a
+		+vertical
+		display: block
+		padding: 10px 20px
+		height: 60px
+		+box 
+		position: relative
+		+border-radius(5px 5px 0 0)
+		background: #fff 
+		&:after
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			content: "" 
+			border: 1px solid #e7e7e7
+			border-bottom: none
+			+border-radius(5px 5px 0 0) 
+			+r1
+				border-bottom: 1px solid #e7e7e7
+				+border-radius(5px)
+		i,span
+			display: inline-block
+			vertical-align: middle
+		i
+			margin-right: 17px
+			&.is-gallery
+				+s(is-gallery)
+			&.is-guest
+				+s(is-guest)
+			&.is-street
+				+s(is-street)
+		span
+			font-size: 18px
+			line-height: 1
+			color: #87949c 
+			&.is-quantity
+				margin-left: 10px
+				font-size: 13px
+				color: #005ca9 
+		&.is-active
+			background: #f5f8fb 
+			&:after
+				display: none
+				+r1
+					display: block 
+			span
+				color: #000
+				&.is-quantity
+					color: #005ca9 
+			i
+				&.is-gallery
+					+s(is-gallery-active)
+				&.is-guest
+					+s(is-guest-active)
+				&.is-street
+					+s(is-street-active)
+
+.h-tabs__btn
+	text-align: center
+	padding: 30px 0 0 
+.h-btn_mod
+	+vertical
+	display: inline-block
+	+box-shadow(0 3px 3px rgba(0, 0, 0, 0.11))
+	border: 1px solid #E2B252
+	+border-radius(5px)
+	padding: 8px 20px 7px 
+	+g(#FFDC69, #FFBD3B)
+	&:active
+		+g(#FFBD3B, #FFDC69)
+	i, span
+		display: inline-block
+		vertical-align: middle
+	i
+		+s(h-btn)
+		margin-left: 10px
+	span
+		font-size: 13px
+		color: #714a1f 
+		
+.h-stars
+	font-size: 0
+	padding-left: 10px
+	display: inline-block
+	i
+		display: inline-block
+		+s(h-star1)
+		cursor: pointer
+		margin: 0 1px 
+		&.h-stars__dis
+			+s(h-star0)
+//pop
+.h-wrap
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	+vertical
+	background: url(../img/h-wrap.jpg) no-repeat center center
+	+cover 
+	overflow: auto
+	padding: 20px 
+.h-pop
+	display: inline-block
+	vertical-align: middle
+	width: 100%
+	max-width: 480px
+	background: url(../img/bg.png) repeat-x top left #fff 
+	text-align: left
+	+border-radius(5px)
+	+box-shadow(0 10px 40px rgba(0, 0, 0, 0.1))
+	padding: 38px 0 0
+	+box 
+	+r2
+		text-align: center
+		padding: 25px 0 0 0 
+	h1
+		+lite
+		font-size: 30px
+		line-height: 1
+		margin-bottom: 13px
+.h-pop__txt
+	font-size: 15px
+	line-height: 18px
+	+opacity(0.5)
+.h-pop__amount
+	width: 100%
+	padding: 13px 10px 13px 10px
+	+box 
+	text-align: center
+	font-size: 25px
+	line-height: 1
+	+lite
+	+box
+	background: #fff
+	border: 2px solid #FFBE3C 
+	+border-radius(5px)
+	position: relative
+	&:before, &:after
+		position: absolute
+		right: 100%
+		content: "" 
+	&:before
+		top: 15px
+		+arr(12, 20, #FFBE3C, l)
+	&:after
+		top: 17px
+		+arr(10, 16, #ffffff, l)
+	span
+		font-size: 15px
+.h-pop__small
+	font-size: 13px
+	font-style: italic
+	line-height: 16px
+	color: #999 
+	a
+		color: #196bb1
+		font-style: normal
+		font-size: 15px
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.h-pop__in
+	padding: 0 30px 
+	+r2
+		padding: 0 20px 
+.h-pop__logo
+	width: 105px
+	display: block
+	margin-bottom: 30px
+	+r2
+		margin: 0 auto 30px 
+	img
+		width: 100%
+.h-pop__top, .h-pop__info, .h-pop__bottom
+	+clr
+.h-pop__top
+	border-bottom: 1px solid #e5e5e5 
+	padding-bottom: 10px
+.h-pop__info
+	padding: 25px 0 0 0 
+.h-pop__bottom
+	background: #f8f5eb
+	padding: 27px 0 25px  
+	+border-radius(0 0 5px 5px)
+	p
+		font-size: 15px
+		line-height: 23px
+		color: #7f7f7f
+		position: relative
+		padding: 0 0 0 35px 
+		float: left
+		max-width: 230px
+		margin: 4px 0 10px 0 
+		+r2
+			float: none
+			margin: 4px auto 10px
+			text-align: left
+		span
+			color: #ffb82b
+	.h-pop__loader
+		+s(h-loader)
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -11px
+.h-pop__btn
+	display: inline-block
+	+box-shadow(0 3px 3px rgba(0, 0, 0, 0.11))
+	border: 1px solid #E2B252
+	+border-radius(5px)
+	+g(#FFDC69, #FFBD3B)
+	text-align: center
+	width: 100%
+	max-width: 165px
+	padding: 5px 10px 
+	+box
+	font-size: 15px
+	color: #714a1f  
+	float: right
+	text-decoration: none
+	+r2
+		display: block
+		margin: 0 auto
+		float: none
+	&:active
+		+g(#FFBD3B, #FFDC69)
+.h-pop__left
+	float: left
+	width: 100%
+	max-width: 220px
+	padding: 0 0 20px 
+	+r2
+		float: none
+		margin: 0 auto
+.h-pop__right
+	float: right
+	width: 100%
+	max-width: 165px
+	padding: 15px 0 20px 0 
+	text-align: center
+	+r2
+		float: none
+		margin: 0 auto
+
+.is-hide
+	display: none
+
+
+//progress
+.h-progress
+	background: #fff
+	+border-radius(5px)
+	padding: 10px 16px 14px  
+	margin: 0 -27px -17px
+	+r1
+		margin: 0 -17px -17px 
+	p
+		overflow: hidden
+		font-size: 13px
+		line-height: 20px
+		+opacity(0.5)
+		margin-bottom: 4px
+.h-progress__name
+	float: right
+	font-size: 12px
+	line-height: 22px
+	+opacity(0.3)
+	margin-bottom: 4px
+.h-progress__line
+	background: #f8f5eb
+	height: 16px
+	width: 100%
+	position: relative
+	background: url(../img/progress.png) repeat-x left center 
+	+border-radius(5px)
+	overflow: hidden
+	div
+		background: url(../img/progress_in.png) repeat-x left center 		
+		height: 100%
+		width: 40%
+.form_h__box
+	margin: 0 -10px 8px
+	padding: 5px 0 0 0 
+	+clr 
+	.form_h__btn
+		float: right
+		+r2
+			margin-bottom: 20px
+	h3
+		overflow: hidden
+		+r2
+			clear: both
+.form_h__btn
+	font-size: 12px
+	line-height: 23px
+	padding: 0 24px
+	display: inline-block 
+	font-style: italic
+	+opacity(0.5)
+	border: 1px solid #e6bd56
+	color: #000
+	text-decoration: none 
+	+border-radius(5px)
+	position: relative
+	&:active
+		top: 1px
+		
+.h-table
+	background: #fff
+	+border-radius(5px) 
+	margin: 0 -27px -17px
+	+r1
+		margin: 0 -17px -17px 
+.h-table__table
+	width: 100%
+.h-table__row
+	width: 100%
+	font-size: 0
+	border-bottom: 1px solid #e5e5e5 
+	&:hover
+		background: #f8f5eb 
+	+r1
+		text-align: center
+.h-table__cell
+	width: 100%
+	display: inline-block
+	vertical-align: top
+	+box
+	padding: 0 20px 
+	text-align: left
+	+r2
+		text-align: center
+		display: block
+		margin: 0 auto
+.h-table__cell1
+	max-width: 140px
+	a
+		display: inline-block
+		img
+			max-width: 100%
+.h-table__in
+	padding: 24px 0 24px 0 
+.h-table__cell2
+	max-width: 500px
+	h3
+		font-size: 18px
+		font-weight: normal
+		max-width: 400px
+		a
+			&:hover
+				text-decoration: none
+	ul
+		font-size: 0 
+		li
+			display: inline-block
+			font-size: 13px
+			line-height: 16px
+			position: relative
+			padding: 0 20px 0 20px 
+			margin-bottom: 10px
+			vertical-align: top
+			&.is-okey
+				&:before
+					content: ""
+					position: absolute
+					top: 50%
+					left: 0
+					+s(is-ok)
+					margin-top: -4px
+			span
+				+opacity(0.5)
+.h-table__cell3
+	max-width: 156px
+.h-table__cell4
+	max-width: 180px
+.h-table__btn
+	padding: 15px 0 
+	.h-btn_mod
+		span
+			font-size: 15px
+.h-table__cell1, .h-table__cell2, .h-table__cell3, .h-table__cell4 
+	+r2
+		max-width: 100%
+.h-table__amount
+	font-size: 25px
+	line-height: 1
+	+lite
+	span
+		font-size: 15px
+.h-table__small
+	font-size: 12px
+	line-height: 22px
+	+opacity(0.3)
+	padding: 4px 0  
+	display: block
+
+.h-table__more
+	text-align: center
+	padding: 20px 
+	a
+		display: inline-block
+		font-size: 12px
+		padding: 0 25px 0 0
+		position: relative
+		text-decoration: none
+		&:before
+			position: absolute
+			top: 50%
+			right: 0
+			margin-top: -3px
+			+s(arr-bot)
+			content: ""
+.h-table__head
+	+r1
+		display: none

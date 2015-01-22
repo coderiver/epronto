@@ -105,5 +105,40 @@ head.ready(function() {
             // }
             $('.form__select').removeClass('is-active');
         }
-    })
+    });
+
+    //accordion
+    $(".js-accordion-title").on("click", function(){
+    	if ($(this).parents(".js-accordion").hasClass("is-active")) {
+    		$(this).parents(".js-accordion").removeClass("is-active").find(".js-accordion-body").slideUp();
+    	}
+    	else {
+    		$(".js-accordion").removeClass("is-active");
+    		$(".js-accordion-body").slideUp();
+    		$(this).parents(".js-accordion").toggleClass("is-active").find(".js-accordion-body").slideDown()
+    	};
+    	return false;
+    });
+    //scroll
+	$('.js-scroll').jScrollPane( {
+		verticalDragMaxHeight: 30,
+		autoReinitialise: true
+	});
+	$('.h-tabs__item').click(function() {
+		$('.h-tabs__item').removeClass('is-active');
+		$(this).addClass('is-active');
+		attr = $(this).attr('href');
+		$('#is-gallery,#is-guest,#is-street').hide();
+		$(' '+attr).show();
+		return false;
+	});
+	//map items
+	$('.h-map__link').on('click', function() {
+		$('.h-map__pop').addClass('is-open');
+		return false;
+	});
+	$('.js-close-pop').on('click', function() {
+		$('.h-map__pop').removeClass('is-open');
+		return false;
+	});
 });
