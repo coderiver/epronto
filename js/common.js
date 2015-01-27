@@ -141,4 +141,23 @@ head.ready(function() {
 		$('.h-map__pop').removeClass('is-open');
 		return false;
 	});
+	
+	$(window).load(function() {
+	    if ( $(window).width() < 640) {
+	        var element = $('.h-scroll').jScrollPane({});
+	        var api = element.data('jsp');
+	        api.destroy();
+	    } else {
+	        $('.h-scroll').jScrollPane();
+	    }
+	});
+	$(window).resize(function() {
+	    if ( $(window).width() < 640) {
+	        var element = $('.h-scroll').jScrollPane({});
+	        var api = element.data('jsp');
+	        api.destroy();
+	    } else {
+	        $('.h-scroll').jScrollPane();
+	    }
+	});
 });
