@@ -68,13 +68,13 @@
 		+clr
 .questions
 	width: 100%
-	max-width: 480px
-	float: left
 	+r1
 		float: none
 		margin: 0 auto 20px
 .question
 	margin-bottom: 4px
+	img
+		max-width: 100%
 	&.is-active
 		border: 1px solid #FFBE3C
 		+border-radius(5px)
@@ -157,7 +157,6 @@
 					line-height: 19px
 		span
 			+opacity(0.8)	
-			max-width: 340px
 			display: block
 	.question__box
 		background-color: #FFF
@@ -175,9 +174,7 @@
 				line-height: 18px
 		
 .s-form
-	max-width: 480px
 	width: 100%
-	float: right
 	padding: 7px
 	+box
 	background: url(../img/bg-form.png) repeat top left #fff
@@ -196,9 +193,20 @@
 		font-size: 26px
 		line-height: 1
 		margin-bottom: 18px
+	.s-form__field-wrap
+		margin: 0 -10px 
+		+clr
 	.s-form__field
 		font-size: 0
 		padding-bottom: 20px
+	.s-form__field_w50
+		padding: 0 10px 20px 
+		width: 50%
+		+box
+		float: left
+		+r2
+			float: none
+			width: 100%
 	.s-form__input, .s-form__textarea
 		width: 100%
 		padding: 10px 15px 9px
@@ -210,21 +218,25 @@
 		color: #000
 		font-size: 12px 
 	.s-form__textarea
-		height: 290px
+		height: 150px
 		resize: none
 	.s-form__code
 		margin: 0 -6px 
-		+vertical
-		text-align: left
 		+clr
-		+r2
-			text-align: center
 		.s-form__input
 			width: 120px
 		.s-form__input, img
 			display: inline-block
 			vertical-align: middle
 			margin: 0 6px 
+	.s-form__code-in
+		float: left
+		+vertical
+		text-align: left
+		+r2
+			text-align: center
+			width: 100%
+			margin-bottom: 20px
 	.s-form__btn
 		width: 190px
 		height: 35px
@@ -246,7 +258,7 @@
 		+r2
 			float: none
 			display: block
-			margin: 20px auto 0
+			margin: 0 auto 0
 			
 .b-sup
 	.header
