@@ -5,32 +5,29 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300,600,800' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
-
+<body class="out">
 <!-- begin header  -->
-<div class="header"><div class="header__in">
-	<div class="header__left"></div>
-	<div class="header__right"></div>
-	<a href="#" class="header__logo"></a>
-	<div class="menu"></div>
-	<!-- begin menu dropdown -->
-	<div class="menu__dropdown">
-		<div class="menu__fakelogo"></div>
-		<ul class="nav">
-			<li class="nav__hotel is-active"><a href="#"><i></i>Отели</a></li>
-			<li class="nav__avia"><a href="#"><i></i>Авиабилеты</a></li>
-			<li class="nav__auto"><a href="#"><i></i>Прокат авто</a></li>
-		</ul>
-		<div class="social">
-			<a href="#" class="social__fb"></a>
-			<a href="#" class="social__vk"></a>
+<div class="header">
+	<div class="header__in">
+		<a href="#" class="header__logo"></a>
+		<!-- begin menu  -->
+		<div class="menu"></div>
+		<!-- begin menu dropdown -->
+		<div class="menu__dropdown">
+			<ul class="nav">
+				<li><a href="#">Отели</a></li>
+				<li><a href="#">Авиабилеты</a></li>
+				<li><a href="#">Прокат авто</a></li>
+			</ul>
+			<!-- end menu  -->
 		</div>
 	</div>
-	<!-- end menu dropdown -->
-</div></div>
+</div>
 <!-- end header -->
+
 
 <!-- begin form  -->
 <div class="form__wrap"><div class="form">
@@ -38,21 +35,12 @@
 		<h2>Сравнение цен на отели <span>Бесплатно найдите самую низкую цену за номер!</span></h2>
 	</div>
 	<div class="form__hotel">
-		<input class="input" type="text" name="" placeholder="Город или название гостиницыГород или название гостиницыГород или название гостиницыГород или название гостиницы" id="">
-		<div class="form__hotelicon"></div>
-		<div class="form__hotelsearch"></div>
-	</div>
-	<div class="form__example">
-		<div class="form__exampleicon"></div>
-		Например <a href='#'>Париж</a>  или  <a href='#'>Hilton Berlin</a>
+		<input class="input" type="text" name="" placeholder="Город или название гостиницы" id="">
 	</div>
 
 	<div class="form__date form__date_in">
 		<input class="input js-datepicker js-datein" type="text" name="" placeholder="Дата заезда" id="">
 		<div class="form__dateicon"></div>
-		<div class="form__nodates">
-			<label><input type="checkbox" name="" id=""><i></i><span>Даты неизвестны</span></label>
-		</div>
 	</div>
 	<div class="form__date form__date_out">
 		<input type="text" class="input js-datepicker js-dateout"  name="" placeholder="Дата отъезда" id="">
@@ -60,7 +48,6 @@
 	</div>
 	<div class="form__people">
 		<input class="input js-people" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
-		<div class="form__peopleicon iconmore"></div>
 		<div class="form__peoplearrow"></div>
 		<div class="people">
 			<ul>
@@ -92,194 +79,183 @@
 		</div>
 	</div>
 	<div class="form__submit">
-		<a href="#" class="btn">Сравнить цены</a>
+		<a href="#" class="btn">Узнать цены</a>
 	</div>
 	
 </div></div>
 <!-- end form -->
-
-<!-- begin about  -->
-<div class="about">
-	<div class="about__item">
-		<div class="about__icon"></div>
-		<strong>Все распродажи отелей</strong> Независимый поиск скидок
-	</div>
-	<div class="about__item">
-		<div class="about__icon"></div>
-		<strong>55 проверенных сайтов</strong> Expedia.com, Hotels.com, Ostrovok.ru и другие
-	</div>
-	<div class="about__item">
-		<div class="about__icon"></div>
-		<strong>Надежно и бесплатно!</strong> Вы всегда экономите на гостиницах!
-	</div>
-	<a href="#" class="about__video">
-		<div class="about__videoicon"></div>
-		<div class="about__videotitle">Как это<br> 
-работает?</div>
-		<div class="about__videotext">Смотрите видео Youtube</div>
-	</a>
+<!-- begin partners  -->
+<div class="partners">
+	<ul class="partners__list">
+		<li class="partners__official"><a href="#">Oфициальный 
+	сайт отеля</a></li>
+		<li><i class="ico ico_octogo"></i></li>
+		<li><i class="ico ico_ostanovok"></i></li>
+		<li><i class="ico ico_ozon"></i></li>
+		<li><i class="ico ico_booking"></i></li>
+		<li><i class="ico ico_agoda"></i></li>
+		<li class="partners__50plus"><i class="ico ico_50"></i><span>Сайтов бронирования</span></li>
+	</ul>
 </div>
-<!-- end about -->
-
+<!-- end partners -->
 <!-- begin content  -->
 <div class="content content_main">
 
-
-	
-
 	<!-- begin pop  -->
 	<div class="pop">
-		<h2 class="pop__head"><span>Популярные<br>направления</span></h2>
+		<h2 class="pop__head">Популярные направления</h2>
 		<!-- begin go -->
 		<div class="go__wrap">
-		<div class="go">
-			<h3 class="go__title"><a href='#'>ВенаВенаВенаВенаВенаВена ВенаВенаВенаВенаВенаВена</a></h3>
-			<div class="go__pic go__picsprite go__cvena"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
+			<div class="go">
+				<img src="img/roma.png" alt="img">
+				<div class="go__town go__town_blue">
+					<div class="go__bottom">
+						<h3 class="go__title">Рим <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
+			<!-- begin go -->
+			<div class="go">
+				<img src="img/helsinki.png" alt="img">
+				<div class="go__town go__brown">
+					<div class="go__bottom">
+						<h3 class="go__title">Хельсинки <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
+			<!-- begin go -->
+			<div class="go">
+				<img src="img/barselona.png" alt="img">
+				<div class="go__town go__darc-blue">
+					<div class="go__bottom">
+						<h3 class="go__title">барслона <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
+			<!-- begin go -->
+			<div class="go">
+				<img src="img/madrid.png" alt="img">
+				<div class="go__town go__darc-brown">
+					<div class="go__bottom">
+						<h3 class="go__title">мадрид <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
+			<!-- begin go -->
+			<div class="go">
+				<img src="img/amsterdam.png" alt="img">
+				<div class="go__town go__purple">
+					<div class="go__bottom">
+						<h3 class="go__title">амстердам <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
+			<!-- begin go -->
+			<div class="go">
+				<img src="img/vena.png" alt="img">
+				<div class="go__town go__light-blue">
+					<div class="go__bottom">
+						<h3 class="go__title">вена <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
+			<!-- begin go -->
+			<div class="go">
+				<img src="img/praga.png" alt="img">
+				<div class="go__town go__light-brown">
+					<div class="go__bottom">
+						<h3 class="go__title">прага <div class="go__price">от <strong>10€</strong></div></h3>
+						<div class="go__hotels">792 отеля</div>
+					</div>
+				</div>
+			</div>
+			<!-- end go -->
 		</div>
-		<!-- end go -->
-
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Amster</a></h3>
-			<div class="go__pic go__picsprite go__camsterdam"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Barcelona</a></h3>
-			<div class="go__pic go__picsprite go__cbarcelona"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cberlin"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cfirenze"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__clondon"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cmilan"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cparis"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cpatong"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cpraga"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__crome"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		
-		<!-- end go -->
-		<!-- begin go -->
-		<div class="go">
-			<h3 class="go__title"><a href='#'>Вена</a></h3>
-			<div class="go__pic go__picsprite go__cshanhai"></a></div>
-			<div class="go__hotels"><strong>792</strong> отеля</div>
-			<div class="go__price">от <strong>10€</strong></div>
-		</div>
-		</div>
-		<!-- end go -->
-
 		<!-- end go_wrap -->
-
-
-		<div class="pop__text">
-			<div class="pop__left">
-				<p>ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. Сотрудничество с ведущими системами бронирования отелей позволяет найти выгодное предложение.</p>
+		<!-- begin about  -->
+		<div class="about">
+			<div class="about__item">
+				<div class="about__icon"></div>
+				<h3 class="about__title">Все распродажи отелей</h3> 
+				<div class="about__text">Независимый поиск скидок</div>
 			</div>
-			<div class="pop__right">
-				<p>Никаких наценок и дополнительных комиссий, только скидки и лучшие цены. Выбирайте город, дату путешествия и бронируйте понравившейся отель онлайн.</p>
+			<div class="about__item">
+				<div class="about__icon"></div>
+				<h3 class="about__title">55 проверенных сайтов</h3> 
+				<div class="about__text">Expedia.com, Hotels.com, Ostrovok.ru и другие</div>
 			</div>
+			<div class="about__item">
+				<div class="about__icon"></div>
+				<h3 class="about__title">Надежно и бесплатно!</h3> 
+				<div class="about__text">Вы всегда экономите на гостиницах!</div>
+			</div>
+			<a href="#" class="about__video">
+				<div class="about__videoicon"></div>
+				<div class="about__videotitle">Как это<br> 
+		работает?</div>
+				<div class="about__videotext">Смотрите видео Youtube</div>
+			</a>
 		</div>
-		<div class="pop__more"><a href='#' class="pop__morelink"></a></div>
+		<!-- end about -->
 	</div>
 	<!-- end pop -->
 
-
 	<!-- begin rec  -->
 	<div class="rec"><div class="rec__in">
-		<h2 class="rec__title">Нас рекомендуют</h2>
+		<h2 class="rec__title">Нас рекомендуют друзьям</h2>
 		<div class="feedbacks">
-			<div class="feedback">
-				<div class="feedback__photo feedback__photo_dolya" ></div>
-				<div class="feedback__name">Алекс Экслер</div>
-				<a href="#" class="feedback__site">exler.ru</a>
-				<div class="feedback__text">
-					<p>Это действительно удобный и качественный метапоисковик, я им 
-	пользуюсь уже не первый год и 
-	приятно видеть, как сервис, который изначально был очень полезен, все развивается и развиваетсся, постоянно добавляя новые возможности. Меня ePronto еще ни разу не подводил, я уверен, что он и вас не подведет!</p>
-				</div>
-			</div>
-			<div class="feedback">
-				<div class="feedback__photo feedback__photo_cheban"></div>
-				<div class="feedback__name">Алекс Экслер</div>
-				<a href="#" class="feedback__site">exler.ru</a>
-				<div class="feedback__text">
-					<p>Это действительно удобный и качественный метапоисковик, я им 
-	пользуюсь уже не первый год и 
-	приятно видеть, как сервис, который изначально был очень полезен, все развивается и развиваетсся, постоянно добавляя новые возможности. Меня ePronto еще ни разу не подводил, я уверен, что он и вас не подведет!</p>
-				</div>
-			</div>
 			<!-- begin f -->
 			<div class="feedback">
-				<div class="feedback__photo feedback__photo_exler"></div>
-				<div class="feedback__name">Алекс Экслер</div>
-				<a href="#" class="feedback__site">exler.ru</a>
-				<div class="feedback__text">
-					<p>Это действительно удобный и качественный метапоисковик, я им 
-	пользуюсь уже не первый год и 
-	приятно видеть, как сервис, который изначально был очень полезен, все развивается и развиваетсся, постоянно добавляя новые возможности. Меня ePronto еще ни разу не подводил, я уверен, что он и вас не подведет!</p>
+				<div class="feedback__in">
+					<div class="feedback__text">
+						<p>Это действительно удобный и качественный метапоисковик, я им 
+		пользуюсь уже не первый год и 
+		приятно видеть, как сервис, который изначально был очень полезен, все развивается и развиваетсся, постоянно добавляя новые возможности. Меня ePronto еще ни разу не подводил, я уверен, что он и вас не подведет!</p>
+					</div>
+					<div class="feedback__photo feedback__photo_exler"></div>
+					<div class="feedback__right">
+						<div class="feedback__name">Алекс Экслер</div>
+						<a href="#" class="feedback__site">exler.ru</a>
+					</div>
+				</div>
+			</div>
+			<div class="feedback">
+				<div class="feedback__in">
+					<div class="feedback__text">
+						<p>Это действительно удобный и качественный метапоисковик, я им 
+		пользуюсь уже не первый год и </p>
+					</div>
+					<div class="feedback__photo feedback__photo_dolya" ></div>
+					<div class="feedback__right">
+						<div class="feedback__name">Алекс Экслер</div>
+						<a href="#" class="feedback__site">exler.ru</a>
+					</div>
+				</div>
+			</div>
+			<div class="feedback">
+				<div class="feedback__in">
+					<div class="feedback__text">
+						<p>Это действительно удобный и качественный метапоисковик, я им 
+		пользуюсь уже не первый год и 
+		приятно видеть, как сервис, который изначально был очень полезен, все развивается и развиваетсся, постоянно добавляя новые возможности. Меня ePronto еще ни разу не подводил, я уверен, что он и вас не подведет!</p>
+					</div>
+					<div class="feedback__photo feedback__photo_cheban"></div>
+					<div class="feedback__right">
+						<div class="feedback__name">Алекс Экслер</div>
+						<a href="#" class="feedback__site">exler.ru</a>
+					</div>
 				</div>
 			</div>
 			<!-- end f -->
@@ -287,6 +263,44 @@
 		<!-- end feedbacks -->
 	</div></div>
 	<!-- end rec -->
+	<!-- begin news -->
+	<div class="news js-news">
+		<div class="news__slide">
+			<div class="news__img"><div class="news__img-wrap"><img src="img/news-img.png" alt="img"></div></div>
+			<div class="news__text">
+				<h3 class="news__title">Заголовок новости</h3>
+				<p>ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. Сотрудничество с ведущими системами бронирования отелей позволяет найти выгодное предложение.</p>
+				<a href="#">Подробнее</a>
+			</div>
+		</div>
+		<div class="news__slide">
+			<div class="news__img"><div class="news__img-wrap"><img src="img/news-img.png" alt="img"></div></div>
+			<div class="news__text">
+				<h3 class="news__title">Заголовок новости</h3>
+				<p>ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. Сотрудничество с ведущими системами бронирования отелей позволяет найти выгодное предложение.</p>
+				<a href="#">Подробнее</a>
+			</div>
+		</div>
+		<div class="news__slide">
+			<div class="news__img"><div class="news__img-wrap"><img src="img/news-img.png" alt="img"></div></div>
+			<div class="news__text">
+				<h3 class="news__title">Заголовок новости</h3>
+				<p>ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. Сотрудничество с ведущими системами бронирования отелей позволяет найти выгодное предложение.</p>
+				<a href="#">Подробнее</a>
+			</div>
+		</div>
+	</div>
+	<!-- end news -->
+	<div class="info">
+		<div class="info__in">
+			<div class="info__left">
+				<p>ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. Сотрудничество с ведущими системами бронирования отелей позволяет найти выгодное предложение.</p>
+			</div>
+			<div class="info__right">
+				<p>Никаких наценок и дополнительных комиссий, только скидки и лучшие цены. Выбирайте город, дату путешествия и бронируйте понравившейся отель онлайн.</p>
+			</div>
+		</div>
+	</div>
 
 </div>
 <!-- end content -->
@@ -294,37 +308,41 @@
 
 
 <!-- begin footer  -->
-<div class="footer"><div class="footer__in">
-	<div class="footer__text">
-		<div class="footer__logo"></div>
-		<div class="footer__copy">© 2012 ePronto.ru<br>Все права защтщены</div>
-		<div class="footer__links"><a href="#">О проекте</a><a href="#">Контакты</a></div>
+<div class="footer">
+	<div class="footer__in">
+		<div class="footer__text">
+			<div class="footer__logo"></div>
+			<div class="footer__copy">© 2009 — 2014 ePronto.ru<br>Все права защтщены</div>
+		</div>
+		<div class="footer__col">
+			<ul>
+				<li class="border"><a href="#">О проекте</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<ul>
+				<li><a class="border" href="#">Отели</a></li>
+				<li><a href="#">Авиабилеты</a></li>
+				<li><a href="#">Прокат авто</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<ul>
+				<li><a href="#">Бронирование отелей</a></li>
+				<li><a href="#">Авиа компании</a></li>
+				<li><a href="#">Компании автопроката</a></li>
+			</ul>
+		</div>
+		<div class="footer__soc soc">
+			<span class="ico ico_shape"></span>
+			<ul class="soc__list">
+				<li><a class="ico ico_f" href="#"></a></li>
+				<li><a class="ico ico_vk" href="#"></a></li>
+			</ul>
+		</div>
 	</div>
-	<div class="footer__col">
-		<h3>Сравнение цен</h3>
-		<ul>
-			<li><a href="#">Отели</a></li>
-			<li><a href="#">Авиабилеты</a></li>
-			<li><a href="#">Прокат авто</a></li>
-		</ul>
-	</div>
-	<div class="footer__col">
-		<h3>Партнеры</h3>
-		<ul>
-			<li><a href="#">Бронирование отелей</a></li>
-			<li><a href="#">Авиа компании</a></li>
-			<li><a href="#">Компании автопроката</a></li>
-		</ul>
-	</div>
-	<div class="footer__col">
-		<h3>Общение</h3>
-		<ul>
-			<li><a href="#">Группа в Facebook</a></li>
-			<li><a href="#">Группа в Vkontakte </a></li>
-		</ul>
-	</div>
-	
-</div></div>
+</div>
 <!-- end footer -->
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

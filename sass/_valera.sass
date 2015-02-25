@@ -1,0 +1,586 @@
+.out
+	background: url(../img/map-top.png) repeat-x 50% 0
+	+osr
+	%in
+		max-width: 940px 
+		margin: 0 auto
+		+r1
+			margin: 0 20px
+	.header
+		padding: 0
+		background: none
+		+clr    
+		.header__in
+			padding-top: 24px
+			height: 80px
+			@extend %in
+			+box
+		.header__logo
+			top: 27px
+			+s(logo-2)
+			&:before
+				display: none
+			.is-menu &
+				+r1
+					+s(logoactive2)
+	.nav
+		float: right
+		margin-top: 6px
+		list-style: none
+		color: #222
+		font-weight: 700
+		text-transform: uppercase
+		+osb
+		+r1
+			float: none
+		li
+			margin-left: 37px
+			display: inline-block
+			font-size: 13px
+			position: relative
+			top: auto
+			height: auto
+			line-height: 1
+			&:first-child
+				margin-left: 0
+			+r1
+				margin: 0
+				display: block
+		a
+			padding: 0
+			height: auto
+			color: #000000
+			line-height: 1
+			text-decoration: none 
+			+r1
+				height: 46px
+				font-size: 16px
+				line-height: 46px
+				color: #fff 
+				text-align: center
+				padding-left: 0
+				text-align: center 
+				border-bottom: 1px solid #084B85 
+				box-shadow: 0 1px 0 #246FAE
+
+	.about
+		margin: 46px 0 52px
+		+r1
+			margin: 10px 0 30px
+		+r4
+			margin-top: -10px
+		.about__item
+			margin-right: 14px
+			padding-left: 48px
+			width: 225px
+			font-style: normal
+			vertical-align: top
+			+box
+		.about__video
+			padding-left: 70px
+			width: 152px
+		.about__item, .about__video
+			+r1
+				margin: 20px 0 0 0
+				width: 50%
+			+r2
+				width: 100%
+		.about__icon
+			+s(check-icon)
+		.about__videoicon
+			+s(play-ico)
+		.about__title
+			color: #022222
+			font-weight: normal
+			+r1
+				font-size: 16px
+		.about__text
+			margin-top: 6px
+			font-size: 13px
+			opacity: 0.5
+	.pop
+		@extend %in
+		margin-bottom: 3px 
+		.pop__head
+			text-align: center
+			margin-bottom: 25px 
+			font-size: 25px 
+			background: none
+			+osl
+	.go__wrap
+		margin-right: -9px
+		+r1
+			margin-right: -1%
+	.go
+		position: relative
+		margin: 0 9px 10px 0
+		width: 228px
+		height: 200px
+		overflow: hidden 
+		border-radius: 4px
+		+r1
+			margin: 0 1% 1% 0
+			width: 24%
+			height: 132px
+			overflow: hidden
+			img
+				width: 100%
+		+r2
+			margin: 0 2% 2% 0
+			width: 48%
+			height: 200px
+			img
+				height: auto
+		+r3
+			height: 150px
+		+r4
+			margin-bottom: 20px
+			width: 98%
+			height: auto
+		&:first-child
+			width: 465px
+			+r1
+				width: 49%
+			+r2
+				width: 98%
+		.go__town
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 2
+			background-size: cover !important
+			border-radius: 4px 
+			+box
+			&.go__town_blue
+				background: url(../img/go-bg-blue.png) no-repeat 0 100%
+			&.go__brown
+				background: url(../img/brown.png) no-repeat 0 100%
+			&.go__darc-blue
+				background: url(../img/darc-blue.png) no-repeat 0 100%
+			&.go__darc-brown
+				background: url(../img/darc-brown.png) no-repeat 0 100%
+			&.go__purple
+				background: url(../img/purple.png) no-repeat 0 100%
+			&.go__light-blue
+				background: url(../img/light-blue.png) no-repeat 0 100%
+			&.go__light-brown
+				background: url(../img/light-brown.png) no-repeat 0 100%
+		.go__bottom
+			position: absolute
+			left: 15px
+			bottom: 15px
+			right: 15px
+		.go__title
+			margin-bottom: 0
+			font-size: 14px 
+			color: #fff
+			line-height: 1
+			text-transform: uppercase
+			+osb
+			&:before
+				display: none
+		.go__pic
+			border-radius: 4px
+			margin-bottom: 7px 
+			img
+				display: block
+				border-radius: 4px
+				width: 100% 
+		.go__hotels
+			font-size: 12px 
+			padding-top: 1px 
+			color: #adabad
+		.go__price
+			float: none
+			font-size: 12px
+			text-transform: lowercase
+			color: #fff
+			font-style: normal
+			display: inline-block
+			strong
+				font-size: 20px 
+				color: #ffcd52
+				+ossb 
+	.input
+		padding: 0 40px 0 20px
+		height: 49px
+		line-height: 1 
+		+placeholder-color(#7f7f7f)
+		+osr
+		+placeholder
+			+osl
+		&:focus
+			border: 1px solid #0071BD 
+	.btn
+		height: 49px
+		line-height: 49px
+	.form__wrap
+		@extend %in
+	.form
+		padding: 15px 30px 29px 30px
+		+r1
+			margin-bottom: 20px
+		.form__title
+			margin-bottom: 25px  
+			h2
+				+osl
+				color: #3E3B35
+				span
+					margin-top: 5px
+					font-size: 21px 
+		.form__hotel
+			margin-bottom: 10px
+			.form__hotelsearch
+				position: absolute
+				right: 10px 
+				top: 50%
+				margin-top: -11px  
+				+s(search)
+			.form__hotelicon
+				left: 13px 
+				top: 14px 
+				+s(location)
+			.input
+				padding-left: 13px
+				padding-right: 40px
+				height: 51px
+				font-size: 14px 
+				letter-spacing: 0.3px
+			
+		.form__date
+			width: 24%
+			margin-right: 1% 
+			+r2
+				width: 100%
+			.form__dateicon
+				right: 13px 
+				top: 13px
+				+s(date)
+			&.form__date_out
+				+r1
+					float: none
+				+r2
+					margin-bottom: 16px
+		.form__people
+			width: 29.8%
+			margin-right: 1%
+			+r2
+				width: 100%
+			.input
+				padding-left: 16px 
+				padding-right: 40px 
+			.form__peoplearrow
+				right: 13px 
+				top: 21px 
+				+s(arr-people)
+		.form__submit
+			display: inline-block
+			vertical-align: top
+			width: 19%
+			+r2
+				width: 100%
+			.btn
+				font-size: 16px
+				+osr
+	.rec
+		background: #f2f5f7
+		.rec__title
+			+lite
+			font-size: 25px  
+			margin: 29px 0 20px
+	.feedback
+		margin-bottom: 30px
+		text-align: left
+		+r2
+			margin-bottom: 8px
+		.feedback__in
+			margin: 0 2%
+			+r1
+				margin: 0 5%
+		.feedback__photo 
+			width: 60px 
+			height: 60px 
+			overflow: hidden
+			border-radius: 60px
+			&.feedback__photo_dolya
+				+s(dolya-ico) 
+			&.feedback__photo_exler
+				+s(exler-ico)
+			&.feedback__photo_cheban
+				+s(cheban-ico)
+		.feedback__right
+			margin: 11px 0 0 16px
+			vertical-align: top
+			display: inline-block
+		.feedback__name
+			font-size: 15px
+		.feedback__site
+			font-size: 13px 
+			color: #03519C
+			text-decoration: none 
+		.feedback__text
+			position: relative
+			padding: 13px 20px
+			font-size: 13px
+			margin-bottom: 23px
+			border-radius: 4px
+			background: #fff 
+			&:before
+				position: absolute
+				content: ''
+				left: 20px
+				bottom: -20px
+				+arr(20, 20, #fff, tl)
+	.footer
+		background: url(../img/footer-bg.png) repeat-x 50% 0
+		+r1
+			background-size: cover
+		.footer__in
+			position: relative
+			@extend %in
+			+clr
+			padding-top: 30px 
+			padding-bottom: 25px 
+		.footer__text
+			width: $w
+			margin-right: 9px 
+		.footer__logo
+			margin-bottom: 20px 
+		.footer__copy
+			font-size: 12px 
+			color: #fff 
+			opacity: 0.5
+		.footer__col
+			padding-top: 0
+			width: 143px
+			font-size: 12px 
+			margin-right: 20px 
+			li
+				&:first-child
+					a
+						padding-top: 0
+				a
+					color: #fff
+					border: none
+					display: inline-block
+			.border
+				border-bottom: 1px solid #484C4F
+		.footer__text, .footer__col
+			+r1
+				padding-left: 20px
+				margin: 0
+				width: 20%
+				+box
+				&:first-child
+					padding-left: 0
+			+r2
+				width: 50%
+				margin: 0
+				padding: 0 10px 0 0
+		.footer__soc
+			position: absolute
+			right: 0
+			top: 30px
+			text-align: center
+			text-align: right
+			.soc__list
+				margin-top: 21px
+			+r2
+				position: relative
+				margin-top: 20px
+				top: auto
+				text-align: center
+				.soc__list
+					margin: 7px 0 0 15px
+					vertical-align: top
+					display: inline-block
+	.slick-prev, .slick-next
+		top: 50%
+		margin-top: -10px
+.ico 
+	display: inline-block
+	&.ico_octogo
+		+s(octogo)
+	&.ico_ostanovok
+		+s(ostanovok) 
+	&.ico_ozon
+		+s(ozon)
+	&.ico_booking
+		+s(booking)
+	&.ico_agoda
+		+s(agoda)
+	&.ico_50
+		+s(plus50)
+	&.ico_shape
+		+s(shape)
+	&.ico_f
+		+s(f)
+	&.ico_vk
+		+s(vk-ico)
+.soc
+	.soc__list
+		font-size: 0
+		li
+			margin-left: 20px
+			display: inline-block
+			&:first-child
+				margin-left: 0
+		a
+			&:hover
+				opacity: .8
+.partners
+	margin: 53px 0 40px
+	border-top: 1px solid #ebebeb
+	border-bottom: 1px solid #ebebeb
+	+r1
+		display: none
+	.partners__list
+		font-size: 0
+		@extend %in
+		li
+			width: 130px
+			height: 69px
+			font-size: 13px
+			line-height: 69px
+			vertical-align: top
+			border-left: 1px solid #ebebeb
+			vertical-align: top
+			text-align: center
+			display: inline-block
+			+box
+			.ico
+				vertical-align: middle
+			.ico_agoda
+				height: 32px
+		.partners__official
+			width: 121px 
+			border-left: none
+			a
+				margin-top: 19px
+				line-height: 1.2
+				text-align: left
+				text-decoration: none
+				display: block
+		.partners__50plus
+			padding: 24px 0 0 23px
+			width: 168px 
+			line-height: 1.2
+			font-size: 12px
+			font-style: italic
+			+box
+			span
+				display: inline-block
+				width: 83px
+			.ico
+				margin-right: 10px
+				vertical-align: top
+		.artners__official,
+		.partners__50plus
+			text-align: left
+.news
+	@extend %in
+	padding: 78px 0
+	overflow: hidden
+	min-height: 180px
+	white-space: nowrap
+	+r1
+		padding: 20px 0
+	.news__slide
+		display: inline-block
+		width: 100%
+		white-space: normal
+		+clr
+	.news__img
+		float: left
+		padding-right: 40px
+		text-align: right
+		width: 40%
+		+box
+		+r1
+			padding-right: 20px
+		+r2
+			padding: 0
+			width: 100%
+			text-align: center
+	.news__img-wrap
+		width: 180px
+		height: 180px
+		border-radius: 50%
+		overflow: hidden
+		vertical-align: top
+		display: inline-block
+	img
+		display: block
+	.news__text
+		float: right
+		padding-right: 120px
+		width: 60%
+		+box
+		+r1
+			padding-right: 30px
+			p
+				line-height: 1.4
+		+r2
+			padding: 0 20px
+			width: 100%
+		p
+			margin-bottom: 10px
+			opacity: 0.6
+			line-height: 24px
+			letter-spacing: 0.65px
+		a
+			position: relative
+			padding-right: 27px
+			letter-spacing: 0.5px
+			display: inline-block
+			&:before
+				position: absolute
+				content: ''
+				top: 50%
+				right: 0
+				margin-top: -2px
+				+s(rarr)
+	.news__title
+		margin: 10px 0
+		font-size: 20px
+		font-weight: normal
+		+r2
+			margin-top: 13px
+			text-align: center
+	.slick-prev, .slick-next
+		top: 50%
+		margin-top: -11px
+	.slick-prev
+		+s(slick-prev-ico)
+	.slick-next
+		+s(slick-next-ico)
+.info
+	padding: 53px 0 49px
+	border-top: 1px solid #ebebeb
+	+r2
+		padding: 18px 0
+	.info__in
+		@extend %in
+		font-size: 0
+	.info__left,
+	.info__right
+		padding-right: 30px
+		width: 50%
+		font-size: 13px
+		opacity: 0.6
+		letter-spacing: 0.1px
+		line-height: 24px
+		vertical-align: top
+		display: inline-block
+		+box
+		+r1
+			padding-right: 15px
+		+r4
+			margin-top: 15px
+			padding: 0
+			width: 100%
+			&:first-child
+				margin-top: 0
+
