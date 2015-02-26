@@ -1,6 +1,13 @@
 .out
 	background: url(../img/map-top.png) repeat-x 50% 0
 	+osr
+	&.b-inside3
+		.header
+			.header__in
+				padding-top: 14px
+				height: 60px
+			.header__logo
+				top: 14px
 	%in
 		max-width: 940px 
 		margin: 0 auto
@@ -570,7 +577,7 @@
 		width: 50%
 		font-size: 13px
 		opacity: 0.6
-		letter-spacing: 0.1px
+		letter-spacing: 0.1px 
 		line-height: 24px
 		vertical-align: top
 		display: inline-block
@@ -583,4 +590,23 @@
 			width: 100%
 			&:first-child
 				margin-top: 0
-
+.discount
+	padding: 12px 0
+	font-size: 20px
+	background: #ffc84c
+	.discount__in
+		@extend %in
+		+clr
+	.discount__left
+		float: left
+	.discount__right
+		float: right
+		+osb
+	+r1
+		margin-top: 15px
+		padding: 10px 0 
+		font-size: 15px
+	+r2
+		display: none
+.block
+	height: 100%
