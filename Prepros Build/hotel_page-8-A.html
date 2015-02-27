@@ -1,0 +1,927 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/jScrollPane.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body onload="initialize()">
+
+<!-- begin header  -->
+<div class="header"><div class="header__in">
+	<div class="header__left"></div>
+	<div class="header__right"></div>
+	<a href="#" class="header__logo"></a>
+	<div class="menu"></div>
+	<!-- begin menu dropdown -->
+	<div class="menu__dropdown">
+		<div class="menu__fakelogo"></div>
+		<ul class="nav">
+			<li class="nav__hotel is-active"><a href="#"><i></i>Отели</a></li>
+			<li class="nav__avia"><a href="#"><i></i>Авиабилеты</a></li>
+			<li class="nav__auto"><a href="#"><i></i>Прокат авто</a></li>
+		</ul>
+		<div class="social">
+			<a href="#" class="social__fb"></a>
+			<a href="#" class="social__vk"></a>
+		</div>
+	</div>
+	<!-- end menu dropdown -->
+</div></div>
+<!-- end header -->
+
+
+
+<!-- begin content  -->
+<div class="content content_inside">
+	<div class="bc"><a href="#">Главная</a><i></i><a href="#">Страны</a><i></i><span>Италия</span></div>
+	
+	<!-- begin h-block  -->
+	<div class="h-block">
+		<div class="h-block__left">
+			<h1>Campanile Barcelona Sud Hotel Cornella Llobregat <span class="h-stars"><i></i><i></i><i></i><i></i><i class="h-stars__dis"></i></span></h1>
+			<div class="h-info">
+				<span class="h-info__label">Хостфранкс, Барселона</span>
+				<a href="#" class="h-btn h-btn_map"><i></i><span>2,29 км от центра города</span></a>
+				<a href="#" class="h-btn h-btn_blue"><span>Показать карту</span></a>
+			</div>
+		</div>
+		<div class="h-block__right">
+			<a href="#" class="h-reserv">
+				<span class="h-reserv__top">Забронировать</span>
+				<div class="h-reserv__bot">
+					<span class="reserv__txt">Цена от</span>
+					<span class="reserv__amount">125 200 <span>руб.</span></span>
+				</div>
+			</a>
+		</div>
+		<div class="h-photo h-photo_t">
+			<div class="h-photo__big">
+				<div style="background-image: url(img/hotel-1.png);"></div>
+			</div>
+			<div class="h-photo__med">
+				<div style="background-image: url(img/hotel-2.png);"></div>
+			</div>
+			<div class="h-photo__small">
+				<div style="background-image: url(img/hotel-3.png);"></div>
+			</div>
+			<div class="h-photo__small">
+				<div style="background-image: url(img/hotel-3.png);"></div>
+			</div>
+			<div class="h-photo__small">
+				<div style="background-image: url(img/hotel-3.png);"></div>
+			</div>
+			<div class="h-photo__small">
+				<div style="background-image: url(img/hotel-3.png);"></div>
+			</div>
+			<div class="h-photo__small">
+				<div style="background-image: url(img/hotel-3.png);"></div>
+			</div>			
+			<ul class="h-list">
+				<li><a href="#"><i class="is-internet"></i><span>WiFi</span></a></li>
+				<li><a href="#"><i class="is-pool"></i><span>Бассейн</span></a></li>
+				<li><a href="#"><i class="is-parking"></i><span>Парковка</span></a></li>
+				<li><a href="#"><i class="is-restaurant"></i><span>Ресторан</span></a></li>
+				<li><a href="#"><i class="is-spa"></i><span>SPA</span></a></li>
+			</ul>
+		</div>
+		<div class="h-block__right">
+			<div class="h-block__heading">
+				<p class="is-blue">Очень хорошо, 8<span>/10</span></p>
+				<span class="h-block__small">Оценка по <span>125</span> отзывам гостей</span>
+			</div>
+			<ul class="h-block__list">
+				<li><a href="#">Узнать цены</a></li>
+				<li><a href="#">Расположение</a></li>
+				<li><a href="#">Услуги отеля</a></li>
+				<li><a href="#">Фотогалерея</a></li>
+				<li><a href="#">Фото гостей</a></li>
+				<li><a href="#">Пройти по улице</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end h-block -->
+
+	<!-- begin form  -->
+	<div class="form__wrap form__wrap_h form_zin"><div class="form form_h">
+		<h3>Проверить цены и наличие мест</h3>
+		<div class="form__date form__date_in">
+			<input class="input js-datepicker js-datein" type="text" name="" placeholder="Дата заезда" id="">
+			<div class="form__dateicon"></div>
+		</div>
+		<div class="form__date form__date_out">
+			<input type="text" class="input js-datepicker js-dateout"  name="" placeholder="Дата отъезда" id="">
+			<div class="form__dateicon"></div>
+		</div>
+		<div class="form__people">
+			<input class="input js-people" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
+			<div class="form__peopleicon iconmore"></div>
+			<div class="form__peoplearrow"></div>
+			<div class="people">
+				<ul>
+					<li data-adult="1" data-rooms="1">
+	                    <i class="icon11"></i>
+	                    1&nbsp;взрослый
+	                </li>
+	                <li data-adult="2" data-rooms="1">
+	                    <i class="icon21"></i>
+	                    2&nbsp;взрослых в 1 номере
+	                </li>
+	                <li data-adult="3" data-rooms="1">
+	                    <i class="icon31"></i>
+	                    3&nbsp;взрослых в 1 номере
+	                </li>
+	                <li data-adult="4" data-rooms="1">
+	                    <i class="icon41"></i>
+	                    4&nbsp;взрослых 1 номере
+	                </li>
+	                <li data-adult="2" data-rooms="2">
+	                    <i class="icon22"></i>
+	                    2&nbsp;взрослых в 2 номерах
+	                </li>
+	                <li data-adult="0" data-rooms="0">
+	                    <i class="iconmore"></i>
+	                    Нужно больше номеров или проживание с детьми
+	                </li>
+				</ul>
+			</div>
+		</div>
+		<div class="form__submit">
+			<a href="#" class="btn">Узнать цены</a>
+		</div>
+		
+	</div></div>
+	<!-- end form -->
+
+	<!-- begin form  -->
+	<div class="form__wrap form__wrap_h"><div class="form form_h">
+		<div class="form_h__box">
+			<a href="#" class="form_h__btn">Изменить даты</a>
+			<h3>7 января 2015 г. — 8 января 2015 г. для 2х взрослых в 1 номере</h3>
+		</div>
+		<div class="h-progress">
+			<span class="h-progress__name">Booking.com...</span>
+			<p>Подождите, идет загрузка...</p>
+			<div class="h-progress__line"><div></div></div>
+		</div>
+		
+	</div></div>
+	<!-- end form -->
+
+	<!-- begin form  -->
+	<div class="form__wrap form__wrap_h"><div class="form form_h">
+		<div class="form_h__box">
+			<a href="#" class="form_h__btn">Изменить даты</a>
+			<h3>7 января 2015 г. — 8 января 2015 г. для 2х взрослых в 1 номере</h3>
+		</div>
+		<div class="h-table">
+			<div class="h-table__table">
+				<div class="h-table__row h-table__head">
+					<div class="h-table__cell h-table__cell1"><span class="h-table__small">Сайт</span></div>
+					<div class="h-table__cell h-table__cell2"><span class="h-table__small">Тип номера</span></div>
+					<div class="h-table__cell h-table__cell3"><span class="h-table__small">Цена</span></div>
+					<div class="h-table__cell h-table__cell4"><span class="h-table__small">Забронировать</span></div>
+				</div>
+				<div class="h-table__row">
+					<div class="h-table__cell h-table__cell1">
+						<div class="h-table__in">							
+							<a href="#"><img src="img/logo1-gray.png" alt=""></a>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell2">
+						<div class="h-table__in">	
+							<h3>Стандартный номер Classic</h3>
+							<ul>
+								<li class="is-okey"><span>Не подлежит отмене</span></li>
+								<li class="is-okey"><span>Завтрак включен</span></li>
+								<li class="is-okey"><span>Оплата сразу</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell3">
+						<div class="h-table__in">	
+							<p class="h-table__amount">25 200 <span>руб.</span></p>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell4">
+						<div class="h-table__btn">
+							<a href="#" class="h-btn_mod"><span>Забронировать</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="h-table__row">
+					<div class="h-table__cell h-table__cell1">
+						<div class="h-table__in">							
+							<a href="#"><img src="img/amoma.png" alt=""></a>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell2">
+						<div class="h-table__in">	
+							<h3>Улучшеный двухместный номер с 1 кроватью или 2 отдельными кроватями</h3>
+							<ul>
+								<li class="is-okey"><span>Бесплатная отмена</span></li>
+								<li class="is-okey"><span>Завтрак включен</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell3">
+						<div class="h-table__in">	
+							<p class="h-table__amount">19 200 <span>руб.</span></p>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell4">
+						<div class="h-table__btn">
+							<a href="#" class="h-btn_mod"><span>Забронировать</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="h-table__row">
+					<div class="h-table__cell h-table__cell1">
+						<div class="h-table__in">							
+							<a href="#"><img src="img/venere.png" alt=""></a>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell2">
+						<div class="h-table__in">	
+							<h3><a href="#">Улучшеный номер</a></h3>
+							<ul>
+								<li class="is-okey"><span>Не подлежит отмене</span></li>
+								<li class="is-okey"><span>Завтрак включен</span></li>
+								<li class="is-okey"><span>Оплата сразу</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell3">
+						<div class="h-table__in">	
+							<p class="h-table__amount">22 190 <span>руб.</span></p>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell4">
+						<div class="h-table__btn">
+							<a href="#" class="h-btn_mod"><span>Забронировать</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="h-table__row">
+					<div class="h-table__cell h-table__cell1">
+						<div class="h-table__in">							
+							<a href="#"><img src="img/hotels.png" alt=""></a>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell2">
+						<div class="h-table__in">	
+							<h3>Двухместный номер Superior</h3>
+							<ul>
+								<li class="is-okey"><span>Бесплатная отмена</span></li>
+								<li class="is-okey"><span>Завтрак включен</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell3">
+						<div class="h-table__in">	
+							<p class="h-table__amount">19 200 <span>руб.</span></p>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell4">
+						<div class="h-table__btn">
+							<a href="#" class="h-btn_mod"><span>Забронировать</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="h-table__row">
+					<div class="h-table__cell h-table__cell1">
+						<div class="h-table__in">							
+							<a href="#"><img src="img/logo1-gray.png" alt=""></a>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell2">
+						<div class="h-table__in">	
+							<h3>Стандартный номер Classic</h3>
+							<ul>
+								<li class="is-okey"><span>Завтрак включен</span></li>
+								<li class="is-okey"><span>Оплата сразу</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell3">
+						<div class="h-table__in">	
+							<p class="h-table__amount">25 200 <span>руб.</span></p>
+						</div>
+					</div>
+					<div class="h-table__cell h-table__cell4">
+						<div class="h-table__btn">
+							<a href="#" class="h-btn_mod"><span>Забронировать</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="h-table__more">
+					<a href="#">Все цены</a>
+				</div>
+			</div>
+		</div>
+		
+	</div></div>
+	<!-- end form -->
+
+	<!-- begin h-place  -->
+	<div class="h-place">
+		<h3>Расположение отеля</h3>
+		<div class="h-map-wrapper">
+			<div id="map_canvas" class="h-map"></div>
+			<div class="h-map__block">
+				<div class="h-map__box">
+					<h4>Куда сходить</h4>
+					<div class="h-map__list js-scroll">
+						<ul>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Рестораны</span>
+									<span class="h-map__quantity">12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Для детей</span>
+									<span class="h-map__quantity">23</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Торговый центр</span>
+									<span class="h-map__quantity">45</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Надо посетить</span>
+									<span class="h-map__quantity">55</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Театры</span>
+									<span class="h-map__quantity">19</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Казинотеатры</span>
+									<span class="h-map__quantity">12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Аэропорт</span>
+									<span class="h-map__quantity">2</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Рестораны</span>
+									<span class="h-map__quantity">12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Для детей</span>
+									<span class="h-map__quantity">23</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Торговый центр</span>
+									<span class="h-map__quantity">45</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Надо посетить</span>
+									<span class="h-map__quantity">55</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Театры</span>
+									<span class="h-map__quantity">19</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Казинотеатры</span>
+									<span class="h-map__quantity">12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="h-map__link">
+									<span class="h-map__name">Аэропорт</span>
+									<span class="h-map__quantity">2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h-map__pop">
+						<div class="h-map__top">
+							<a href="#" class="h-map__back js-close-pop">Назад</a>
+							<h4>Надо посетить</h4>							
+						</div>
+						<div class="h-map__drop js-scroll">
+							<ul>
+								<li>
+									<a href="#"><span>Двор бегинок - Бегинаж</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Музейная площадь</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Muntplein</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Nieuwmarkt</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Ватерлоо</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Дам</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Рембрандта</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Двор бегинок - Бегинаж</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Музейная площадь</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Muntplein</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Nieuwmarkt</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Ватерлоо</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Дам</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Площадь Рембрандта</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. Сотрудничество с ведущими системами бронирования отелей позволяет найти выгодное предложение. Никаких наценок и дополнительных комиссий, только скидки и лучшие цены. Выбирайте город, дату путешествия и бронируйте понравившейся отель онлайн.</p>
+		<p>Никаких наценок и дополнительных комиссий, только скидки и лучшие цены. Выбирайте город, дату путешествия и бронируйте понравившейся отель онлайн. ePronto.ru поможет не только упростить бронирование отелей онлайн, но еще и подскажет самую низкую цену на любой отель по всему миру. </p>
+	</div>
+	<!-- end h-place -->
+
+	<!-- begin h-services  -->
+	<div class="h-services">
+		<h3>Услуги отеля</h3>
+		<div class="h-row">
+			<div class="h-box h-box_small">
+				<h4><i class="is-theme"></i><span>Тематика отеля</span></h4>
+				<p>Отель предлагает высокий уровень обслуживания и удобств</p>
+			</div>
+			<div class="h-box h-box_small">
+				<h4><i class="is-time"></i><span>Время заезда и отъезда</span></h4>
+				<p>Заезд начинается с 13:00, выезд до 12:00</p>
+			</div>
+			<div class="h-box h-box_small">
+				<h4><i class="is-internet"></i><span>Интернет</span></h4>
+				<p>Бесплатный в лобби и на терассе. В номере за дополнительную плату</p>
+			</div>
+			<div class="h-box h-box_small">
+				<h4><i class="is-parking"></i><span>Парковка</span></h4>
+				<p>Парковка для автомобилей, Услуги парковки, Бесплатная парковка.</p>
+			</div>
+			<div class="h-box h-box_small">
+				<h4><i class="is-restaurant"></i><span>Питание</span></h4>
+				<p>Бар, бесплатный чай/кофе, завтрак (платный), ресторан</p>
+			</div>
+		</div>
+		<div class="h-row">
+			<div class="h-box h-box_med">
+				<h4><i class="is-beauty"></i><span>Здоровье и красота</span></h4>
+				<p>Солярий, Теннисный корт, Игровая комната, Сауна, Детский бассейн, Ночной клуб, Тренажерный зал, Массаж, Настольный теннис, Игровая площадка, Бассейн, Экскурсии, Спа, Открытый бассейн.</p>
+			</div>
+			<div class="h-box h-box_med">
+				<h4><i class="is-inroom"></i><span>В номере</span></h4>
+				<p>Стол, Ванна, Холодильник, Телевизор, Детская кроватка, Халаты, Душ, Номера для некурящих, Мини-бар, Фен, Тапочки, Балкон/Терраса, Кофеварка/Чайник, Кондиционер, Сейф, Радио, Сейф в номере, Ежедневная газета, Ванная, Телефон.</p>
+			</div>
+			<div class="h-box h-box_med">
+				<h4><i class="is-services"></i><span>Другие услуги</span></h4>
+				<p>Обмен валюты, Услуги прачечной, Услуга "Будильник", Салон красоты, Медицинские услуги, Обслуживание в номерах, Круглосуточное обслуживание в номерах, Услуги врача, Трансфер до аэропорта/отеля, Услуги консьержа, Няня, Бизнес-центр.</p>
+			</div>
+		</div>
+	</div>
+	<!-- end h-services -->
+
+	<!-- begin h-rating  -->
+	<div class="h-rating">
+		<h3>Рейтинг отеля</h3>
+		<div class="h-rating__block">
+			<a href="#" class="h-rating__box">
+				<div class="h-rating__logo">
+					<img src="img/l-priceline.png" alt="">
+				</div>
+				<span class="h-rating__ttl">7,2</span>
+				<span class="h-rating__txt">Хорошо</span>
+			</a>
+			<a href="#" class="h-rating__box">
+				<div class="h-rating__logo">
+					<img src="img/l-ebookers.png" alt="">
+				</div>
+				<span class="h-rating__ttl">8</span>
+				<span class="h-rating__txt">Восхитительно</span>
+			</a>
+			<a href="#" class="h-rating__box">
+				<div class="h-rating__logo">
+					<img src="img/l-hotels.png" alt="">
+				</div>
+				<span class="h-rating__ttl">7,4</span>
+				<span class="h-rating__txt">Очень хорошо</span>
+				<span class="h-rating__comment">Читать <span>25</span> отзывов</span>
+			</a>
+			<a href="#" class="h-rating__box">
+				<div class="h-rating__logo">
+					<img src="img/l-skoosh.png" alt="">
+				</div>
+				<span class="h-rating__ttl">7,1</span>
+				<span class="h-rating__txt">Хорошо</span>
+				<span class="h-rating__comment">Читать отзывы</span>
+			</a>
+			<a href="#" class="h-rating__box">
+				<div class="h-rating__logo">
+					<img src="img/l-venere.png" alt="">
+				</div>
+				<span class="h-rating__ttl">4,2</span>
+				<span class="h-rating__txt">Неплохо</span>
+			</a>
+			<div class="h-rating__result">
+				<div class="h-rating__logo">
+					<span>Общий</span>
+				</div>
+				<span class="h-rating__ttl">7,4</span>
+				<span class="h-rating__txt">Хорошо</span>
+			</div>
+		</div>
+	</div>
+	<!-- end h-rating -->
+
+</div>
+<!-- end content -->
+<div class="h-tabs_wrap">
+	<div class="h-tabs">
+		<div class="h-tabs__inner">
+			<ul class="h-tabs__list">
+				<li>
+					<a href="#is-gallery" class="h-tabs__item is-active">
+						<i class="is-gallery"></i>
+						<span>Фотогалерея<span class="is-quantity">150</span></span>
+					</a>
+				</li>
+				<li>
+					<a href="#is-guest" class="h-tabs__item">
+						<i class="is-guest"></i>
+						<span>Фото гостей<span class="is-quantity">127</span></span>
+					</a>
+				</li>
+				<li>
+					<a href="#is-street" class="h-tabs__item">
+						<i class="is-street"></i>
+						<span>Походить по улице</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="h-tabs__inner">
+			<div class="h-photo_wrapper" id="is-gallery">
+				<div class="h-photo h-photo_mod">
+					<div class="h-photo__big2">
+						<div style="background-image: url(img/hotel-1.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+				</div>
+				
+				<div class="h-photo h-photo_mod h-photo_right">
+					<div class="h-photo__big2">
+						<div style="background-image: url(img/hotel-1.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+				</div>
+				<div class="h-tabs__btn">
+					<a href="#" class="h-btn_mod"><span>Показать еще фото</span><i></i></a>
+				</div>
+			</div>
+
+			<div class="h-photo_wrapper is-hide" id="is-guest">
+				<div class="h-photo h-photo_mod">
+					<div class="h-scroll js-scroll">
+						<div class="h-photo__big">
+							<div style="background-image: url(img/hotel-1.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__big">
+							<div style="background-image: url(img/hotel-1.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+						<div class="h-photo__small">
+							<div style="background-image: url(img/hotel-3.png);"></div>
+						</div>
+					</div>
+				</div>
+				<div class="h-tabs__btn">
+					<a href="#" class="h-btn_mod"><span>Показать еще фото</span><i></i></a>
+				</div>
+			</div>
+
+			<div class="h-photo_wrapper is-hide" id="is-street">
+				<div class="h-photo h-photo_mod">
+					<div class="h-photo__big2">
+						<div style="background-image: url(img/hotel-1.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+					<div class="h-photo__med2">
+						<div style="background-image: url(img/hotel-2.png);"></div>
+					</div>
+				</div>
+				<div class="h-tabs__btn">
+					<a href="#" class="h-btn_mod"><span>Показать еще фото</span><i></i></a>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+	<div class="h-tabs__inner h-tabs__inner_mod">
+		
+		<!-- begin form  -->
+		<div class="form__wrap form__wrap_h"><div class="form form_h">
+			<h3>Проверить цены и наличие мест</h3>
+			<div class="form__date form__date_in">
+				<input class="input js-datepicker js-datein" type="text" name="" placeholder="Дата заезда" id="">
+				<div class="form__dateicon"></div>
+			</div>
+			<div class="form__date form__date_out">
+				<input type="text" class="input js-datepicker js-dateout"  name="" placeholder="Дата отъезда" id="">
+				<div class="form__dateicon"></div>
+			</div>
+			<div class="form__people">
+				<input class="input js-people" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
+				<div class="form__peopleicon iconmore"></div>
+				<div class="form__peoplearrow"></div>
+				<div class="people">
+					<ul>
+						<li data-adult="1" data-rooms="1">
+		                    <i class="icon11"></i>
+		                    1&nbsp;взрослый
+		                </li>
+		                <li data-adult="2" data-rooms="1">
+		                    <i class="icon21"></i>
+		                    2&nbsp;взрослых в 1 номере
+		                </li>
+		                <li data-adult="3" data-rooms="1">
+		                    <i class="icon31"></i>
+		                    3&nbsp;взрослых в 1 номере
+		                </li>
+		                <li data-adult="4" data-rooms="1">
+		                    <i class="icon41"></i>
+		                    4&nbsp;взрослых 1 номере
+		                </li>
+		                <li data-adult="2" data-rooms="2">
+		                    <i class="icon22"></i>
+		                    2&nbsp;взрослых в 2 номерах
+		                </li>
+		                <li data-adult="0" data-rooms="0">
+		                    <i class="iconmore"></i>
+		                    Нужно больше номеров или проживание с детьми
+		                </li>
+					</ul>
+				</div>
+			</div>
+			<div class="form__submit">
+				<a href="#" class="btn">Узнать цены</a>
+			</div>
+			
+		</div></div>
+		<!-- end form -->
+	</div>
+</div>
+
+
+<!-- begin footer  -->
+<div class="footer"><div class="footer__in">
+	<div class="footer__text">
+		<div class="footer__logo"></div>
+		<div class="footer__copy">© 2012 ePronto.ru<br>Все права защтщены</div>
+		<div class="footer__links"><a href="#">О проекте</a><a href="#">Контакты</a></div>
+	</div>
+	<div class="footer__col">
+		<h3>Сравнение цен</h3>
+		<ul>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Авиабилеты</a></li>
+			<li><a href="#">Прокат авто</a></li>
+		</ul>
+	</div>
+	<div class="footer__col">
+		<h3>Партнеры</h3>
+		<ul>
+			<li><a href="#">Бронирование отелей</a></li>
+			<li><a href="#">Авиа компании</a></li>
+			<li><a href="#">Компании автопроката</a></li>
+		</ul>
+	</div>
+	<div class="footer__col">
+		<h3>Общение</h3>
+		<ul>
+			<li><a href="#">Группа в Facebook</a></li>
+			<li><a href="#">Группа в Vkontakte </a></li>
+		</ul>
+	</div>
+	
+</div></div>
+<!-- end footer -->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript"> 
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(55.7541655,37.6112452);
+    var myLatlng1 = new google.maps.LatLng(55.7542201,37.6168602);
+    var myLatlng2 = new google.maps.LatLng(55.7518895,37.6176702);
+    var myOptions = {
+		zoom: 14,
+		center: myLatlng,
+		mapTypeControl: false,
+		panControl: true,
+		panControlOptions: {
+			position: google.maps.ControlPosition.LEFT_TOP
+		},
+		zoomControl: true,
+		zoomControlOptions: {
+			style: google.maps.ZoomControlStyle.DEFAULT,
+			position: google.maps.ControlPosition.LEFT_BOTTOM
+		},
+		scaleControl: true,
+		streetViewControl: true,
+			streetViewControlOptions: {
+			position: google.maps.ControlPosition.LEFT_CENTER
+		}
+    }
+ 
+ 	var img = 'img/marker.png';
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: '1',
+        icon: img
+    });
+    var marker1 = new google.maps.Marker({
+        position: myLatlng1,
+        map: map,
+        title: '2',
+        icon: img
+    });
+    var marker2 = new google.maps.Marker({
+        position: myLatlng2,
+        map: map,
+        title: '3',
+        icon: img
+    });
+  }
+ 
+</script> 
+</body>
+</html>

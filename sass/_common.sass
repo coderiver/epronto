@@ -46,19 +46,38 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
+=lite
+	font-family: "Helvetica Neue",arial, sans-serif 
+	font-weight: 300 
+=osr
+	font-family: 'Open Sans', sans-serif
+	font-weight: 400
+=osb
+	font-family: 'Open Sans', sans-serif
+	font-weight: 700
+=osl
+	font-family: 'Open Sans', sans-serif
+	font-weight: 300
+=ossb
+	font-family: 'Open Sans', sans-serif
+	font-weight: 600
+
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-	background: url(../img/map.jpg) repeat-x 50% 6px
+	background: url(../img/map.jpg) repeat-x 50% 0
 	&.b-inside
-		background-position: 50% -110px 
+		background-position: 50% -163px 
 	&.b-inside1
-		background-position: 50% -60px 
+		background-position: 50% -113px 
 	&.b-inside2
-		background-position: 50% -220px 
+		background-position: 50% -233px 
+	&.b-inside3
+		background-position: 50% -226px
+	
 %in
-	max-width: 984px 
+	max-width: 984px
 	margin: 0 auto
 	+r1
 		margin: 0 20px
@@ -66,14 +85,11 @@ body
 	@extend %in
 $w: 228px
 $s: 24px
-a
+a 
 	color: #005CA9 
 .is-mobilehidden
 	+r1
 		display: none
-=lite
-	font-family: "Helvetica Neue",arial, sans-serif 
-	font-weight: 300 
 // common blocks     
 .rub
 	display: inline-block

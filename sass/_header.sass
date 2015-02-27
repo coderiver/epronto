@@ -199,4 +199,61 @@
 		padding-top: 83px 
 		padding-bottom: 24px 
 		box-shadow: 0 10px 10px rgba(0,0,0,.35)
-		
+.header
+	&.header_mod
+		padding: 0
+		background: none
+		+clr    
+		.header__in
+			padding-top: 24px
+			height: 80px
+			@extend %in
+			+box
+		.header__logo
+			top: 27px
+			+s(logo-2)
+			&:before
+				display: none
+			.is-menu &
+				+r1
+					+s(logoactive2)
+	.nav
+		float: right
+		margin-top: 6px
+		list-style: none
+		color: #222
+		font-weight: 700
+		text-transform: uppercase
+		+osb
+		+r1
+			float: none
+		li
+			margin-left: 37px
+			display: inline-block
+			font-size: 13px
+			position: relative
+			top: auto
+			height: auto
+			line-height: 1
+			&:first-child
+				margin-left: 0
+			+r1
+				margin: 0
+				display: block
+		a
+			padding: 0
+			height: auto
+			color: #000000
+			line-height: 1
+			text-decoration: none 
+			+r1
+				height: 46px
+				font-size: 16px
+				line-height: 46px
+				color: #fff 
+				text-align: center
+				padding-left: 0
+				text-align: center 
+				border-bottom: 1px solid #084B85 
+				box-shadow: 0 1px 0 #246FAE
+			
