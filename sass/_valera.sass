@@ -161,19 +161,19 @@
 			border-radius: 4px 
 			+box
 			&.go__town_blue
-				background: url(../img/go-bg-blue.png) no-repeat 0 100%
+				background: linear-gradient(191deg, rgba(38,34,59,0) 51%, rgba(38,34,59,1) 93%, rgba(38,34,59,1) 100%)
 			&.go__brown
-				background: url(../img/brown.png) no-repeat 0 100%
+				background: linear-gradient(191deg, rgba(#363136,0) 51%, rgba(#363136,1) 93%, rgba(#363136,1) 100%)
 			&.go__darc-blue
-				background: url(../img/darc-blue.png) no-repeat 0 100%
+				background: linear-gradient(191deg, rgba(#0c2760,0) 51%, rgba(#0c2760,1) 93%, rgba(#0c2760,1) 100%)
 			&.go__darc-brown
-				background: url(../img/darc-brown.png) no-repeat 0 100%
-			&.go__purple
-				background: url(../img/purple.png) no-repeat 0 100%
+				background: linear-gradient(191deg, rgba(#4e2a2a,0) 51%, rgba(#4e2a2a,1) 93%, rgba(#4e2a2a,1) 100%)
+			&.go__purple 
+				background: linear-gradient(191deg, rgba(#483b4e,0) 51%, rgba(#483b4e,1) 93%, rgba(#483b4e,1) 100%)
 			&.go__light-blue
-				background: url(../img/light-blue.png) no-repeat 0 100%
+				background: linear-gradient(191deg, rgba(20,53,94,0) 51%, rgba(20,53,94,1) 93%, rgba(20,53,94,1) 100%)
 			&.go__light-brown
-				background: url(../img/light-brown.png) no-repeat 0 100%
+				background: linear-gradient(191deg, rgba(#50343e,0) 51%, rgba(#50343e,1) 93%, rgba(#50343e,1) 100%)
 		.go__bottom
 			position: absolute
 			left: 15px
@@ -213,7 +213,7 @@
 	.input
 		padding: 0 40px 0 20px
 		height: 49px
-		line-height: 1 
+		line-height: 49px
 		+placeholder-color(#7f7f7f)
 		+osr
 		+placeholder
@@ -253,6 +253,7 @@
 				padding-left: 13px
 				padding-right: 40px
 				height: 51px
+				line-height: 51px
 				font-size: 14px 
 				letter-spacing: 0.3px
 			
@@ -309,14 +310,14 @@
 		.feedback__photo 
 			width: 60px 
 			height: 60px 
-			overflow: hidden
+			overflow: hidden 
 			border-radius: 60px
-			&.feedback__photo_dolya
-				+s(dolya-ico) 
-			&.feedback__photo_exler
-				+s(exler-ico)
-			&.feedback__photo_cheban
-				+s(cheban-ico)
+			// &.feedback__photo_dolya
+			// 	+s64pic(dolya-ico)
+			// &.feedback__photo_exler
+			// 	+s64pic(exler-ico)
+			// &.feedback__photo_cheban
+			// 	+s64pic(cheban-ico)
 		.feedback__right
 			margin: 11px 0 0 16px
 			vertical-align: top
