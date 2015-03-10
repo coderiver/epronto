@@ -326,7 +326,7 @@ a { color: #005ca9; }
 .people .people__minus, .drop .people__minus { background: url('../img/icons-s56caddc4c7.png') 0 -831px no-repeat; width: 12px; height: 2px; }
 .people .people__date, .drop .people__date { position: relative; margin: 0 5px; height: 30px; line-height: 30px; min-width: 20px; text-align: center; }
 .people .people__date.is-active ul, .drop .people__date.is-active ul { display: block; }
-.people .people__date ul, .drop .people__date ul { position: absolute; left: 0; right: 0; top: 0; padding: 0; z-index: 2; background-color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 3.5px 3.5px 27px rgba(0, 0, 0, 0.22); -webkit-box-shadow: 3.5px 3.5px 27px rgba(0, 0, 0, 0.22); box-shadow: 3.5px 3.5px 27px rgba(0, 0, 0, 0.22); display: none; }
+.people .people__date ul, .drop .people__date ul { position: absolute; left: 0; right: 0; top: 0; padding: 0; z-index: 2; background-color: white; overflow: hidden; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 3.5px 3.5px 27px rgba(0, 0, 0, 0.22); -webkit-box-shadow: 3.5px 3.5px 27px rgba(0, 0, 0, 0.22); box-shadow: 3.5px 3.5px 27px rgba(0, 0, 0, 0.22); display: none; }
 .people .people__date ul li, .drop .people__date ul li { padding: 0; height: 30px; line-height: 30px; border-top: 1px solid #e5e5e5; cursor: pointer; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; display: block; }
 .people .people__date ul li:hover, .drop .people__date ul li:hover { color: #0071bd; }
 .people .people__date ul li:first-child, .drop .people__date ul li:first-child { border-top: none; }
