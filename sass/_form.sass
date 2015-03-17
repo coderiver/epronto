@@ -523,11 +523,21 @@
 		+s(ico-plus)
 	.people__minus
 		+s(ico-minus)
+	.people__plus,
+	.people__minus
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: -5px
+			left: -5px
+			right: -5px
+			bottom: -5px
 	.people__date
 		position: relative
 		margin: 0 5px
-		height: 30px
-		line-height: 30px
+		height: 23px
+		line-height: 23px
 		min-width: 20px
 		text-align: center
 		&.is-active
@@ -537,7 +547,7 @@
 			position: absolute
 			left: 0
 			right: 0
-			top: 0
+			top: -4px
 			padding: 0
 			z-index: 2
 			background-color: #FFF
