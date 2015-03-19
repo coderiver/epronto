@@ -238,7 +238,8 @@ a { color: #005ca9; }
 .form .form__people .form__peopleicon.icon41 { top: 17px; }
 .form .form__people .form__peopleicon.icon22 { left: 13px; }
 .form .form__people .form__peopleicon.icon31 { top: 12px; }
-.form .form__people .input { padding-left: 45px; padding-right: 40px; }
+.form .form__people .form__peopleicon { display: none; }
+.form .form__people .input { padding-left: 16px; padding-right: 40px; }
 .form .form__people .form__peoplearrow { position: absolute; right: 10px; top: 17px; background: url('../img/icons-s54237963ec.png') 0 -218px no-repeat; width: 15px; height: 10px; }
 .form .form__example { display: block; font-size: 11px; font-style: italic; color: white; margin-top: 6px; margin-bottom: 9px; }
 .form .form__example a { font-size: 12px; color: #704a23; border-bottom: 1px dotted #704a23; font-style: normal; text-decoration: none; }
@@ -311,8 +312,9 @@ a { color: #005ca9; }
 .people.is-open, .is-open.drop { display: block; }
 .people:before, .drop:before { content: "\25B2"; display: block; position: absolute; left: 15px; top: -12px; height: 13px; width: 13px; overflow: hidden; font-size: 13px; line-height: 16px; text-align: center; color: white; }
 .people ul, .drop ul { list-style: none; padding: 6px; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.people li, .drop li { padding: 10px 15px 11px 27px; color: black; min-width: 18px; font-size: 14px; cursor: default; position: relative; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font-family: "Open Sans", sans-serif; font-weight: 400; }
-.people li i, .drop li i { position: absolute; top: 8px; left: 9px; }
+.people li, .drop li { padding: 10px 15px 11px 17px; color: black; min-width: 18px; font-size: 14px; cursor: default; position: relative; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font-family: "Open Sans", sans-serif; font-weight: 400; }
+.people li i, .drop li i { position: absolute; top: 8px; left: 9px; display: none; }
+.people li i.icon-children, .drop li i.icon-children, .people li i.icon-number, .drop li i.icon-number { display: none; }
 .people li span, .drop li span { opacity: 0.5; color: #222222; font-size: 11px; font-style: italic; }
 .people li:first-child, .drop li:first-child { border-style: none; }
 .people li:hover, .drop li:hover { background-color: #e6eef3; color: black; }
