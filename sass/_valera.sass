@@ -105,6 +105,7 @@
 			margin-top: 6px
 			font-size: 13px
 			opacity: 0.5
+			color: #000 
 	.pop
 		@extend %in
 		margin-bottom: 3px 
@@ -198,18 +199,25 @@
 		.go__hotels
 			font-size: 12px 
 			padding-top: 1px 
-			color: #adabad
+			// color: #adabad
+			color: #fff
+			+opacity(0.6) 
 		.go__price
 			float: none
 			font-size: 12px
 			text-transform: lowercase
 			color: #fff
 			font-style: normal
+			font-weight: normal
 			display: inline-block
 			strong
 				font-size: 20px 
 				color: #ffcd52
 				+ossb 
+				.rub
+					text-transform: uppercase
+					&:before
+						background: #ffcd52 
 	.input
 		padding: 0 40px 0 20px
 		height: 49px
@@ -310,7 +318,7 @@
 		.feedback__photo 
 			width: 60px 
 			height: 60px 
-			overflow: hidden
+			overflow: hidden 
 			border-radius: 60px
 			// &.feedback__photo_dolya
 			// 	+s64pic(dolya-ico)
@@ -327,7 +335,6 @@
 		.feedback__site
 			font-size: 13px 
 			color: #03519C
-			text-decoration: none 
 		.feedback__text
 			position: relative
 			padding: 13px 20px
@@ -410,15 +417,15 @@
 .ico 
 	display: inline-block
 	&.ico_octogo
-		+s(octogo)
+		+s(octogo1)
 	&.ico_ostanovok
-		+s(ostanovok) 
+		+s(ostanovok1) 
 	&.ico_ozon
-		+s(ozon)
+		+s(ozon1)
 	&.ico_booking
-		+s(booking)
+		+s(booking1)
 	&.ico_agoda
-		+s(agoda)
+		+s(agoda1)
 	&.ico_50
 		+s(plus50)
 	&.ico_shape
@@ -460,8 +467,6 @@
 			+box
 			.ico
 				vertical-align: middle
-			.ico_agoda
-				height: 32px
 		.partners__official
 			width: 121px 
 			border-left: none
@@ -472,20 +477,40 @@
 				text-decoration: none
 				display: block
 		.partners__50plus
-			padding: 24px 0 0 23px
 			width: 168px 
 			line-height: 1.2
 			font-size: 12px
 			font-style: italic
 			+box
+			position: relative
+			&:before, &:after
+				content: "" 
+				position: absolute
+			&:before
+				+arr(21, 11, #ebebeb, t)
+				top: -11px
+				right: 33px
+			&:after
+				+arr(19, 10, #fff, t)
+				top: -10px
+				right: 34px
+			div
+				width: 100%
+				height: 100%
+				+vertical
+				text-align: right
 			span
-				display: inline-block
+				color: #000 
 				width: 83px
+				font-size: 12px		
+				text-align: left
+				+opacity(0.6)		
 			.ico
 				margin-right: 10px
-				vertical-align: top
-		.artners__official,
-		.partners__50plus
+			span, .ico
+				display: inline-block
+				vertical-align: middle
+		.artners__official
 			text-align: left
 .news
 	@extend %in
@@ -543,6 +568,7 @@
 			padding-right: 27px
 			letter-spacing: 0.5px
 			display: inline-block
+			text-decoration: none
 			&:before
 				position: absolute
 				content: ''
@@ -550,6 +576,8 @@
 				right: 0
 				margin-top: -2px
 				+s(rarr)
+			&:hover
+				text-decoration: underline
 	.news__title
 		margin: 10px 0
 		font-size: 20px
