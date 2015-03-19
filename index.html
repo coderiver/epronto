@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" media="screen" href="css/css.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+        <link rel="stylesheet" media="screen" href="css/overload.css" >
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300,600,800' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -35,52 +37,144 @@
 		<h2>Сравнение цен на отели <span>Бесплатно найдите самую низкую цену за номер!</span></h2>
 	</div>
 	<div class="form__hotel">
-		<input class="input" type="text" name="" placeholder="Город или название гостиницы" id="">
-	</div>
+                <input class="input" type="text" name="destination" placeholder="Город или название гостиницы" data-keyword="">
+            </div>
 
 	<div class="form__date form__date_in">
-		<input class="input js-datepicker js-datein" type="text" name="" placeholder="Дата заезда" id="">
-		<div class="form__dateicon"></div>
-	</div>
-	<div class="form__date form__date_out">
-		<input type="text" class="input js-datepicker js-dateout"  name="" placeholder="Дата отъезда" id="">
-		<div class="form__dateicon"></div>
-	</div>
-	<div class="form__people">
-		<input class="input js-people" type="text" name="" placeholder="2 взрослых в 1 номере" id="">
-		<div class="form__peoplearrow"></div>
-		<div class="people">
-			<ul>
-				<li data-adult="1" data-rooms="1">
-                    <i class="icon11"></i>
-                    1&nbsp;взрослый
-                </li>
-                <li data-adult="2" data-rooms="1">
-                    <i class="icon21"></i>
-                    2&nbsp;взрослых в 1 номере
-                </li>
-                <li data-adult="3" data-rooms="1">
-                    <i class="icon31"></i>
-                    3&nbsp;взрослых в 1 номере
-                </li>
-                <li data-adult="4" data-rooms="1">
-                    <i class="icon41"></i>
-                    4&nbsp;взрослых 1 номере
-                </li>
-                <li data-adult="2" data-rooms="2">
-                    <i class="icon22"></i>
-                    2&nbsp;взрослых в 2 номерах
-                </li>
-                <li data-adult="0" data-rooms="0">
-                    <i class="iconmore"></i>
-                    Нужно больше номеров или проживание с детьми
-                </li>
-			</ul>
-		</div>
-	</div>
-	<div class="form__submit">
-		<a href="#" class="btn">Узнать цены</a>
-	</div>
+                <input class="input datepicker" readonly="readonly" type="text" placeholder="Дата заезда" id="datein">
+                <div class="form__dateicon"></div>
+            </div>
+        <div class="form__date form__date_out">
+                <input type="text" class="input datepicker" readonly="readonly" placeholder="Дата отъезда" id="dateout">
+                <div class="form__dateicon"></div>
+        </div>
+        <div class="form__people">
+                <input class="input js-people" type="text"  readonly="readonly" placeholder="2 взрослых в 1 номере" id="">
+                <div class="form__peopleicon icon21"></div>
+                <div class="form__peoplearrow"></div>
+                <div class="people">
+                    <ul>
+                        <li data-adult="1" data-rooms="1">
+                            <i class="icon11"></i>
+                            1&nbsp;взрослый
+                        </li>
+                        <li data-adult="2" data-rooms="1">
+                            <i class="icon21"></i>
+                            2&nbsp;взрослых в 1 номере
+                        </li>
+                        <li data-adult="3" data-rooms="1">
+                            <i class="icon31"></i>
+                            3&nbsp;взрослых в 1 номере
+                        </li>
+                        <li data-adult="4" data-rooms="1">
+                            <i class="icon41"></i>
+                            4&nbsp;взрослых 1 номере
+                        </li>
+                        <li data-adult="2" data-rooms="2">
+                            <i class="icon22"></i>
+                            2&nbsp;взрослых в 2 номерах
+                        </li>
+                        <li data-adult="0" data-rooms="0">
+                            <i class="iconmore"></i>
+                            Нужно больше номеров или проживание с детьми
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__submit">
+                <a href="#" class="btn">Узнать цены</a>
+            </div>
+	<div class="form__moarpeople">
+                <fieldset class="form__moar">
+                    <legend>Номер <span>1</span>:</legend>
+                    <div class="form__moarselect">
+                        <label for="">Взрослых</label>
+                        <div class="form__select">
+                            <input class="input js-select adults" type="text" name="" placeholder="2" id="" value="2">
+                            <div class="form__arrow"></div>
+                            <div class="drop">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__moarselect">
+                        <label>Детей</label>
+                        <div class="form__select">
+                            <input class="input js-select" type="text" name="" placeholder="0" id="" value="0">
+                            <div class="form__arrow"></div>
+                            <div class="drop">
+                                <ul class="ch_ul">
+                                    <li>0</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__age hidden">
+                        <label>Возраст детей</label>
+                        <div class="ages">
+                        </div>
+                    </div>
+                    <a href="#" class="form__removeme">Удалить</a>
+                </fieldset>
+                <a href="#" class="form__clonemoar">Добавить другой номер</a>
+
+            </div>
+            <div class="hidden moar_tpl">
+                <fieldset class="form__moar">
+                    <legend>Номер <span>1</span>:</legend>
+                    <div class="form__moarselect">
+                        <label for="">Взрослых</label>
+                        <div class="form__select">
+                            <input class="input js-select adults" type="text" name="" placeholder="2" value="2">
+                            <div class="form__arrow"></div>
+                            <div class="drop">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__moarselect">
+                        <label>Детей</label>
+                        <div class="form__select">
+                            <input class="input js-select" type="text" name="" placeholder="0" id="" value="0">
+                            <div class="form__arrow"></div>
+                            <div class="drop">
+                                <ul class="ch_ul">
+                                    <li>0</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__age hidden">
+                        <label>Возраст детей</label>
+                        <div class="ages">
+                        </div>
+                    </div>
+                    <a href="#" class="form__removeme">Удалить</a>
+                </fieldset>
+            </div>
 	
 </div></div>
 <!-- end form -->
@@ -106,82 +200,255 @@
 		<h2 class="pop__head">Популярные направления</h2>
 		<!-- begin go -->
 		<div class="go__wrap">
-			<div class="go">
-				<img src="img/roma.png" alt="img">
-				<a href="#" class="go__town go__town_blue">
-					<div class="go__bottom">
-						<h3 class="go__title">Рим <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
-			<!-- begin go -->
-			<div class="go">
-				<img src="img/helsinki.png" alt="img">
-				<a href="#" class="go__town go__brown">
-					<div class="go__bottom">
-						<h3 class="go__title">Хельсинки <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
-			<!-- begin go -->
-			<div class="go">
-				<img src="img/barselona.png" alt="img">
-				<a href="#" class="go__town go__darc-blue">
-					<div class="go__bottom">
-						<h3 class="go__title">барслона <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
-			<!-- begin go -->
-			<div class="go">
-				<img src="img/madrid.png" alt="img">
-				<a href="#" class="go__town go__darc-brown">
-					<div class="go__bottom">
-						<h3 class="go__title">мадрид <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
-			<!-- begin go -->
-			<div class="go">
-				<img src="img/amsterdam.png" alt="img">
-				<a href="#" class="go__town go__purple">
-					<div class="go__bottom">
-						<h3 class="go__title">амстердам <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
-			<!-- begin go -->
-			<div class="go">
-				<img src="img/vena.png" alt="img">
-				<a href="#" class="go__town go__light-blue">
-					<div class="go__bottom">
-						<h3 class="go__title">вена <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
-			<!-- begin go -->
-			<div class="go">
-				<img src="img/praga.png" alt="img">
-				<a href="#" class="go__town go__light-brown">
-					<div class="go__bottom">
-						<h3 class="go__title">прага <div class="go__price">от <strong>10€</strong></div></h3>
-						<div class="go__hotels">792 отеля</div>
-					</div>
-				</a>
-			</div>
-			<!-- end go -->
+			<div class="destinations-container">
+                <div class="arrows">
+                    <a href="#" class="arrow left-arrow flipit" data-dir="left"><img src="img/larr.png"></a>
+                    <a href="#" class="arrow right-arrow flipit" data-dir="right"><img src="img/rarr.png"></a>
+                </div>
+                <div class="active-destinations" data-pos="0">
+
+                </div>
+
+                <div class="active-destinations-above" data-pos="0">
+
+                </div>
+            </div>
+            <div class="destinations hidden">
+                                    <div class="go">
+                        <img src="http://i5.epronto.ru/c/48427.jpg" alt="Москва">
+                        <a href="http://epronto/Russia/all/Moscow/" class="go__town go__town_blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Москва <div class="go__price">от <strong>389<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">2050 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i1.epronto.ru/c/13804.jpg" alt="Санкт-Петербург">
+                        <a href="http://epronto/Russia/all/Saint_Petersburg/" class="go__town go__brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Санкт-Петербург <div class="go__price">от <strong>548<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">2067 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i4.epronto.ru/c/35521.jpg" alt="Таллин">
+                        <a href="http://epronto/Estonia/Harjumaa/Tallinn/" class="go__town go__darc-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Таллин <div class="go__price">от <strong>530<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">425 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i1.epronto.ru/c/47496.jpg" alt="Рига">
+                        <a href="http://epronto/Latvia/Vidzeme/Riga/" class="go__town go__darc-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Рига <div class="go__price">от <strong>606<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">450 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+<div class="go">
+                        <img src="http://i2.epronto.ru/c/34437.jpg" alt="Прага">
+                        <a href="http://epronto/Czech_Republic/Prague_Region/Prague/" class="go__town go__purple">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Прага <div class="go__price">от <strong>533<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">2013 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i5.epronto.ru/c/25007.jpg" alt="Вена">
+                        <a href="http://epronto/Austria/Vienna_state/Vienna/" class="go__town go__light-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Вена <div class="go__price">от <strong>606<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">1567 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i2.epronto.ru/c/47182.jpg" alt="Рим">
+                        <a href="http://epronto/Italy/Lazio/Rome/" class="go__town go__light-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Рим <div class="go__price">от <strong>530<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">7904 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i2.epronto.ru/c/147272.jpg" alt="Милан">
+                        <a href="http://epronto/Italy/Lombardy/Milan/" class="go__town go__town_blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Милан <div class="go__price">от <strong>455<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">1425 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i1.epronto.ru/c/47319.jpg" alt="Амстердам">
+                        <a href="http://epronto/Netherlands/Noord-Holland/Amsterdam/" class="go__town go__brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Амстердам <div class="go__price">от <strong>606<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">1915 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i3.epronto.ru/c/43958.jpg" alt="Париж">
+                        <a href="http://epronto/France/Ile_de_France/Paris/" class="go__town go__darc-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Париж <div class="go__price">от <strong>682<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">4398 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i1.epronto.ru/c/154262.jpg" alt="Барселона">
+                        <a href="http://epronto/Spain/Catalonia/Barcelona/" class="go__town go__darc-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Барселона <div class="go__price">от <strong>455<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">4296 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i4.epronto.ru/c/47900.jpg" alt="Стамбул">
+                        <a href="http://epronto/Turkey/Marmara_Region/Istanbul/" class="go__town go__purple">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Стамбул <div class="go__price">от <strong>514<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">4280 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i4.epronto.ru/c/47855.jpg" alt="Гонконг">
+                        <a href="http://epronto/Hong_Kong/all/Hong_Kong/" class="go__town go__light-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Гонконг <div class="go__price">от <strong>518<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">696 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i3.epronto.ru/c/15579.jpg" alt="Хельсинки">
+                        <a href="http://epronto/Finland/Southern_Finland/Helsinki/" class="go__town go__light-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Хельсинки <div class="go__price">от <strong>682<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">137 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i4.epronto.ru/c/47662.jpg" alt="Вильнюс">
+                        <a href="http://epronto/Lithuania/Vilnius_county/Vilnius/" class="go__town go__town_blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Вильнюс <div class="go__price">от <strong>1 146<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">379 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i1.epronto.ru/c/68073.jpg" alt="Варшава">
+                        <a href="http://epronto/Poland/Masovia/Warsaw/" class="go__town go__brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Варшава <div class="go__price">от <strong>546<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">851 отель</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i2.epronto.ru/c/47350.jpg" alt="Будапешт">
+                        <a href="http://epronto/Hungary/Pest/Budapest/" class="go__town go__darc-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Будапешт <div class="go__price">от <strong>531<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">1966 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i2.epronto.ru/c/34499.jpg" alt="Берлин">
+                        <a href="http://epronto/Germany/Berlin_Federal_State/Berlin/" class="go__town go__darc-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Берлин <div class="go__price">от <strong>455<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">2244 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i3.epronto.ru/c/37086.jpg" alt="Мадрид">
+                        <a href="http://epronto/Spain/Community_of_Madrid/Madrid/" class="go__town go__purple">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Мадрид <div class="go__price">от <strong>530<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">1721 отель</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i3.epronto.ru/c/158584.jpg" alt="Лондон">
+                        <a href="http://epronto/United_Kingdom/Greater_London/London/" class="go__town go__light-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Лондон <div class="go__price">от <strong>612<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">3962 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i3.epronto.ru/c/300481.jpg" alt="Тель-Авив">
+                        <a href="http://epronto/Israel/Tel_Aviv_District/Tel_Aviv/" class="go__town go__light-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Тель-Авив <div class="go__price">от <strong>859<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">511 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i5.epronto.ru/c/147578.jpg" alt="Ницца">
+                        <a href="http://epronto/France/Provence-Alpes-Cote_dAzur/Nice/" class="go__town go__town_blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Ницца <div class="go__price">от <strong>833<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">694 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i5.epronto.ru/c/47746.jpg" alt="Венеция">
+                        <a href="http://epronto/Italy/Veneto/Venice/" class="go__town go__brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Венеция <div class="go__price">от <strong>1 288<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">1604 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i3.epronto.ru/c/304428.jpg" alt="Пхукет">
+                        <a href="http://epronto/Thailand/Phuket/Phuket/" class="go__town go__darc-blue">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Пхукет <div class="go__price">от <strong>539<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">152 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i4.epronto.ru/c/57663.jpg" alt="Бангкок">
+                        <a href="http://epronto/Thailand/Bangkok_Province/Bangkok/" class="go__town go__darc-brown">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Бангкок <div class="go__price">от <strong>522<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">2159 отелей</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="go">
+                        <img src="http://i1.epronto.ru/c/234791.jpg" alt="Сочи">
+                        <a href="http://epronto/Russia/Krasnodar/Sochi/" class="go__town go__purple">
+                            <div class="go__bottom">
+                                <h3 class="go__title">Сочи <div class="go__price">от <strong>587<span class="rub">Р</span></strong></div></h3>
+                                <div class="go__hotels">254 отеля</div>
+                            </div>
+                        </a>
+                    </div>
+                                </div>
 		</div>
 		<!-- end go_wrap -->
 		<!-- begin about  -->

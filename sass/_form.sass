@@ -12,6 +12,7 @@
 	font-size: 15px 
 	line-height: 1 
 	+placeholder-color(#B8B8B8)
+	cursor: pointer
 	&:focus
 		border: 1px solid #0071BD 
 .btn
@@ -435,11 +436,11 @@
 .people
 	position: absolute
 	left: 0
+	right: 0
 	top: 57px  
 	background: #fff 
 	z-index: 1000
 	box-shadow: 0 5px 27px rgba(0,0,0,.22)
-	width: 230px 
 	font-size: 12px 
 	border-radius: 5px
 	display: none
@@ -458,47 +459,125 @@
 		line-height: 16px
 		text-align: center
 		color: #fff
-	&:after
-		content: ''
-		display: block
-		position: absolute
-		bottom: 0
-		left: 0
-		right: 0  
-		height: 5px
-		overflow: hidden
-		border-radius: 0 0 5px 5px
-		background: -webkit-gradient(linear, 0 100%, 0 0, from(#2192d3), to(#004e94))
-		background: -webkit-linear-gradient(#2192d3 0%, #004e94 100%)
-		background: -moz-linear-gradient(#2192d3 0%, #004e94 100%)
-		background: -o-linear-gradient(#2192d3 0%, #004e94 100%)
-		background: linear-gradient(#2192d3 0%, #004e94 100%)
-		// -webkit-transform: scale(1.4, 1)
-		// -ms-transform: scale(1.4, 1)
-		// transform: scale(1.4, 1)
+	// &:after
+	// 	content: ''
+	// 	display: block
+	// 	position: absolute
+	// 	bottom: 0
+	// 	left: 0
+	// 	right: 0  
+	// 	height: 5px
+	// 	overflow: hidden
+	// 	border-radius: 0 0 5px 5px
+	// 	background: -webkit-gradient(linear, 0 100%, 0 0, from(#2192d3), to(#004e94))
+	// 	background: -webkit-linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	background: -moz-linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	background: -o-linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	background: linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	// -webkit-transform: scale(1.4, 1)
+	// 	// -ms-transform: scale(1.4, 1)
+	// 	// transform: scale(1.4, 1)
 	ul
 		list-style: none
-		padding-top: 4px 
+		padding: 6px 
+		width: 100%
+		+box
 	li
-		border-top: 1px solid #d9d9d9
-		padding: 10px 15px 11px 12px
-		color: #626161
-		cursor: pointer
+		padding: 10px 15px 11px 27px
+		color: #000
 		min-width: 18px
-		padding-left: 63px 
+		font-size: 14px
+		cursor: default
 		position: relative
+		+border-radius(3px)
+		+osr
 		i
 			position: absolute
 			top: 8px 
-			right: 180px 
+			left: 9px
+		span
+			opacity: 0.5
+			color: #222
+			font-size: 11px
+			font-style: italic
 		&:first-child
 			border-style: none
 		&:hover
 			background-color: #e6eef3
 			color: #000
-		&:last-child:hover
-			border-bottom-right-radius: 5px
-			border-bottom-left-radius: 5px
+			.people__plus
+				+s(ico-plus-hover)
+			.people__minus
+				+s(ico-minus-hover)
+			.people__date
+				color: #0071bd
+	.icon-children
+		display: inline-block
+		+s(icon-children-hover)
+	.icon-number
+		top: 13px
+		display: inline-block
+		+s(ico-keys)
+	.people__calc
+		float: right
+	.people__plus
+		+s(ico-plus)
+	.people__minus
+		+s(ico-minus)
+	.people__plus,
+	.people__minus
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: -5px
+			left: -5px
+			right: -5px
+			bottom: -5px
+	.people__date
+		position: relative
+		margin: 0 5px
+		height: 23px
+		line-height: 23px
+		min-width: 20px
+		text-align: center
+		&.is-active
+			ul
+				display: block
+		ul
+			position: absolute
+			left: 0
+			right: 0
+			top: -4px
+			padding: 0
+			z-index: 2
+			background-color: #FFF
+			overflow: hidden
+			+border-radius(5px)
+			+box-shadow(3.5px 3.5px 27px rgba(0, 0, 0, 0.22))
+			display: none
+			li
+				padding: 0
+				height: 30px
+				line-height: 30px
+				border-top: 1px solid #e5e5e5
+				cursor: pointer
+				+border-radius(0)
+				display: block
+				&:hover
+					color: #0071bd
+				&:first-child
+					border-top: none
+	.people__date,
+	.people__plus,
+	.people__minus
+		vertical-align: middle
+		cursor: pointer
+		display: inline-block
+		&.is-disabled
+			cursor: default
+			+opacity(.4)
+		
 @each $s in icon11,icon21,icon31,icon41,icon22, iconmore
 	.#{$s}
 		+s(#{$s})
