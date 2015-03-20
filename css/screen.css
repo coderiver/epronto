@@ -1660,7 +1660,7 @@ li:hover .iconmore { background-position: 0 -1398px; }
 .out .go:first-child { width: 465px; }
 @media only screen and (max-width: 984px) { .out .go:first-child { width: 49%; } }
 @media only screen and (max-width: 640px) { .out .go:first-child { width: 98%; } }
-.out .go .go__town { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; background-size: cover !important; border-radius: 4px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.out .go .go__town { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; background-size: cover !important; border-radius: 4px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
 .out .go .go__town.go__town_blue { background: linear-gradient(191deg, rgba(38, 34, 59, 0) 51%, #26223b 93%, #26223b 100%); }
 .out .go .go__town.go__brown { background: linear-gradient(191deg, rgba(54, 49, 54, 0) 51%, #363136 93%, #363136 100%); }
 .out .go .go__town.go__darc-blue { background: linear-gradient(191deg, rgba(12, 39, 96, 0) 51%, #0c2760 93%, #0c2760 100%); }
@@ -1671,6 +1671,7 @@ li:hover .iconmore { background-position: 0 -1398px; }
 .out .go .go__bottom { position: absolute; left: 15px; bottom: 15px; right: 15px; }
 .out .go .go__title { margin-bottom: 0; font-size: 14px; color: white; line-height: 1; text-transform: uppercase; font-family: "Open Sans", sans-serif; font-weight: 700; }
 .out .go .go__title:before { display: none; }
+.out .go .go__title a { color: white; text-decoration: none; }
 .out .go .go__pic { border-radius: 4px; margin-bottom: 7px; }
 .out .go .go__pic img { display: block; border-radius: 4px; width: 100%; }
 .out .go .go__hotels { font-size: 12px; padding-top: 1px; color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
