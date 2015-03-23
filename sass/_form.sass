@@ -35,6 +35,11 @@
 		+g(#004c97, #0082cc)
 .form__wrap
 	@extend %in
+	&.form__wrap_popup
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+		margin: 0
 .form
 	border: 1px solid #ecbe62
 	border-radius: 0 0 10px 10px
@@ -50,6 +55,8 @@
 		padding-bottom: 20px 
 		padding-right: 20px 
 		padding-left: 20px 
+	&.form_popup
+		+border-radius(10px)
 	.form__title
 		margin-bottom: 25px 
 		+r1

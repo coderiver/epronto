@@ -195,8 +195,11 @@ a { color: #005ca9; }
 .btn:hover { background-image: -moz-linear-gradient(#47a7df, #004c97); background-image: -webkit-linear-gradient(#47a7df, #004c97); background-image: linear-gradient(#47a7df, #004c97); }
 .btn:active { background-image: -moz-linear-gradient(#004c97, #0082cc); background-image: -webkit-linear-gradient(#004c97, #0082cc); background-image: linear-gradient(#004c97, #0082cc); }
 
+.form__wrap.form__wrap_popup { display: inline-block; vertical-align: middle; width: 100%; margin: 0; }
+
 .form { border: 1px solid #ecbe62; border-radius: 0 0 10px 10px; background-clip: padding-box; box-shadow: 0 10px 38px rgba(0, 0, 0, 0.11); background-image: linear-gradient(to top, #ffbd3b 0%, #ffdb69 100%); background-image: -moz-linear-gradient(#ffdb69, #ffbd3b); background-image: -webkit-linear-gradient(#ffdb69, #ffbd3b); background-image: linear-gradient(#ffdb69, #ffbd3b); padding: 12px 30px 48px 30px; font-size: 0; position: relative; z-index: 10; }
 @media only screen and (max-width: 984px) { .form { padding-bottom: 20px; padding-right: 20px; padding-left: 20px; } }
+.form.form_popup { -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 .form .form__title { margin-bottom: 25px; }
 @media only screen and (max-width: 984px) { .form .form__title { margin-bottom: 16px; } }
 .form .form__title h2 { font-size: 50px; font-weight: 100; font-family: "Open Sans", sans-serif; font-weight: 300; color: #3e3b35; text-align: center; line-height: 1; }
@@ -1615,6 +1618,11 @@ li:hover .iconmore { background-position: 0 -1398px; }
 @media only screen and (max-width: 984px) { .h-table__head { display: none; } }
 
 .form_zin { position: relative; z-index: 999; }
+
+.p-form { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.5); z-index: 5000; overflow: auto; text-align: center; font-size: 0; padding: 10px; }
+.p-form:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+
+@media only screen and (max-width: 984px) { .out .p-form .form__wrap { margin: 0; } }
 
 .out { background: url(../img/map-top.png) repeat-x 50% 0; font-family: "Open Sans", sans-serif; font-weight: 400; }
 .out.b-inside3 .header .header__in { padding-top: 14px; height: 60px; }
