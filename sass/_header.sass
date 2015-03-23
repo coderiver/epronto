@@ -61,12 +61,14 @@
 		position: absolute
 		top: 37px 
 		left: 0
-		+s(logo) 
+		// +s(logo) 
 		+hide-text
 		z-index: 30 
+		+svg(logo, 147, 33)
 		.is-menu &
 			+r1
-				+s(logoactive)
+				// +s(logoactive)
+				+svg(logo, 113, 25)				
 		+r1
 			top: 20px 
 		&:before
@@ -211,7 +213,8 @@
 			+box
 		.header__logo
 			top: 27px
-			+s(logo-2)
+			// +s(logo-2)
+			+svg(logo, 113, 25)
 			&:before
 				display: none
 			.is-menu &

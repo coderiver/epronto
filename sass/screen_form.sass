@@ -1,0 +1,642 @@
+@import lib/base
+@import reset
+@import common
+@import datepicker
+
+body
+	background: none
+.p-form
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0, 0, 0, 0.5) 
+	z-index: 998
+	overflow: auto
+	+vertical
+	padding: 10px 
+.out
+	.p-form
+		.form__wrap
+			+r1
+				margin: 0
+.input
+	border: 1px solid #e2b252
+	border-radius: 5px
+	background-color: #fff
+	box-shadow: inset 2px 4px 6px rgba(0,0,0,.1)
+	+box
+	width: 100%
+	display: block
+	padding: 0 20px
+	height: 45px
+	padding-top: 1px   
+	font-size: 15px 
+	line-height: 1 
+	+placeholder-color(#B8B8B8)
+	cursor: pointer
+	&:focus
+		border: 1px solid #0071BD 
+.btn
+	display: inline-block
+	border-radius: 5px
+	background-color: #fff
+	box-shadow: 0 3px 3px rgba(0,0,0,.14)
+	+g(#0081cb,#004b97)
+	color: #fff
+	font-size: 19px
+	font-weight: bold
+	text-shadow: -1px -1px 0 rgba(0,0,0,.28)
+	height: 45px
+	line-height: 45px
+	padding: 0 20px
+	text-decoration: none   
+	&:hover
+		+g(#47A7DF,#004C97)
+	&:active
+		+g(#004c97, #0082cc)
+.form__wrap
+	@extend %in
+	&.form__wrap_popup
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+		margin: 0
+.form
+	border: 1px solid #ecbe62
+	border-radius: 0 0 10px 10px
+	background-clip: padding-box
+	box-shadow: 0 10px 38px rgba(0,0,0,.11)
+	background-image: linear-gradient(bottom, #ffbd3b 0%, #ffdb69 100%)
+	+g(#ffdb69,#ffbd3b)
+	padding: 12px 30px 48px 30px
+	font-size: 0 
+	position: relative
+	z-index: 10 
+	text-align: left
+	+r1
+		padding-bottom: 20px 
+		padding-right: 20px 
+		padding-left: 20px 
+	&.form_popup
+		+border-radius(10px)
+	.form__title
+		margin-bottom: 25px 
+		+r1
+			margin-bottom: 16px 
+		h2
+			font-size: 55px 
+			font-weight: 100
+			+lite
+			color: #3E3B35
+			text-align: center
+			line-height: 1 
+			+r1
+				font-size: 25px 
+			+r2
+				font-size: 20px  
+			span
+				font-size: 26px 
+				display: block
+				line-height: 1 
+				+r1
+					font-size: 15px 
+					color: #957D3C
+					padding-top: 6px 
+				+r2
+					display: none
+	.form__hotel
+		position: relative
+		margin-bottom: 10px
+		.form__hotelsearch
+			position: absolute
+			right: 10px 
+			top: 50%
+			margin-top: -11px  
+			+s(search)
+		.form__hotelicon
+			position: absolute
+			left: 13px 
+			top: 14px 
+			+s(location)
+		.input
+			padding-left: 35px
+			padding-right: 40px 
+	.form__nodates 
+		position: absolute
+		bottom: -25px 
+		left: 0 
+		font-style: italic 
+		font-size: 12px 
+		color: #704A23 
+		text-shadow: 1px 1px 0 rgba(255,255,255,.24)
+		cursor: pointer
+		
+		+r1
+			bottom: -31px 
+		+r2
+			bottom: auto
+			top: 116px 
+		label
+			display: block
+			cursor: pointer
+		span
+			vertical-align: middle
+			position: relative
+			top: 1px 
+		input
+			display: none
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-right: 9px 
+			+s(checkbox0)
+		input:checked+i
+			+s(checkbox)
+		
+	.form__date
+		position: relative
+		display: inline-block
+		width: 20%
+		margin-right: 2% 
+		float: left
+		+r1
+			margin-bottom: 46px 
+			width: 48% 
+			margin-right: 0
+			margin-left: 0  
+		+r2
+			width: auto
+			margin-bottom: 16px 
+			float: none
+			display: block
+		&.form__date_out
+			+r1
+				float: right
+			+r2
+				float: none
+				margin-bottom: 47px 
+
+		.form__dateicon
+			position: absolute
+			right: 10px 
+			top: 10px
+			+s(date)
+		.input
+			padding-left: 16px 
+	.form__people
+		position: relative
+		width: 36%
+		display: inline-block
+		margin-right: 2% 
+		+r1
+			width: 60% 
+			margin-right: 4% 
+		+r2
+			width: auto
+			margin-right: 0
+			margin-bottom: 16px  
+			display: block
+		select
+			opacity: 0
+			position: absolute
+			left: 0
+			top: 0
+			-webkit-appearance: none
+			height: 100%
+			width: 100%
+			z-index: 1      
+		.form__peopleicon
+			left: 16px 
+			top: 11px 
+			+s(people)
+			position: absolute
+			//+s(date)
+			@each $s in icon11,icon21,icon31,icon41,icon22, iconmore
+				&.#{$s}
+					+s(#{$s})
+			&.icon41
+				top: 17px 
+			&.icon22
+				left: 13px 
+			&.icon31
+				top: 12px 
+		.form__peopleicon
+			display: none
+		.input
+			// padding-left: 45px 
+			padding-left: 16px
+			padding-right: 40px 
+		.form__peoplearrow
+			position: absolute
+			right: 10px 
+			top: 17px 
+			+s(arrow1)
+	.form__example
+		display: block
+		font-size: 11px 
+		font-style: italic 
+		color: #FFFFFF
+		margin-top: 6px 
+		margin-bottom: 9px 
+		a
+			font-size: 12px 
+			color: #704A23
+			border-bottom: 1px dotted #704A23  
+			font-style: normal 
+			text-decoration: none
+		.form__exampleicon
+			+s(whitearrow)
+			vertical-align: middle
+			display: inline-block
+			margin-right: 14px 
+			position: relative
+			top: -1px 
+	.form__submit
+		display: inline-block
+		width: 18% 
+		+r1
+			width: 36% 
+		+r2
+			width: auto
+			display: block
+		.btn
+			display: block
+			padding: 0
+			text-align: center 
+	// =======================================
+	// ==============NARROW FORM==============
+	// =======================================
+	&.form_narrow
+		padding: 20px 20px 20px 20px 
+		margin-bottom: 22px 
+		+clr
+		.form__title
+			margin-bottom: 18px 
+			h2
+				font-size: 26px 
+				line-height: .9
+				text-align: left
+		.form__date
+			width: auto
+			float: none
+			margin-bottom: 16px 
+			+r1
+				width: 48% 
+				float: left
+			+r2
+				width: auto
+				float: none
+			.input
+				padding-left: 15px 
+		.form__nodates
+			bottom: auto 
+			top: 116px 
+			z-index: 20 
+			+r1
+				top: 53px 
+			+r2
+				top: 116px 
+		.form__date_out
+			margin-bottom: 38px 
+			+r1
+				float: right
+			+r2
+				float: none
+		.form__submit
+			width: auto
+			float: none
+			display: block
+			+r1
+				float: right
+				width: 26% 
+			+r2
+				width: auto
+				float: none
+		.form__people
+			width: auto
+			display: block
+			float: none
+			margin-bottom: 16px 
+			+r1
+				width: 70%
+				float: left 
+				margin-bottom: 0 
+			+r2
+				width: auto
+				float: none
+				margin-bottom: 16px 
+	// =======================================
+	// ==============DEMINARROW FORM==========
+	// =======================================
+	&.form_demi
+		padding: 30px 
+		+clr
+		+r1
+			margin-bottom: 20px 
+		.form__hotel
+			margin-bottom: 16px 
+		.form__date
+			float: left
+			width: 48%
+			margin-bottom: 38px 
+			+r2
+				float: none
+				width: auto
+				margin-bottom: 16px 
+			&.form__date_out
+				float: right
+				margin: 0
+				+r2
+					float: none
+					margin-bottom: 38px 
+		.form__nodates
+			top: 53px 
+			+r2
+				top: 116px 
+		.form__people
+			float: left
+			width: 70% 
+			+r2
+				float: none
+				width: auto
+		.form__submit
+			float: right
+			width: 26% 
+			+r2
+				float: none
+				width: auto
+	.form__moarpeople
+		clear: both
+		padding-top: 10px  
+		display: none
+		.is-mainpage &
+			padding-top: 32px 
+	.form__moar
+		border: 1px solid #6C6C6C
+		padding: 15px  
+		margin-bottom: 12px 
+		+clr
+		legend
+			display: block
+			font-size: 12px 
+			margin-left: 10px 
+			color: #3e3b35 
+			padding: 0 4px 
+	.form__moarselect
+		float: left
+		margin-right: 15px 
+		text-align: left
+		width: 86px 
+		label
+			display: block
+			font-style: italic
+			text-shadow: 1px 1px 1px rgba(255, 255, 255, .24)
+			color: #714A1F 
+			font-size: 12px 
+			display: block
+			margin-bottom: 5px 
+	.form__age
+		@extend .form__moarselect
+		min-width: 180px 
+		margin-right: 0 
+		margin-left: 0 
+		display: none
+		label
+			white-space: nowrap
+			
+		input
+			width: 40px 
+			margin-right: 4px 
+			display: inline-block
+			text-align: center
+			padding-left: 0
+			padding-right: 0  
+			&:last-child
+				margin-right: 0 
+		&.show1
+			input+input
+				display: none
+		&.show2
+			input+input+input
+				display: none
+		&.show3
+			input:last-child
+				display: none
+	.form__clonemoar
+		color: #005CA9 
+		font-size: 13px 
+		display: inline-block
+		// margin-top: 8px 
+	.form__select
+		position: relative
+		.form__arrow
+			position: absolute
+			width: 45px 
+			height: 45px 
+			right: 0
+			top: 0  
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+			&:before
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -5px   
+				margin-left: -7px 
+				content: ' '
+				+s(arrow1)
+		select
+			display: none
+		&.is-active
+			.form__arrow
+				+g(#004E99,#0069A7)
+				&:before
+					+s(arrow2)
+			.input
+				border: 1px solid #0071BD 
+	.form__removeme
+		font-size: 12px 
+		display: block
+		clear: both
+		padding-top: 7px 
+	.form__moar
+		.form__removeme
+			display: none
+	.form__moar+.form__moar
+		.form__removeme
+			display: block
+
+.people
+	position: absolute
+	left: 0
+	right: 0
+	top: 57px  
+	background: #fff 
+	z-index: 1000
+	box-shadow: 0 5px 27px rgba(0,0,0,.22)
+	font-size: 12px 
+	border-radius: 5px
+	display: none
+	&.is-open
+		display: block
+	&:before
+		content: '\25B2'
+		display: block
+		position: absolute
+		left: 15px
+		top: -12px
+		height: 13px
+		width: 13px
+		overflow: hidden
+		font-size: 13px
+		line-height: 16px
+		text-align: center
+		color: #fff
+	// &:after
+	// 	content: ''
+	// 	display: block
+	// 	position: absolute
+	// 	bottom: 0
+	// 	left: 0
+	// 	right: 0  
+	// 	height: 5px
+	// 	overflow: hidden
+	// 	border-radius: 0 0 5px 5px
+	// 	background: -webkit-gradient(linear, 0 100%, 0 0, from(#2192d3), to(#004e94))
+	// 	background: -webkit-linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	background: -moz-linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	background: -o-linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	background: linear-gradient(#2192d3 0%, #004e94 100%)
+	// 	// -webkit-transform: scale(1.4, 1)
+	// 	// -ms-transform: scale(1.4, 1)
+	// 	// transform: scale(1.4, 1)
+	ul
+		list-style: none
+		padding: 6px 
+		width: 100%
+		+box
+	li
+		// padding: 10px 15px 11px 27px
+		padding: 10px 15px 11px 17px
+		color: #000
+		min-width: 18px
+		font-size: 14px
+		cursor: default
+		position: relative
+		+border-radius(3px)
+		+osr
+		i
+			position: absolute
+			top: 8px 
+			left: 9px
+			display: none
+			&.icon-children, &.icon-number
+				display: none
+		span
+			opacity: 0.5
+			color: #222
+			font-size: 11px
+			font-style: italic
+		&:first-child
+			border-style: none
+		&:hover
+			background-color: #e6eef3
+			color: #000
+			.people__plus
+				+s(ico-plus-hover)
+			.people__minus
+				+s(ico-minus-hover)
+			.people__date
+				color: #0071bd
+	.icon-children
+		display: inline-block
+		+s(icon-children-hover)
+	.icon-number
+		top: 13px
+		display: inline-block
+		+s(ico-keys)
+	.people__calc
+		float: right
+	.people__plus
+		+s(ico-plus)
+	.people__minus
+		+s(ico-minus)
+	.people__plus,
+	.people__minus
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: -5px
+			left: -5px
+			right: -5px
+			bottom: -5px
+	.people__date
+		position: relative
+		margin: 0 5px
+		height: 23px
+		line-height: 23px
+		min-width: 20px
+		text-align: center
+		&.is-active
+			ul
+				display: block
+		ul
+			position: absolute
+			left: 0
+			right: 0
+			top: -4px
+			padding: 0
+			z-index: 2
+			background-color: #FFF
+			overflow: hidden
+			+border-radius(5px)
+			+box-shadow(3.5px 3.5px 27px rgba(0, 0, 0, 0.22))
+			display: none
+			li
+				padding: 0
+				height: 30px
+				line-height: 30px
+				border-top: 1px solid #e5e5e5
+				cursor: pointer
+				+border-radius(0)
+				display: block
+				&:hover
+					color: #0071bd
+				&:first-child
+					border-top: none
+	.people__date,
+	.people__plus,
+	.people__minus
+		vertical-align: middle
+		cursor: pointer
+		display: inline-block
+		&.is-disabled
+			cursor: default
+			+opacity(.4)
+		
+@each $s in icon11,icon21,icon31,icon41,icon22, iconmore
+	.#{$s}
+		+s(#{$s})
+	li:hover .#{$s}
+		+sp(#{$s}h)
+
+
+.drop
+	@extend .people
+	left: auto
+	right: 0
+	width: 80px 
+	&:before
+		left: auto 
+		right: 20px 
+	.is-active &
+		display: block
+	li
+		padding-left: 0
+		padding-right: 0 
+		text-align: center 
+	
+	
