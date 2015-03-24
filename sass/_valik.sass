@@ -333,70 +333,62 @@
 
 .h-services
 	overflow: hidden
+	padding: 10px 0 30px
 	h3
 		font-size: 18px
-		text-align: center
+		// text-align: center
 		font-weight: normal
 		line-height: 1
 		margin-bottom: 30px
-.h-row
-	font-size: 0
-	margin: 0 -10px 
-	+r1
-		text-align: center
-.h-box
-	display: inline-block
-	vertical-align: top
-	width: 100%
-	padding: 0 10px 40px
-	+box
-	h4
-		font-size: 15px
-		line-height: 20px
-		+opacity(0.8)
+		text-align: left
+	&__item
 		+clr
-		margin-bottom: 7px
-		i
-			margin-right: 10px
+		border-bottom: 1px solid #e5e5e5 
+		padding: 15px 0 17px 0 
+		&:last-child
+			border-bottom: none
+		h4
+			font-size: 15px
+			line-height: 20px
+			+clr
 			float: left
-			margin-top: 1px
-			+r1
-				float: none
-			&.is-theme
-				+svg(is-theme, 16, 16)
-			&.is-time
-				+svg(is-time, 16, 16)
-			&.is-internet
-				+svg(is-internet, 16, 16)
-			&.is-parking
-				+svg(is-parking, 16, 16)
-			&.is-restaurant
-				+svg(is-restaurant, 16, 14)
-			&.is-beauty
-				+svg(is-beauty, 17, 18)
-			&.is-inroom
-				+svg(is-inroom, 17, 13)
-			&.is-services
-				+svg(is-services, 17, 14)
-		span
-			display: block
-			overflow: hidden
-	p
-		font-size: 13px
-		line-height: 20px
-		+opacity(0.5)
-	&.h-box_small
-		width: 20%
-		max-width: 200px
-		+r1
-			width: 200px
-			text-align: center
-	&.h-box_med
-		max-width: 334px
-		width: 33%
-		+r1
+			max-width: 250px
 			width: 100%
-			text-align: center
+			color: #000 
+			+r2
+				float: none
+				max-width: 100%
+				margin-bottom: 10px
+			i
+				margin-right: 10px
+				float: left
+				margin-top: 1px
+				&.is-theme
+					+svg(is-theme, 16, 16)
+				&.is-time
+					+svg(is-time, 16, 16)
+				&.is-internet
+					+svg(is-internet, 16, 16)
+				&.is-parking
+					+svg(is-parking, 16, 16)
+				&.is-restaurant
+					+svg(is-restaurant, 16, 14)
+				&.is-beauty
+					+svg(is-beauty, 17, 18)
+				&.is-inroom
+					+svg(is-inroom, 17, 13)
+				&.is-services
+					+svg(is-services, 17, 14)
+			span
+				display: block
+				overflow: hidden
+				+opacity(0.8)
+		p
+			font-size: 15px
+			line-height: 20px
+			+opacity(0.8)
+			overflow: hidden
+
 .h-rating
 	margin-bottom: 70px
 	h3

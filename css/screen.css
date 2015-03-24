@@ -1237,39 +1237,33 @@ li:hover .iconmore { background-position: 0 -1398px; }
 .h-info .h-btn_map i { background: url('../img/icons-s54237963ec.png') 0 -1893px no-repeat; width: 10px; height: 15px; }
 .h-info .h-btn_blue { border-color: #005ca9; color: #005ca9; }
 
-.h-services { overflow: hidden; }
-.h-services h3 { font-size: 18px; text-align: center; font-weight: normal; line-height: 1; margin-bottom: 30px; }
-
-.h-row { font-size: 0; margin: 0 -10px; }
-@media only screen and (max-width: 984px) { .h-row { text-align: center; } }
-
-.h-box { display: inline-block; vertical-align: top; width: 100%; padding: 0 10px 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.h-box h4 { font-size: 15px; line-height: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; *zoom: 1; margin-bottom: 7px; }
-.h-box h4:after { content: " "; display: table; clear: both; }
-.h-box h4 i { margin-right: 10px; float: left; margin-top: 1px; }
-@media only screen and (max-width: 984px) { .h-box h4 i { float: none; } }
-.h-box h4 i.is-theme { background: url("../img/svg/is-theme.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
-.ie8 .h-box h4 i.is-theme { background: url('../img/icons-s54237963ec.png') 0 -1841px no-repeat; width: 16px; height: 16px; }
-.h-box h4 i.is-time { background: url("../img/svg/is-time.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
-.ie8 .h-box h4 i.is-time { background: url('../img/icons-s54237963ec.png') 0 -1867px no-repeat; width: 16px; height: 16px; }
-.h-box h4 i.is-internet { background: url("../img/svg/is-internet.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
-.ie8 .h-box h4 i.is-internet { background: url('../img/icons-s54237963ec.png') 0 -1621px no-repeat; width: 16px; height: 13px; }
-.h-box h4 i.is-parking { background: url("../img/svg/is-parking.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
-.ie8 .h-box h4 i.is-parking { background: url('../img/icons-s54237963ec.png') 0 -1662px no-repeat; width: 16px; height: 16px; }
-.h-box h4 i.is-restaurant { background: url("../img/svg/is-restaurant.svg") no-repeat 0 0; -moz-background-size: 16px 14px 100%; -webkit-background-size: 16px 14px 100%; background-size: 16px 14px 100%; width: 16px; height: 14px; display: inline-block; }
-.ie8 .h-box h4 i.is-restaurant { background: url('../img/icons-s54237963ec.png') 0 -1714px no-repeat; width: 16px; height: 14px; }
-.h-box h4 i.is-beauty { background: url("../img/svg/is-beauty.svg") no-repeat 0 0; -moz-background-size: 17px 18px 100%; -webkit-background-size: 17px 18px 100%; background-size: 17px 18px 100%; width: 17px; height: 18px; display: inline-block; }
-.ie8 .h-box h4 i.is-beauty { background: url('../img/icons-s54237963ec.png') 0 -1428px no-repeat; width: 17px; height: 18px; }
-.h-box h4 i.is-inroom { background: url("../img/svg/is-inroom.svg") no-repeat 0 0; -moz-background-size: 17px 13px 100%; -webkit-background-size: 17px 13px 100%; background-size: 17px 13px 100%; width: 17px; height: 13px; display: inline-block; }
-.ie8 .h-box h4 i.is-inroom { background: url('../img/icons-s54237963ec.png') 0 -1598px no-repeat; width: 16px; height: 13px; }
-.h-box h4 i.is-services { background: url("../img/svg/is-services.svg") no-repeat 0 0; -moz-background-size: 17px 14px 100%; -webkit-background-size: 17px 14px 100%; background-size: 17px 14px 100%; width: 17px; height: 14px; display: inline-block; }
-.ie8 .h-box h4 i.is-services { background: url('../img/icons-s54237963ec.png') 0 -1738px no-repeat; width: 17px; height: 13px; }
-.h-box h4 span { display: block; overflow: hidden; }
-.h-box p { font-size: 13px; line-height: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
-.h-box.h-box_small { width: 20%; max-width: 200px; }
-@media only screen and (max-width: 984px) { .h-box.h-box_small { width: 200px; text-align: center; } }
-.h-box.h-box_med { max-width: 334px; width: 33%; }
-@media only screen and (max-width: 984px) { .h-box.h-box_med { width: 100%; text-align: center; } }
+.h-services { overflow: hidden; padding: 10px 0 30px; }
+.h-services h3 { font-size: 18px; font-weight: normal; line-height: 1; margin-bottom: 30px; text-align: left; }
+.h-services__item { *zoom: 1; border-bottom: 1px solid #e5e5e5; padding: 15px 0 17px 0; }
+.h-services__item:after { content: " "; display: table; clear: both; }
+.h-services__item:last-child { border-bottom: none; }
+.h-services__item h4 { font-size: 15px; line-height: 20px; *zoom: 1; float: left; max-width: 250px; width: 100%; color: black; }
+.h-services__item h4:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 640px) { .h-services__item h4 { float: none; max-width: 100%; margin-bottom: 10px; } }
+.h-services__item h4 i { margin-right: 10px; float: left; margin-top: 1px; }
+.h-services__item h4 i.is-theme { background: url("../img/svg/is-theme.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-theme { background: url('../img/icons-s54237963ec.png') 0 -1841px no-repeat; width: 16px; height: 16px; }
+.h-services__item h4 i.is-time { background: url("../img/svg/is-time.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-time { background: url('../img/icons-s54237963ec.png') 0 -1867px no-repeat; width: 16px; height: 16px; }
+.h-services__item h4 i.is-internet { background: url("../img/svg/is-internet.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-internet { background: url('../img/icons-s54237963ec.png') 0 -1621px no-repeat; width: 16px; height: 13px; }
+.h-services__item h4 i.is-parking { background: url("../img/svg/is-parking.svg") no-repeat 0 0; -moz-background-size: 16px 16px 100%; -webkit-background-size: 16px 16px 100%; background-size: 16px 16px 100%; width: 16px; height: 16px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-parking { background: url('../img/icons-s54237963ec.png') 0 -1662px no-repeat; width: 16px; height: 16px; }
+.h-services__item h4 i.is-restaurant { background: url("../img/svg/is-restaurant.svg") no-repeat 0 0; -moz-background-size: 16px 14px 100%; -webkit-background-size: 16px 14px 100%; background-size: 16px 14px 100%; width: 16px; height: 14px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-restaurant { background: url('../img/icons-s54237963ec.png') 0 -1714px no-repeat; width: 16px; height: 14px; }
+.h-services__item h4 i.is-beauty { background: url("../img/svg/is-beauty.svg") no-repeat 0 0; -moz-background-size: 17px 18px 100%; -webkit-background-size: 17px 18px 100%; background-size: 17px 18px 100%; width: 17px; height: 18px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-beauty { background: url('../img/icons-s54237963ec.png') 0 -1428px no-repeat; width: 17px; height: 18px; }
+.h-services__item h4 i.is-inroom { background: url("../img/svg/is-inroom.svg") no-repeat 0 0; -moz-background-size: 17px 13px 100%; -webkit-background-size: 17px 13px 100%; background-size: 17px 13px 100%; width: 17px; height: 13px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-inroom { background: url('../img/icons-s54237963ec.png') 0 -1598px no-repeat; width: 16px; height: 13px; }
+.h-services__item h4 i.is-services { background: url("../img/svg/is-services.svg") no-repeat 0 0; -moz-background-size: 17px 14px 100%; -webkit-background-size: 17px 14px 100%; background-size: 17px 14px 100%; width: 17px; height: 14px; display: inline-block; }
+.ie8 .h-services__item h4 i.is-services { background: url('../img/icons-s54237963ec.png') 0 -1738px no-repeat; width: 17px; height: 13px; }
+.h-services__item h4 span { display: block; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
+.h-services__item p { font-size: 15px; line-height: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; overflow: hidden; }
 
 .h-rating { margin-bottom: 70px; }
 .h-rating h3 { font-size: 18px; font-weight: normal; line-height: 1; margin-bottom: 20px; }
