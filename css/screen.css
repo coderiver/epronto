@@ -227,7 +227,7 @@ a { color: #005ca9; }
 @media only screen and (max-width: 640px) { .form .form__date.form__date_out { float: none; margin-bottom: 47px; } }
 .form .form__date .form__dateicon { position: absolute; right: 10px; top: 10px; background: url('../img/icons-s598b1ebf26.png') 0 -747px no-repeat; width: 19px; height: 23px; }
 .form .form__date .input { padding-left: 16px; }
-.form .form__people { position: relative; width: 36%; display: inline-block; margin-right: 2%; }
+.form .form__people { position: relative; width: 36%; display: inline-block; margin-right: 2%; vertical-align: top; }
 @media only screen and (max-width: 984px) { .form .form__people { width: 60%; margin-right: 4%; } }
 @media only screen and (max-width: 640px) { .form .form__people { width: auto; margin-right: 0; margin-bottom: 16px; display: block; } }
 .form .form__people select { opacity: 0; position: absolute; left: 0; top: 0; -webkit-appearance: none; height: 100%; width: 100%; z-index: 1; }
@@ -247,7 +247,7 @@ a { color: #005ca9; }
 .form .form__example { display: block; font-size: 11px; font-style: italic; color: white; margin-top: 6px; margin-bottom: 9px; }
 .form .form__example a { font-size: 12px; color: #704a23; border-bottom: 1px dotted #704a23; font-style: normal; text-decoration: none; }
 .form .form__example .form__exampleicon { background: url('../img/icons-s598b1ebf26.png') 0 -4215px no-repeat; width: 21px; height: 7px; vertical-align: middle; display: inline-block; margin-right: 14px; position: relative; top: -1px; }
-.form .form__submit { display: inline-block; width: 18%; }
+.form .form__submit { display: inline-block; width: 18%; vertical-align: top; }
 @media only screen and (max-width: 984px) { .form .form__submit { width: 36%; } }
 @media only screen and (max-width: 640px) { .form .form__submit { width: auto; display: block; } }
 .form .form__submit .btn { display: block; padding: 0; text-align: center; }
