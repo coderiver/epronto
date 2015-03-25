@@ -1,11 +1,11 @@
-=svg($name, $width, $height)
-	background: url("../img/svg/#{$name}.svg") no-repeat 0 0
-	+background-size(#{$width}px #{$height}px)
-	width: #{$width}px
-	height: #{$height}px
-	display: inline-block
-	.ie8 &
-		+s($name)
+// =svg($name, $width, $height)
+// 	background: url("../img/svg/#{$name}.svg") no-repeat 0 0
+// 	+background-size(#{$width}px #{$height}px)
+// 	width: #{$width}px
+// 	height: #{$height}px
+// 	display: inline-block
+// 	.ie8 &
+// 		+s($name)
 
 +keyframes(rotate)
 	100%
@@ -1378,3 +1378,18 @@
 		.form__wrap
 			+r1
 				margin: 0
+
+//slider index
+
+.arrows__left, .arrows__right
+	position: absolute
+	top: 50%
+	z-index: 2000 
+.arrows__left
+	left: -15px
+	+svg(arr-slider-left, 11, 21)
+.arrows__right
+	right: -5px
+	+svg(arr-slider-right, 11, 21)
+.go__wrap_hidden
+	overflow: hidden

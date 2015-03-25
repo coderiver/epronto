@@ -107,7 +107,7 @@
 
 .ui-datepicker td
 	border: 1px solid #e5e5e5
-
+	line-height: 29px
 .ui-datepicker td span, .ui-datepicker td a
 	display: block
 	padding: 8px 6px
@@ -168,3 +168,14 @@
 
 .ui-datepicker-group td span, .ui-datepicker-group td a
 	padding: 5px 3px
+
+.ui-datepicker-group-first
+	padding: 0 0 0 5px
+	+box
+	.ui-widget-header
+		margin: 0 0 0 -5px 
+.ui-datepicker-group-first
+	padding: 0 5px 0 0
+	+box
+	.ui-widget-header
+		margin: 0 -5px 0 0

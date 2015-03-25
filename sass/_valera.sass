@@ -118,6 +118,7 @@
 			+osl
 	.go__wrap
 		margin-right: -9px
+		position: relative
 		+r1
 			margin-right: -1%
 	.go
@@ -428,11 +429,17 @@
 	&.ico_ostanovok
 		+s(ostanovok1) 
 	&.ico_ozon
-		+s(ozon1)
+		// +s(ozon1)
+		+svg(ozon-logo, 65, 22)
 	&.ico_booking
-		+s(booking1)
+		// +s(booking1)
+		+svg(booking-logo, 110, 20)
 	&.ico_agoda
-		+s(agoda1)
+		// +s(agoda1)
+		width: 75px 
+		height: 25px 
+		background: url(../img/icons/agoda-x2.png) no-repeat center center
+		background-size: contain
 	&.ico_50
 		+s(plus50)
 	&.ico_shape
