@@ -281,12 +281,15 @@
 			.form__dateicon
 				right: 13px 
 				top: 13px
-				+s(date)
+				+s(date-def)
 			&.form__date_out
 				+r1
 					float: none
 				+r2
 					margin-bottom: 16px
+			&.is-active
+				.form__dateicon
+					+s(date)
 		.form__people
 			width: 29.8%
 			margin-right: 1%

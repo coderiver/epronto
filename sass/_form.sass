@@ -157,9 +157,12 @@
 			position: absolute
 			right: 10px 
 			top: 10px
-			+s(date)
+			+s(date-def)
 		.input
 			padding-left: 16px 
+		&.is-active
+			.form__dateicon
+				+s(date)
 	.form__people
 		position: relative
 		width: 36%
