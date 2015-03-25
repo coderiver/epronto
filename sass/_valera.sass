@@ -425,9 +425,14 @@
 .ico 
 	display: inline-block
 	&.ico_octogo
-		+s(octogo1)
+		// +s(octogo1)
+		+svg(oktogo-ru, 90, 24)
 	&.ico_ostanovok
-		+s(ostanovok1) 
+		// +s(ostanovok1) 
+		width: 100px
+		height: 20px
+		background: url(../img/icons/ostrovok-logo.png) no-repeat center center
+		background-size: contain  
 	&.ico_ozon
 		// +s(ozon1)
 		+svg(ozon-logo, 65, 22)
