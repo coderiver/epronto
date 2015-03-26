@@ -60,6 +60,8 @@
 			color: #000000
 			line-height: 1
 			text-decoration: none 
+			&:hover
+				text-decoration: underline
 			+r1
 				height: 46px
 				font-size: 16px
@@ -189,7 +191,7 @@
 			color: #fff
 			line-height: 1
 			text-transform: uppercase
-			+osb
+			+ossb
 			&:before
 				display: none
 			a
@@ -221,7 +223,7 @@
 			strong
 				font-size: 20px 
 				color: #ffcd52
-				+ossb 
+				+osr
 				.rub
 					text-transform: uppercase
 					&:before
@@ -384,15 +386,14 @@
 			font-size: 12px 
 			margin-right: 20px 
 			li
+				border-bottom: 1px solid #484C4F
 				&:first-child
 					a
 						padding-top: 0
 				a
 					color: #fff
 					border: none
-					display: inline-block
-			.border
-				border-bottom: 1px solid #484C4F
+					display: inline-block				
 		.footer__text, .footer__col
 			+r1
 				padding-left: 20px

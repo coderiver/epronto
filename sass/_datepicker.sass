@@ -14,7 +14,7 @@
 	display: none
 	background-color: #FFF
 	border-radius: 5px
-	padding: 0 0 4px
+	// padding: 0 0 4px
 	box-shadow: 0 5px 27px RGBA(0, 0, 0, 0.22)
 	margin-top: 17px
 	margin-left: -26px
@@ -23,7 +23,7 @@
 
 .ui-datepicker:after
 	content: ''
-	display: block
+	display: none
 	position: absolute
 	bottom: 0
 	width: 100%
@@ -62,39 +62,42 @@
 .ui-datepicker-prev
 	left: 2px
 	position: absolute
-	padding: 14px 15px
+	padding: 16px 10px 15px
 
 .ui-datepicker-next
 	right: 2px
 	position: absolute
-	padding: 14px 15px
+	padding: 16px 10px 15px
 
 .ui-datepicker-prev .ui-icon
-	background-position: -350px -175px
-	width: 8px
-	height: 12px
+	// background-position: -350px -175px
+	+s(cal-arr-left)
+	// width: 8px
+	// height: 12px
 
 .ui-datepicker-next .ui-icon
-	background-position: -360px -175px
-	width: 8px
-	height: 12px
+	// background-position: -360px -175px
+	+s(cal-arr-right)
+	// width: 8px
+	// height: 12px
 
 .ui-datepicker-title, .ui-datepicker-table-Title
-	font-size: 14px
+	font-size: 13px
 	line-height: 16px
 	font-weight: bold
 	text-shadow: -1px -1px 1px RGBA(0, 0, 0, 0.28)
 	text-align: center
 	text-transform: uppercase
 	color: #FFF
-	padding: 14px 0
+	padding: 12px 0
 
 .ui-datepicker table
-	width: 100%
+	// width: 100%
+	width: auto
 	font-size: 15px
 	border-collapse: collapse
-	margin: 0
-	border: 1px solid #e5e5e5
+	margin: 9px
+	// border: 1px solid #e5e5e5
 
 .ui-datepicker th
 	padding: 4px 0 5px
@@ -170,12 +173,8 @@
 	padding: 5px 3px
 
 .ui-datepicker-group-first
-	padding: 0 0 0 5px
-	+box
-	.ui-widget-header
-		margin: 0 0 0 -5px 
-.ui-datepicker-group-first
-	padding: 0 5px 0 0
-	+box
-	.ui-widget-header
-		margin: 0 -5px 0 0
+	.ui-datepicker-calendar
+		margin: 7px 4.5px 9px 9px
+.ui-datepicker-group-last
+	.ui-datepicker-calendar
+		margin: 7px 9px 9px 4.5px

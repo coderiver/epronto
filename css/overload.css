@@ -68,21 +68,16 @@ td.ui-state-disabled span{
 }
 
 .ui-widget { font-family: "Open Sans", sans-serif; font-size: 12px; }
-.ui-datepicker-next{
-    padding: 15px 10px;
 
-}
-.ui-datepicker-prev{
-    padding: 15px 10px;
-}
 .ui-datepicker-group td span, .ui-datepicker-group td a{
     padding:7px;
+    font-size: 13px;
 }
 .ui-datepicker-multi-2 .ui-datepicker-group{
-    width:240px;
+    width:50%;
 }
 #ui-datepicker-div{
-    width:480px!important;
+    width:449px!important;
 }
 .ui-datepicker-title, .ui-datepicker-table-Title{
     font-weight: 400;
