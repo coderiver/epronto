@@ -188,7 +188,7 @@ a { color: #005ca9; }
 @media only screen and (max-width: 984px) { .footer .footer__designby { display: none; } }
 .footer .footer__designby a { font: 0/0 a; text-shadow: none; color: transparent; display: inline-block; background: url('../img/icons-s87d9305b66.png') 0 -4154px no-repeat; width: 72px; height: 21px; vertical-align: middle; }
 
-.input { border: 1px solid #e2b252; border-radius: 5px; background-color: white; box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.1); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; display: block; padding: 0 20px; height: 45px; padding-top: 1px; font-size: 15px; line-height: 1; cursor: pointer; }
+.input { border: 1px solid #e2b252; border-radius: 5px; background-color: white; box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.1); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; display: block; padding: 0 20px; height: 45px; padding-top: 1px; font-size: 15px; line-height: 1; }
 .input:-moz-placeholder, .input::-moz-placeholder { color: #b8b8b8; opacity: 1; }
 .input::-webkit-input-placeholder { color: #b8b8b8; }
 .input:focus { border: 1px solid #0071bd; }
@@ -222,15 +222,15 @@ a { color: #005ca9; }
 .form .form__nodates input { display: none; }
 .form .form__nodates i { display: inline-block; vertical-align: middle; margin-right: 9px; background: url('../img/icons-s87d9305b66.png') 0 -678px no-repeat; width: 20px; height: 20px; }
 .form .form__nodates input:checked + i { background: url('../img/icons-s87d9305b66.png') 0 -648px no-repeat; width: 20px; height: 20px; }
-.form .form__date { position: relative; display: inline-block; width: 20%; margin-right: 2%; float: left; }
+.form .form__date { position: relative; display: inline-block; width: 20%; margin-right: 2%; float: left; cursor: pointer; }
 @media only screen and (max-width: 984px) { .form .form__date { margin-bottom: 46px; width: 48%; margin-right: 0; margin-left: 0; } }
 @media only screen and (max-width: 640px) { .form .form__date { width: auto; margin-bottom: 16px; float: none; display: block; } }
 @media only screen and (max-width: 984px) { .form .form__date.form__date_out { float: right; } }
 @media only screen and (max-width: 640px) { .form .form__date.form__date_out { float: none; margin-bottom: 47px; } }
 .form .form__date .form__dateicon { position: absolute; right: 10px; top: 10px; background: url('../img/icons-s87d9305b66.png') 0 -785px no-repeat; width: 19px; height: 23px; }
-.form .form__date .input { padding-left: 16px; }
+.form .form__date .input { padding-left: 16px; cursor: pointer; }
 .form .form__date.is-active .form__dateicon { background: url('../img/icons-s87d9305b66.png') 0 -818px no-repeat; width: 19px; height: 23px; }
-.form .form__people { position: relative; width: 36%; display: inline-block; margin-right: 2%; vertical-align: top; }
+.form .form__people { position: relative; width: 36%; display: inline-block; margin-right: 2%; vertical-align: top; cursor: pointer; }
 @media only screen and (max-width: 984px) { .form .form__people { width: 60%; margin-right: 4%; } }
 @media only screen and (max-width: 640px) { .form .form__people { width: auto; margin-right: 0; margin-bottom: 16px; display: block; } }
 .form .form__people select { opacity: 0; position: absolute; left: 0; top: 0; -webkit-appearance: none; height: 100%; width: 100%; z-index: 1; }
@@ -245,7 +245,7 @@ a { color: #005ca9; }
 .form .form__people .form__peopleicon.icon22 { left: 13px; }
 .form .form__people .form__peopleicon.icon31 { top: 12px; }
 .form .form__people .form__peopleicon { display: none; }
-.form .form__people .input { padding-left: 16px; padding-right: 40px; }
+.form .form__people .input { padding-left: 16px; padding-right: 40px; cursor: pointer; }
 .form .form__people .form__peoplearrow { position: absolute; right: 10px; top: 17px; background: url('../img/icons-s87d9305b66.png') 0 -339px no-repeat; width: 15px; height: 10px; }
 .form .form__example { display: block; font-size: 11px; font-style: italic; color: white; margin-top: 6px; margin-bottom: 9px; }
 .form .form__example a { font-size: 12px; color: #704a23; border-bottom: 1px dotted #704a23; font-style: normal; text-decoration: none; }
@@ -1263,7 +1263,8 @@ li:hover .iconmore { background-position: 0 -1590px; }
 .h-services__item h4 i.is-inroom { background: url("../img/svg/is-inroom.svg") no-repeat 0 0; -moz-background-size: 17px 13px 100%; -webkit-background-size: 17px 13px 100%; background-size: 17px 13px 100%; width: 17px; height: 13px; display: inline-block; }
 .h-services__item h4 i.is-services { background: url("../img/svg/is-services.svg") no-repeat 0 0; -moz-background-size: 17px 14px 100%; -webkit-background-size: 17px 14px 100%; background-size: 17px 14px 100%; width: 17px; height: 14px; display: inline-block; }
 .h-services__item h4 span { display: block; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
-.h-services__item p { font-size: 15px; line-height: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; overflow: hidden; }
+.h-services__item p { font-size: 15px; line-height: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; overflow: hidden; padding: 0 60px 0 0; }
+@media only screen and (max-width: 520px) { .h-services__item p { padding: 0; } }
 
 .h-rating { margin-bottom: 70px; }
 .h-rating h3 { font-size: 18px; font-weight: normal; line-height: 1; margin-bottom: 20px; }
