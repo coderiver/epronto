@@ -341,56 +341,56 @@
 		line-height: 1
 		margin-bottom: 30px
 		text-align: left
-	&__item
+.h-services__item, .h-box
+	+clr
+	border-bottom: 1px solid #e5e5e5 
+	padding: 15px 0 17px 0 
+	&:last-child
+		border-bottom: none
+	h4
+		font-size: 15px
+		line-height: 20px
 		+clr
-		border-bottom: 1px solid #e5e5e5 
-		padding: 15px 0 17px 0 
-		&:last-child
-			border-bottom: none
-		h4
-			font-size: 15px
-			line-height: 20px
-			+clr
+		float: left
+		max-width: 250px
+		width: 100%
+		color: #000 
+		+r2
+			float: none
+			max-width: 100%
+			margin-bottom: 10px
+		i
+			margin-right: 10px
 			float: left
-			max-width: 250px
-			width: 100%
-			color: #000 
-			+r2
-				float: none
-				max-width: 100%
-				margin-bottom: 10px
-			i
-				margin-right: 10px
-				float: left
-				margin-top: 1px
-				&.is-theme
-					+svg(is-theme, 16, 16)
-				&.is-time
-					+svg(is-time, 16, 16)
-				&.is-internet
-					+svg(is-internet, 16, 16)
-				&.is-parking
-					+svg(is-parking, 16, 16)
-				&.is-restaurant
-					+svg(is-restaurant, 16, 14)
-				&.is-beauty
-					+svg(is-beauty, 17, 18)
-				&.is-inroom
-					+svg(is-inroom, 17, 13)
-				&.is-services
-					+svg(is-services, 17, 14)
-			span
-				display: block
-				overflow: hidden
-				+opacity(0.8)
-		p
-			font-size: 15px
-			line-height: 20px
-			+opacity(0.8)
+			margin-top: 1px
+			&.is-theme
+				+svg(is-theme, 16, 16)
+			&.is-time
+				+svg(is-time, 16, 16)
+			&.is-internet
+				+svg(is-internet, 16, 16)
+			&.is-parking
+				+svg(is-parking, 16, 16)
+			&.is-restaurant
+				+svg(is-restaurant, 16, 14)
+			&.is-beauty
+				+svg(is-beauty, 17, 18)
+			&.is-inroom
+				+svg(is-inroom, 17, 13)
+			&.is-services
+				+svg(is-services, 17, 14)
+		span
+			display: block
 			overflow: hidden
-			padding: 0 60px 0 0
-			+r3
-				padding: 0 
+			+opacity(0.8)
+	p
+		font-size: 15px
+		line-height: 20px
+		+opacity(0.8)
+		overflow: hidden
+		padding: 0 60px 0 0
+		+r3
+			padding: 0 
 .h-rating
 	margin-bottom: 70px
 	h3
