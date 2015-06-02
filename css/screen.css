@@ -1343,7 +1343,8 @@ li:hover .iconmore { background-position: 0 -1590px; }
 
 .h-map-wrapper { position: relative; overflow: hidden; margin-bottom: 45px; }
 
-.h-map { width: 100%; height: 320px; }
+.h-map { margin-right: 230px; height: 320px; }
+@media only screen and (max-width: 640px) { .h-map { margin-right: 0; } }
 
 .h-map__block { position: absolute; top: 0; right: 0; bottom: 0; width: 230px; }
 @media only screen and (max-width: 640px) { .h-map__block { position: relative; width: 100%; height: 320px; } }
