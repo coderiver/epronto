@@ -129,6 +129,14 @@ td.ui-state-disabled span{
     margin-left:-60px;
     margin-top:-40px;
 }
+
+@media only screen and (max-width: 984px) {
+    .go img, .go.large img {
+        margin: 0;
+        display: block;
+    }
+}
+
 .active-destinations-above, .active-destinations, .destinations-container{
     overflow:hidden;
 }
